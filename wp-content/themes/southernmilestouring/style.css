@@ -1,0 +1,14 @@
+/*
+Theme Name: Southern Miles Touring
+Version: 1.0
+*/
+
+html {
+    margin-top: 0 !important;
+}
+body{
+    margin:0;
+    background:#000;
+    color:#fff;
+    font-family:'Open Sans', sans-serif;
+}

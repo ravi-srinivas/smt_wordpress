@@ -1,1 +1,1 @@
-# smt_wordpress
+# Southern Miles Touring - Wordpress

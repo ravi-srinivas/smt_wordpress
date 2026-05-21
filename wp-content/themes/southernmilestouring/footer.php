@@ -147,6 +147,7 @@
           </p>
         </div>
         <button
+          onclick="openRegisterModal()"
           class="bg-black text-white hover:bg-white hover:text-black transition-all duration-300 px-10 py-5 text-sm md:text-base font-black tracking-widest whitespace-nowrap"
         >
           JOIN US NOW
@@ -164,3 +165,8 @@
     </div>
   </div>
 </footer>
+<?php get_template_part('template-parts/register-modal'); ?>
+
+<?php wp_footer(); ?>
+</body>
+</html>

@@ -43,7 +43,7 @@ function southern_miles_assets() {
         'main-js',
         get_template_directory_uri() . '/assets/js/main.js',
         array(),
-        null,
+        '1.0',
         true
     );
 }

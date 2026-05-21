@@ -6,9 +6,32 @@ Version: 1.0
 html {
     margin-top: 0 !important;
 }
+
 body{
     margin:0;
     background:#000;
     color:#fff;
     font-family:'Open Sans', sans-serif;
+}
+
+.header-menu a:hover{
+    color:#ff5a00;
+    transition-duration: 300ms;
+}
+
+#mobileMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#mobileMenu ul li a {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 0.5rem 0;
+    transition: color 0.2s ease-in-out;
+}
+#mobileMenu ul li a:hover {
+    color: #ff5a00;
 }

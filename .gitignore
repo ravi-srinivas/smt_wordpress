@@ -44,6 +44,7 @@ xmlrpc.php
 # Ignore all themes except custom theme
 /wp-content/themes/*
 !/wp-content/themes/southernmilestouring/
+!/wp-content/themes/southernmilestouring/index.php
 
 # =========================
 # Node / Frontend

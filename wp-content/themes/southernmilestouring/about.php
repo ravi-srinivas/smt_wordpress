@@ -271,7 +271,7 @@
             </div>
           </div>
         </div>
-        <script>
+        <script type="text/javascript">
           new Swiper('.tribeSlider', {
             loop: true,
             autoplay: {

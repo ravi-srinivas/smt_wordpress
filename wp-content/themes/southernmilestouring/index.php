@@ -1,0 +1,360 @@
+<?php get_header(); ?>
+  <div class="overflow-hidden">
+    <section class="relative bg-black text-white overflow-hidden flex items-center min-h-[80vh] uppercase">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="<?php echo get_template_directory_uri(); ?>/assets/bg-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="absolute inset-0 bg-black/60">
+      <div class="relative max-w-7xl mx-auto px-4 py-16 text-center">
+        <div class="inline-flex items-center bg-black border-2 border-[#ff5a00] text-[#ff5a00] px-6 py-2 rounded-none text-sm font-black mb-12 tracking-widest">
+          <i class="fa-solid fa-users"></i>&nbsp;
+          500+ Riders | 50+ Routes Conquered
+        </div>
+        <h1 class="text-4xl md:text-6xl lg:text-8xl font-black mb-8 tracking-tighter leading-[0.9]">
+          Ride the <span class="text-white">Southern Mile</span>
+        </h1>
+        <p class="text-sm md:text-lg lg:text-xl mb-12 max-w-3xl mx-auto leading-loose font-bold tracking-wide">
+          Epic motorcycle adventures through South India's mist-covered hills, pristine beaches & coffee plantations.<br /><br />
+          <span class="text-[#ff5a00]">Luxury stays • Pro captains • All meals included.</span>
+        </p>
+        <div class="flex flex-col md:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
+          <a href="<?php echo esc_url(home_url('/rides')); ?>" class="bg-[#ff5a00] border-2 border-[#ff5a00] hover:bg-white hover:text-black hover:border-white px-12 py-5 rounded-none text-lg font-black transition-all duration-300 w-full md:w-auto flex items-center justify-center space-x-3">
+            <span>Book The Ride</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="<?php echo esc_url(home_url('about')); ?>" class="bg-transparent border-2 border-white hover:bg-white hover:text-black px-12 py-5 rounded-none text-lg font-black transition-all duration-300 w-full md:w-auto">
+            Watch Our Story
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-black text-white border-y border-white/10 uppercase tracking-tighter">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-2 lg:grid-cols-5 border border-white/10">
+          <!-- Item -->
+          <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
+            <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
+              <i class="fa-regular fa-thumbs-up text-[#ff5a00] text-4xl mb-6"></i>
+            </div>
+            <div class="text-4xl font-black text-white mb-1 leading-none">
+              500+
+            </div>
+            <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
+              Happy Riders
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
+            <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
+              <i class="fa-solid fa-award text-[#ff5a00] text-4xl mb-6"></i>
+            </div>
+            <div class="text-4xl font-black text-white mb-1 leading-none">
+              50+
+            </div>
+            <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
+              Epic Routes
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
+            <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
+              <i class="fa-solid fa-location-dot text-[#ff5a00] text-4xl mb-6"></i>
+            </div>
+            <div class="text-4xl font-black text-white mb-1 leading-none">
+              15+
+            </div>
+            <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
+              Ride Captains
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
+            <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
+              <i class="fa-solid fa-bed text-[#ff5a00] text-4xl mb-6"></i>
+            </div>
+            <div class="text-4xl font-black text-white mb-1 leading-none">
+              25+
+            </div>
+            <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
+              Luxury Stays
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b lg:border-b-0 border-white/10">
+            <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
+              <i class="fa-solid fa-utensils text-[#ff5a00] text-4xl mb-6"></i>
+            </div>
+            <div class="text-4xl font-black text-white mb-1 leading-none">
+              100+
+            </div>
+            <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
+              Gourmet Meals
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Adventures Section -->
+    <section class="py-20 bg-[#1a1a1a] border-b border-black text-white uppercase">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-black tracking-tighter mb-4">
+            Upcoming Adventures
+          </h2>
+          <p class="text-sm md:text-base text-gray-400 font-bold max-w-2xl mx-auto tracking-[0.2em] leading-loose">
+            Thrilling rides with luxury stays. All itineraries planned like clockwork.
+          </p>
+          <div class="w-12 h-1 bg-[#ff5a00] mx-auto mt-6"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div class="group bg-[#0a0a0a] border border-white/5 transition-all duration-300 hover:border-[#ff5a00]/50 flex flex-col overflow-hidden">
+            <div class="relative h-56 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                alt="Spiti Valley Expedition"
+                class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
+              />
+              <div class="absolute top-0 left-0 bg-[#ff5a00] text-black text-[10px] font-black px-3 py-1 tracking-widest">
+                UPCOMING
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-black tracking-tighter leading-tight mb-4 group-hover:text-[#ff5a00] transition-colors">
+                SPITI VALLEY EXPEDITION
+              </h3>
+              <div class="space-y-3 mb-6 text-[10px] tracking-widest text-gray-400 font-bold">
+                <div class="flex items-center gap-2">
+                  <span class="text-[#ff5a00]">📅</span>
+                  <span>12 - 18 JUL 2026</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[#ff5a00]">📍</span>
+                  <span>1450 KMS</span>
+                </div>
+              </div>
+              <p class="text-xs text-gray-500 lowercase mb-8">
+                explore the rugged terrains and luxury stays of spiti valley expedition.
+              </p>
+              <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
+                <div>
+                  <span class="block text-2xl font-black tracking-tighter">
+                    ₹48,000
+                  </span>
+                  <span class="text-[9px] text-gray-500 tracking-widest">
+                    PER RIDER
+                  </span>
+                </div>
+                <button class="bg-[#ff5a00] hover:bg-white text-black px-5 py-2 text-[10px] font-black tracking-widest transition-all flex items-center gap-2">
+                  <span>LEARN MORE</span>
+                  <span>→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="group bg-[#0a0a0a] border border-white/5 transition-all duration-300 hover:border-[#ff5a00]/50 flex flex-col overflow-hidden">
+
+            <div class="relative h-56 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
+                alt="Leh Ladakh Ride"
+                class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
+              />
+
+              <div class="absolute top-0 left-0 bg-[#ff5a00] text-black text-[10px] font-black px-3 py-1 tracking-widest">
+                UPCOMING
+              </div>
+            </div>
+
+            <div class="p-6 flex flex-col flex-grow">
+
+              <h3 class="text-xl font-black tracking-tighter leading-tight mb-4 group-hover:text-[#ff5a00] transition-colors">
+                LEH LADAKH EXTREME
+              </h3>
+
+              <div class="space-y-3 mb-6 text-[10px] tracking-widest text-gray-400 font-bold">
+
+                <div class="flex items-center gap-2">
+                  <span class="text-[#ff5a00]">📅</span>
+                  <span>04 - 11 AUG 2026</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <span class="text-[#ff5a00]">📍</span>
+                  <span>2100 KMS</span>
+                </div>
+
+              </div>
+
+              <p class="text-xs text-gray-500 lowercase mb-8">
+                conquer the world's highest passes with curated luxury pitstops.
+              </p>
+
+              <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
+
+                <div>
+                  <span class="block text-2xl font-black tracking-tighter">
+                    ₹65,000
+                  </span>
+
+                  <span class="text-[9px] text-gray-500 tracking-widest">
+                    PER RIDER
+                  </span>
+                </div>
+
+                <button class="bg-[#ff5a00] hover:bg-white text-black px-5 py-2 text-[10px] font-black tracking-widest transition-all flex items-center gap-2">
+                  <span>LEARN MORE</span>
+                  <span>→</span>
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 (Tentative) -->
+          <div class="bg-[#0a0a0a] border border-white/5 opacity-70 grayscale flex flex-col overflow-hidden">
+
+            <div class="relative h-56 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+                alt="Bhutan Escape"
+                class="w-full h-full object-cover brightness-50"
+              />
+
+              <div class="absolute top-0 left-0 bg-gray-600 text-black text-[10px] font-black px-3 py-1 tracking-widest">
+                TENTATIVE
+              </div>
+            </div>
+
+            <div class="p-6 flex flex-col flex-grow">
+
+              <h3 class="text-xl font-black tracking-tighter leading-tight mb-4 text-gray-500">
+                BHUTAN ESCAPE
+              </h3>
+
+              <div class="space-y-3 mb-6 text-[10px] tracking-widest text-gray-500 font-bold">
+
+                <div class="flex items-center gap-2">
+                  <span>📅</span>
+                  <span>TBD</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <span>📍</span>
+                  <span>1800 KMS</span>
+                </div>
+
+              </div>
+
+              <p class="text-xs text-gray-600 lowercase mb-8">
+                details for this ride are currently being finalized.
+              </p>
+
+              <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
+
+                <div>
+                  <span class="block text-2xl font-black tracking-tighter text-gray-600 line-through">
+                    ₹ TBD
+                  </span>
+
+                  <span class="text-[9px] text-gray-600 tracking-widest">
+                    PER RIDER
+                  </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="py-20 bg-[#111] text-white uppercase tracking-tighter border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl lg:text-7xl font-black text-white mb-4 tracking-tighter">
+            RIDERS LOVE US
+          </h2>
+          <p class="text-sm md:text-base text-gray-500 font-bold max-w-3xl mx-auto mb-10 tracking-widest">
+            REAL RIDERS • REAL ADVENTURES • REAL REVIEWS
+          </p>
+          <button 
+            onClick=() setIsModalOpen(true) 
+            class="bg-[#ff5a00] hover:bg-white text-black px-12 py-5 rounded-none text-lg font-black transition-all duration-300 flex items-center gap-3 mx-auto"
+          >
+            <span>SHARE YOUR STORY</span>
+          </button>
+        </div>
+      </div>
+      
+      <TestimonialModal
+        isOpen=isModalOpen
+        onClose=()  setIsModalOpen(false)
+        onSubmit=handleSubmitTestimonial
+      />
+    </section>
+
+    
+    <section class="py-20 bg-black text-white border-y border-white/10 uppercase">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          
+          <h3 class="text-4xl lg:text-5xl font-black text-white mb-6 tracking-tighter">
+            FOLLOW OUR ADVENTURES
+          </h3>
+
+          <a href="https://instagram.com/southernmiles.in" target="_blank" class="inline-flex items-center space-x-3 bg-transparent border-2 border-[#ff5a00] text-[#ff5a00] hover:bg-[#ff5a00] hover:text-black px-8 py-4 rounded-none text-sm font-black transition-all group tracking-widest">
+            <span>
+              <i class="fa-brands fa-instagram"></i>
+              southernmiles.in
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-[#ff5a00] text-black uppercase">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <div class="inline-flex items-center bg-black text-white px-8 py-3 rounded-none text-sm font-black mb-12 tracking-widest">
+          SPOTS FILLING FAST
+        </div>
+        
+        <h2 class="text-5xl lg:text-8xl font-black mb-8 tracking-tighter leading-[0.85]">
+          YOUR ADVENTURE <br/> AWAITS
+        </h2>
+        
+        <p class="text-sm md:text-lg font-bold mb-16 max-w-2xl mx-auto leading-loose tracking-wide opacity-80">
+          JOIN SOUTH INDIA'S MOST TRUSTED RIDING COMMUNITY. <br/> FROM FIRST-TIMERS TO HARDCORE TOURERS.
+        </p>
+        
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+          <a href="/rides" class="bg-black text-white hover:bg-white hover:text-black px-16 py-6 rounded-none text-xl font-black transition-all duration-300 w-full md:w-auto flex items-center justify-center gap-4">
+            <span>VIEW ALL RIDES</span>
+          </a>
+          <a href="/contact" class="border-4 border-black hover:bg-black hover:text-white px-16 py-6 rounded-none text-xl font-black transition-all duration-300 w-full md:w-auto">
+            GET CUSTOM QUOTE
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </div>
+<?php get_footer(); ?>

@@ -40,7 +40,7 @@
                 </div>
                 <div class="flex items-center gap-5">
                     <a 
-                        href="https://instagram.com/<?php echo get_field('instagram', 'option'); ?>"
+                        href="https://instagram.com/<?php echo get_field('instagram'); ?>"
                         target="_blank"
                         class="hover:text-[#ff5a00] transition-colors duration-300"
                     >
@@ -49,7 +49,7 @@
                         </svg>
                     </a>
                     <a 
-                        href="https://youtube.com/@<?php echo get_field('youtube', 'option'); ?>"
+                        href="https://youtube.com/@<?php echo get_field('youtube'); ?>"
                         target="_blank"
                         class="hover:text-[#ff5a00] transition-colors duration-300"
                     >
@@ -59,7 +59,7 @@
                     </a>
                 </div>
                 <button 
-                    onclick="document.getElementById('joinTribeModal').classList.remove('hidden')"
+                    onclick="openRegisterModal()"
                     class="bg-[#ff5a00] hover:bg-white hover:text-black text-white px-8 py-3 font-bold text-lg transition-all duration-300"
                 >
                     JOIN US NOW
@@ -69,7 +69,7 @@
             <!-- MOBILE RIGHT -->
             <div class="flex items-center gap-3 lg:hidden">
                 <button
-                    onclick="document.getElementById('joinTribeModal').classList.remove('hidden')"
+                    onclick="openRegisterModal()"
                     class="bg-[#ff5a00] text-white px-3 py-2 text-xs font-bold hover:bg-white hover:text-black transition-all"
                 >
                     JOIN NOW
@@ -110,7 +110,7 @@
                     SOCIALS :
                 </p>
                 <a
-                    href="https://instagram.com/<?php echo get_field('instagram', 'option'); ?>"
+                    href="https://instagram.com/<?php echo get_field('instagram'); ?>"
                     target="_blank"
                     class="flex-1 flex justify-center p-3 hover:text-[#ff5a00] transition-colors"
                 >
@@ -119,7 +119,7 @@
                     </svg>
                 </a>
                 <a
-                    href="https://youtube.com/@<?php echo get_field('youtube', 'option'); ?>"
+                    href="https://youtube.com/@<?php echo get_field('youtube'); ?>"
                     target="_blank"
                     class="flex-1 flex justify-center p-3 hover:text-[#ff5a00] transition-colors"
                 >

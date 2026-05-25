@@ -17,7 +17,7 @@
           </h1>
           <div class="w-24 h-2 bg-[#ff5a00] mb-8"></div>
           <p class="text-sm md:text-lg font-bold tracking-[0.3em] max-w-2xl mx-auto text-gray-300 leading-relaxed">
-            How a community of riders became Southern Miles Touring!
+            How a bunch of passionate riders became Southern Miles Touring!
           </p>
         </div>
         <div class="absolute bottom-6 right-6 hidden md:block border border-white/20 px-4 py-2 text-[10px] font-black tracking-widest text-white/40 backdrop-blur-sm">
@@ -31,13 +31,12 @@
             <h2 class="text-5xl md:text-7xl font-black text-white mb-8 tracking-tighter leading-none">
               BORN ON KARNATAKA'S <br/> GHAT ROADS
             </h2>
-            <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed font-bold tracking-tight">
-              What started as weekend rides through Coorg's coffee plantations has grown into 
-              <span class="text-[#ff5a00]"> SOUTHERN MILE TOURING</span> — Karnataka's most trusted motorcycle adventure company.
+            <p class="text-md text-gray-400 max-w-3xl mx-auto leading-relaxed font-bold tracking-tight">
+              Founded in 2026 by a group of passionate and experienced tourers, Southern Miles Touring is a premium adventure touring company built for those who seek exploration without compromise. Specializing in motorcycle tours, car expeditions, and MPV touring experiences, Southern Miles curates unforgettable journeys designed for travelers who want to focus purely on the road while every other detail is taken care of.
             </p>
             <div class="mt-12 inline-flex items-center bg-[#ff5a00] text-black px-8 py-4 rounded-none text-xl font-black mb-8">
               <i class="fa-solid fa-award"></i>&nbsp;
-              500+ RIDERS SERVED | 50+ EPIC ROUTES
+              500+ TOURERS SERVED | 50+ EPIC ROUTES
             </div>
           </div>
 
@@ -86,13 +85,13 @@
                   <div class="p-8 text-center bg-[#111]">
                     <div class="text-5xl font-black text-[#ff5a00] mb-1">50+</div>
                     <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
-                      RIDES ORGANIZED
+                      TOUR EXPERIENCES
                     </div>
                   </div>
                   <div class="p-8 text-center bg-[#111]">
-                    <div class="text-5xl font-black text-[#ff5a00] mb-1">300+</div>
+                    <div class="text-5xl font-black text-[#ff5a00] mb-1">500+</div>
                     <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
-                      HAPPY RIDERS
+                      HAPPY TOURERS
                     </div>
                   </div>
                 </div>

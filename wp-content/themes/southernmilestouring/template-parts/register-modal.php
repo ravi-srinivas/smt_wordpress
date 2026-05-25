@@ -175,7 +175,7 @@
                             PAYMENT REQUIRED
                         </h4>
                         <p class="text-[10px] font-black text-gray-500 tracking-[0.3em] uppercase mb-8">
-                            ONE-TIME MEMBERSHIP FEE • ₹1000 ONLY
+                            ANNUAL MEMBERSHIP FEE • ₹1000 ONLY
                         </p>
                         <div class="relative group mb-8 inline-block">
                             <div class="absolute -inset-2 border-2 border-dashed border-black/10 group-hover:border-[#ff5a00] transition-colors duration-500"></div>
@@ -199,6 +199,9 @@
                     </div>
                 </div>
                 <div class="pt-10 border-t border-white/10">
+                    <p class="text-[16px] text-center font-medium text-gray-400 tracking-widest mb-8">
+                        Join the Southern Miles tribe today and unlock priority access to upcoming expeditions and redeem your membership fee instantly with ₹1000 off on every booking.
+                    </p>
                     <button 
                         id="submitTribeBtn"
                         type="submit" 

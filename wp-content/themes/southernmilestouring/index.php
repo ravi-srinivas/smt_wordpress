@@ -15,17 +15,17 @@
       <div class="relative max-w-7xl mx-auto px-4 py-16 text-center">
         <div class="inline-flex items-center bg-black border-2 border-[#ff5a00] text-[#ff5a00] px-6 py-2 rounded-none text-sm font-black mb-12 tracking-widest">
           <i class="fa-solid fa-users"></i>&nbsp;
-          500+ Riders | 50+ Routes Conquered
+          India's Premium Touring Experiences Built By Experts
         </div>
         <h1 class="text-4xl md:text-6xl lg:text-8xl font-black mb-8 tracking-tighter leading-[0.9]">
           Ride the <span class="text-white">Southern Mile</span>
         </h1>
         <p class="text-sm md:text-lg lg:text-xl mb-12 max-w-3xl mx-auto leading-loose font-bold tracking-wide">
-          Epic motorcycle adventures through South India's mist-covered hills, pristine beaches & coffee plantations.<br /><br />
-          <span class="text-[#ff5a00]">Luxury stays • Pro captains • All meals included.</span>
+          Exclusive touring experiences across India on motorcyles, cars and MPV's where every expedition is crafted to perfection.<br /><br />
+          <span class="text-[#ff5a00]">Luxury stays • Pro captains • Support Crew • In-house Media</span>
         </p>
         <div class="flex flex-col md:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
-          <a href="<?php echo esc_url(home_url('/rides')); ?>" class="bg-[#ff5a00] border-2 border-[#ff5a00] hover:bg-white hover:text-black hover:border-white px-12 py-5 rounded-none text-lg font-black transition-all duration-300 w-full md:w-auto flex items-center justify-center space-x-3">
+          <a href="<?php echo esc_url(home_url('/road-quests')); ?>" class="bg-[#ff5a00] border-2 border-[#ff5a00] hover:bg-white hover:text-black hover:border-white px-12 py-5 rounded-none text-lg font-black transition-all duration-300 w-full md:w-auto flex items-center justify-center space-x-3">
             <span>Book The Ride</span>
             <i class="fa-solid fa-arrow-right"></i>
           </a>
@@ -42,65 +42,65 @@
           <!-- Item -->
           <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
             <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
-              <i class="fa-regular fa-thumbs-up text-[#ff5a00] text-4xl mb-6"></i>
+              <i class="fa-solid fa-users text-[#ff5a00] text-5xl mb-3"></i>
             </div>
-            <div class="text-4xl font-black text-white mb-1 leading-none">
-              500+
+            <div class="text-2xl font-black text-white mb-3 leading-none">
+              Experienced Captains
             </div>
             <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
-              Happy Riders
+              Over 4 years of touring expertise
             </div>
           </div>
 
           <!-- Item -->
           <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
             <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
-              <i class="fa-solid fa-award text-[#ff5a00] text-4xl mb-6"></i>
+              <i class="fa-solid fa-briefcase-medical text-[#ff5a00] text-5xl mb-3"></i>
             </div>
-            <div class="text-4xl font-black text-white mb-1 leading-none">
-              50+
+            <div class="text-2xl font-black text-white mb-3 leading-none">
+              Medical Support
             </div>
             <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
-              Epic Routes
+              On-Tour ERT assistance
             </div>
           </div>
 
           <!-- Item -->
           <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
             <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
-              <i class="fa-solid fa-location-dot text-[#ff5a00] text-4xl mb-6"></i>
+              <i class="fa-solid fa-camera text-[#ff5a00] text-5xl mb-3"></i>
             </div>
-            <div class="text-4xl font-black text-white mb-1 leading-none">
-              15+
+            <div class="text-2xl font-black text-white mb-3 leading-none">
+              Media Support
             </div>
             <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
-              Ride Captains
+              Documented by Professionals
             </div>
           </div>
 
           <!-- Item -->
           <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
             <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
-              <i class="fa-solid fa-bed text-[#ff5a00] text-4xl mb-6"></i>
+              <i class="fa-solid fa-bed text-[#ff5a00] text-5xl mb-6"></i>
             </div>
-            <div class="text-4xl font-black text-white mb-1 leading-none">
-              25+
-            </div>
-            <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
+            <div class="text-2xl font-black text-white mb-3 leading-none">
               Luxury Stays
+            </div>
+            <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
+              Handpicked accommodations
             </div>
           </div>
 
           <!-- Item -->
           <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b lg:border-b-0 border-white/10">
             <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
-              <i class="fa-solid fa-utensils text-[#ff5a00] text-4xl mb-6"></i>
+              <i class="fa-solid fa-screwdriver-wrench text-[#ff5a00] text-5xl mb-6"></i>
             </div>
-            <div class="text-4xl font-black text-white mb-1 leading-none">
-              100+
+            <div class="text-2xl font-black text-white mb-3 leading-none">
+              Mechanical Support
             </div>
             <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
-              Gourmet Meals
+              On-Tour assistance
             </div>
           </div>
         </div>
@@ -115,44 +115,107 @@
             Upcoming Adventures
           </h2>
           <p class="text-sm md:text-base text-gray-400 font-bold max-w-2xl mx-auto tracking-[0.2em] leading-loose">
-            Thrilling rides with luxury stays. All itineraries planned like clockwork.
+            Thrilling expeditions with luxury stays. <br/> All itineraries planned like clockwork.
           </p>
           <div class="w-12 h-1 bg-[#ff5a00] mx-auto mt-6"></div>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <?php 
+            $today_ymd = date('Ymd'); 
+            $args = array(
+              'post_type'      => 'ride', 
+              'posts_per_page' => 3,
+              'orderby'        => array(
+                'start_date_clause' => 'ASC',
+              ),
+              'meta_query'     => array(
+                'relation' => 'AND',
+                'end_date_clause' => array(
+                  'relation' => 'OR',
+                  array(
+                    'key'     => 'ride_end_date',
+                    'value'   => $today_ymd,
+                    'compare' => '>=',
+                    'type'    => 'NUMERIC',
+                  ),
+                  array(
+                    'key'     => 'ride_end_date',
+                    'compare' => 'NOT EXISTS', 
+                  ),
+                ),
+                'start_date_clause' => array(
+                  'relation' => 'OR',
+                  array(
+                    'key'     => 'ride_start_date',
+                    'compare' => 'EXISTS', 
+                  ),
+                  array( 
+                    'key'     => 'ride_start_date',
+                    'compare' => 'NOT EXISTS',
+                  ),
+                ),
+              ),
+            );
+            $upcoming_rides = new WP_Query($args);
+            if ($upcoming_rides->have_posts()) :
+              while ($upcoming_rides->have_posts()) : $upcoming_rides->the_post(); 
+                // Setup local scoped variables to protect data from theme loop conflicts
+                $current_ride_id = get_the_ID();
+                $image_url       = get_the_post_thumbnail_url($current_ride_id, 'full');
+                
+                // Fetch custom meta directly from the specific ID
+                $start_date   = get_field('ride_start_date', $current_ride_id); 
+                $end_date     = get_field('ride_end_date', $current_ride_id);
+                $distance_kms = get_field('ride_distance', $current_ride_id);
+                $ride_price   = get_field('ride_price', $current_ride_id);
+                
+                // Format dates into a cleaner human-readable display if values exist
+                $display_start = $start_date ? date("M d, Y", strtotime($start_date)) : 'TBD';
+                $display_end   = $end_date ? date("M d, Y", strtotime($end_date)) : 'TBD';
+          ?>
           <div class="group bg-[#0a0a0a] border border-white/5 transition-all duration-300 hover:border-[#ff5a00]/50 flex flex-col overflow-hidden">
             <div class="relative h-56 overflow-hidden">
+              <?php if (!empty($image_url)) : ?>
               <img
-                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
-                alt="Spiti Valley Expedition"
+                src="<?php echo esc_url($image_url); ?>"
+                alt="<?php echo esc_attr(get_the_title($current_ride_id)); ?>"
                 class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
               />
+              <?php else : ?>
+                <!-- Temporary colored fallback tile to show code execution works -->
+                <div class="w-full h-full bg-neutral-900 flex items-center justify-center text-xs text-neutral-500 font-mono">
+                  No Image Attached (ID: <?php echo $current_ride_id; ?>)
+                </div>
+              <?php endif; ?>
               <div class="absolute top-0 left-0 bg-[#ff5a00] text-black text-[10px] font-black px-3 py-1 tracking-widest">
                 UPCOMING
               </div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
               <h3 class="text-xl font-black tracking-tighter leading-tight mb-4 group-hover:text-[#ff5a00] transition-colors">
-                SPITI VALLEY EXPEDITION
+                <?php echo esc_html(get_the_title($current_ride_id)); ?>
               </h3>
               <div class="space-y-3 mb-6 text-[10px] tracking-widest text-gray-400 font-bold">
                 <div class="flex items-center gap-2">
-                  <span class="text-[#ff5a00]">📅</span>
-                  <span>12 - 18 JUL 2026</span>
+                  <span class="text-[#ff5a00]"><i class="fas fa-calendar-alt"></i></span>
+                  <span>
+                      <?php echo esc_html($display_start); ?> to <?php echo esc_html($display_end); ?>
+                  </span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="text-[#ff5a00]">📍</span>
-                  <span>1450 KMS</span>
+                  <span class="text-[#ff5a00]"><i class="fas fa-map-marker-alt"></i></span>
+                  <span><?php echo $distance_kms ? esc_html($distance_kms) : '0'; ?> KMS</span>
                 </div>
               </div>
               <p class="text-xs text-gray-500 lowercase mb-8">
                 explore the rugged terrains and luxury stays of spiti valley expedition.
               </p>
+              
               <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
                 <div>
                   <span class="block text-2xl font-black tracking-tighter">
-                    ₹48,000
+                    <?php echo $ride_price ? esc_html($ride_price) : 'TBD'; ?>
                   </span>
                   <span class="text-[9px] text-gray-500 tracking-widest">
                     PER RIDER
@@ -165,122 +228,54 @@
               </div>
             </div>
           </div>
-
-          <!-- CARD 2 -->
-          <div class="group bg-[#0a0a0a] border border-white/5 transition-all duration-300 hover:border-[#ff5a00]/50 flex flex-col overflow-hidden">
-
-            <div class="relative h-56 overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
-                alt="Leh Ladakh Ride"
-                class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
-              />
-
-              <div class="absolute top-0 left-0 bg-[#ff5a00] text-black text-[10px] font-black px-3 py-1 tracking-widest">
-                UPCOMING
-              </div>
-            </div>
-
-            <div class="p-6 flex flex-col flex-grow">
-
-              <h3 class="text-xl font-black tracking-tighter leading-tight mb-4 group-hover:text-[#ff5a00] transition-colors">
-                LEH LADAKH EXTREME
-              </h3>
-
-              <div class="space-y-3 mb-6 text-[10px] tracking-widest text-gray-400 font-bold">
-
-                <div class="flex items-center gap-2">
-                  <span class="text-[#ff5a00]">📅</span>
-                  <span>04 - 11 AUG 2026</span>
-                </div>
-
-                <div class="flex items-center gap-2">
-                  <span class="text-[#ff5a00]">📍</span>
-                  <span>2100 KMS</span>
-                </div>
-
-              </div>
-
-              <p class="text-xs text-gray-500 lowercase mb-8">
-                conquer the world's highest passes with curated luxury pitstops.
-              </p>
-
-              <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
-
-                <div>
-                  <span class="block text-2xl font-black tracking-tighter">
-                    ₹65,000
-                  </span>
-
-                  <span class="text-[9px] text-gray-500 tracking-widest">
-                    PER RIDER
-                  </span>
-                </div>
-
-                <button class="bg-[#ff5a00] hover:bg-white text-black px-5 py-2 text-[10px] font-black tracking-widest transition-all flex items-center gap-2">
-                  <span>LEARN MORE</span>
-                  <span>→</span>
-                </button>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- CARD 3 (Tentative) -->
+          <?php
+            endwhile;
+            wp_reset_postdata();
+            else :
+          ?>
           <div class="bg-[#0a0a0a] border border-white/5 opacity-70 grayscale flex flex-col overflow-hidden">
-
             <div class="relative h-56 overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
                 alt="Bhutan Escape"
                 class="w-full h-full object-cover brightness-50"
               />
-
               <div class="absolute top-0 left-0 bg-gray-600 text-black text-[10px] font-black px-3 py-1 tracking-widest">
                 TENTATIVE
               </div>
             </div>
-
             <div class="p-6 flex flex-col flex-grow">
-
               <h3 class="text-xl font-black tracking-tighter leading-tight mb-4 text-gray-500">
                 BHUTAN ESCAPE
               </h3>
-
               <div class="space-y-3 mb-6 text-[10px] tracking-widest text-gray-500 font-bold">
-
                 <div class="flex items-center gap-2">
                   <span>📅</span>
                   <span>TBD</span>
                 </div>
-
                 <div class="flex items-center gap-2">
                   <span>📍</span>
                   <span>1800 KMS</span>
                 </div>
-
               </div>
-
               <p class="text-xs text-gray-600 lowercase mb-8">
                 details for this ride are currently being finalized.
               </p>
-
               <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
-
                 <div>
                   <span class="block text-2xl font-black tracking-tighter text-gray-600 line-through">
                     ₹ TBD
                   </span>
-
                   <span class="text-[9px] text-gray-600 tracking-widest">
                     PER RIDER
                   </span>
                 </div>
-
               </div>
             </div>
           </div>
-
+          <?php
+            endif;
+          ?>
         </div>
       </div>
     </section>

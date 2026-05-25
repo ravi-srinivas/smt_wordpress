@@ -17,7 +17,7 @@
           </h1>
           <div class="w-24 h-2 bg-[#ff5a00] mb-8"></div>
           <p class="text-sm md:text-lg font-bold tracking-[0.3em] max-w-2xl mx-auto text-gray-300 leading-relaxed">
-            Explore our diverse ride packages designed for every biker!
+            Explore our diverse expedition packages designed for every adventurer!
           </p>
         </div>
         <div class="absolute bottom-6 right-6 hidden md:block border border-white/20 px-4 py-2 text-[10px] font-black tracking-widest text-white/40 backdrop-blur-sm">
@@ -26,134 +26,64 @@
       </section>
 
       <section class="text-white py-16 border-y border-white/10 uppercase tracking-tighter">
-        <div class="max-w-7xl mx-auto px-4">
-          
-          <div class="text-center bg-[#0a0a0a] border border-white/10 p-12 md:p-24 mb-16 relative overflow-hidden">
-            
-            <div class="inline-flex items-center bg-[#ff5a00] text-black px-6 py-2 rounded-none text-xs font-black mb-8 tracking-[0.3em]">
-              LUXURY STAYS • PRO CAPTAINS • ALL MEALS INCLUDED
-            </div>
-            
-            <h1 class="text-5xl lg:text-7xl font-black text-white mb-8 tracking-tighter leading-[0.8] drop-shadow-none">
-              WHAT WE <br/> OFFER?
-            </h1>
-            
-            <div class="max-w-4xl mx-auto mt-12">
-              <p class="text-lg lg:text-xl text-gray-300 font-bold leading-tight mb-12 tracking-tight">
-                HIGH ENDURANCE MOTORCYCLE TOURS ACROSS SOUTH INDIA'S MOST SCENIC ROUTES. 
-                WHETHER YOU'RE SEEKING <span class="text-[#ff5a00]"> THRILLING HILL CLIMBS</span>, 
-                <span class="text-[#ff5a00]"> SERENE COASTAL RIDES</span>, OR 
-                <span class="text-[#ff5a00]"> CULTURAL EXPLORATIONS</span>.
-              </p>
-              <p class="text-xs text-gray-500 font-bold max-w-2xl mx-auto tracking-[0.2em] leading-loose">
-                EACH RIDE INCLUDES PROFESSIONAL RIDE CAPTAINS, LUXURY STAYS, GOURMET MEALS, 
-                FUEL COVERAGE, ROADSIDE SUPPORT, AND DETAILED ITINERARIES PLANNED LIKE CLOCKWORK.
-              </p>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-0 mt-20 border border-white/10 divide-x divide-y md:divide-y-0 divide-white/10">             <!-- Item 1 -->
-              <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center">
-                <i class="fa-solid fa-bicycle text-5xl text-[#ff5a00] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
-                <div class="text-4xl font-black text-white mb-1 tracking-tighter leading-none">
-                  50+
-                </div>
-                <div class="text-[10px] font-black text-gray-500 tracking-[0.2em]">
-                  LEGENDARY ROUTES
-                </div>
-              </div>
+        <div class="text-center relative overflow-hidden">
+          <div class="inline-flex items-center bg-[#ff5a00] text-black px-6 py-2 rounded-none text-xs font-black mb-8 tracking-[0.3em]">
+            SOUTHERN MILES • GUIDED BY PASSION
+          </div>
+          <h1 class="text-5xl lg:text-7xl font-black text-white mb-8 tracking-tighter leading-[0.8] drop-shadow-none">
+            WHAT WE OFFER?
+          </h1>
 
-              <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center">
-                <i class="fa-solid fa-bed text-5xl text-[#ff5a00] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
-                <div class="text-4xl font-black text-white mb-1 tracking-tighter leading-none">
-                  25+
-                </div>
-                <div class="text-[10px] font-black text-gray-500 tracking-[0.2em]">
-                  LUXURY STAYS
-                </div>
-              </div>
-
-              <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center">
-                <i class="fa-solid fa-utensils text-5xl text-[#ff5a00] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
-                <div class="text-4xl font-black text-white mb-1 tracking-tighter leading-none">
-                  100+
-                </div>
-                <div class="text-[10px] font-black text-gray-500 tracking-[0.2em]">
-                  GOURMET MEALS
-                </div>
-              </div>
-
-              <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center">
-                <i class="fa-solid fa-hand-fist text-5xl text-[#ff5a00] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
-                <div class="text-4xl font-black text-white mb-1 tracking-tighter leading-none">
-                  24/7
-                </div>
-                <div class="text-[10px] font-black text-gray-500 tracking-[0.2em]">
-                  ROAD SUPPORT
-                </div>
-              </div>
-            </div>
+          <div class="max-w-4xl mx-auto my-12 text-center border-t border-white/10 pt-12">
+            <h2 class="text-xl font-black text-white tracking-[0.3em] mb-6">
+              THE EXPEDITION EXPERIENCE
+            </h2>
+            <p class="text-md text-gray-400 font-medium leading-relaxed tracking-wide mb-6 normal-case">
+              Southern Miles Touring is a premium adventure touring company offering end-to-end curated touring experiences for motorcycle enthusiasts, car enthusiasts, families, and travel communities across India. Founded by passionate and experienced tourers, we specialize in guided motorcycle and car expeditions, while also offering custom-quoted MPV and group touring packages for families, riding clubs, and automotive communities. From expert tour captains, backup support, medical and mechanic assistance, to professional media coverage and handpicked luxury stays, every detail is seamlessly managed so you can focus purely on the journey. Blending adventure, nature, wilderness, and premium hospitality, Southern Miles Touring delivers experiences that are immersive, effortless, and truly unforgettable. 
+            </p>
+            <p class="text-sm text-[#ff5a00] font-bold tracking-widest uppercase">
+              Adventure, Wilderness, and Premium Hospitality. Blended perfectly.
+            </p>
           </div>
           
-          <div class="mt-16">
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0 border border-white/10 divide-x divide-y lg:divide-y-0 divide-white/10">
-              <div class="group p-8 bg-black hover:bg-[#111] transition-all text-center flex flex-col items-center justify-start border-white/10">
-                <i class="fa-solid fa-mountain text-5xl text-[#ff5a00] mb-6 transition-transform group-hover:scale-110 inline-block"></i>
-                <h3 class="text-sm font-black text-white mb-3 tracking-[0.1em] uppercase leading-tight">
-                  Weekend Getaway
-                </h3>
-                <p class="text-[10px] font-bold text-gray-500 leading-relaxed uppercase tracking-tighter">
-                  2-3 day rides to hills & beaches
-                </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-0 mt-20 border border-white/10 divide-x divide-y md:divide-y-0 divide-white/10">             <!-- Item 1 -->
+            <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center">
+              <i class="fa-solid fa-route text-5xl text-[#ff5a00] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
+              <div class="text-4xl font-black text-white mb-1 tracking-tighter leading-none">
+                50+
               </div>
-
-              <div class="group p-8 bg-black hover:bg-[#111] transition-all text-center flex flex-col items-center justify-start border-white/10">
-                <i class="fa-solid fa-map-location-dot text-5xl text-[#ff5a00] mb-6 transition-transform group-hover:scale-110 inline-block"></i>
-                <h3 class="text-sm font-black text-white mb-3 tracking-[0.1em] uppercase leading-tight">
-                  Custom Itinerary
-                </h3>
-                <p class="text-[10px] font-bold text-gray-500 leading-relaxed uppercase tracking-tighter">
-                  Tailor-made routes per group
-                </p>
+              <div class="text-[10px] font-black text-gray-500 tracking-[0.2em]">
+                LEGENDARY ROUTES
               </div>
+            </div>
 
-              <div class="group p-8 bg-black hover:bg-[#111] transition-all text-center flex flex-col items-center justify-start border-white/10">
-                <i class="fa-solid fa-bed text-5xl text-[#ff5a00] mb-6 transition-transform group-hover:scale-110 inline-block"></i>
-                <h3 class="text-sm font-black text-white mb-3 tracking-[0.1em] uppercase leading-tight">
-                  Luxury Stay
-                </h3>
-                <p class="text-[10px] font-bold text-gray-500 leading-relaxed uppercase tracking-tighter">
-                  Homestays, resorts & camps
-                </p>
+            <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center">
+              <i class="fa-solid fa-bed text-5xl text-[#ff5a00] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
+              <div class="text-4xl font-black text-white mb-1 tracking-tighter leading-none">
+                25+
               </div>
-
-              <div class="group p-8 bg-black hover:bg-[#111] transition-all text-center flex flex-col items-center justify-start border-white/10">
-                <i class="fa-solid fa-utensils text-5xl text-[#ff5a00] mb-6 transition-transform group-hover:scale-110 inline-block"></i>
-                <h3 class="text-sm font-black text-white mb-3 tracking-[0.1em] uppercase leading-tight">
-                  Meals Included
-                </h3>
-                <p class="text-[10px] font-bold text-gray-500 leading-relaxed uppercase tracking-tighter">
-                  Local cuisine at every stop
-                </p>
+              <div class="text-[10px] font-black text-gray-500 tracking-[0.2em]">
+                LUXURY STAYS
               </div>
+            </div>
 
-              <div class="group p-8 bg-black hover:bg-[#111] transition-all text-center flex flex-col items-center justify-start border-white/10">
-                <i class="fa-solid fa-gears text-5xl text-[#ff5a00] mb-6 transition-transform group-hover:scale-110 inline-block"></i>
-                <h3 class="text-sm font-black text-white mb-3 tracking-[0.1em] uppercase leading-tight">
-                  Backup Support
-                </h3>
-                <p class="text-[10px] font-bold text-gray-500 leading-relaxed uppercase tracking-tighter">
-                  Mechanic & spares on the go
-                </p>
+            <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center">
+              <i class="fa-solid fa-utensils text-5xl text-[#ff5a00] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
+              <div class="text-4xl font-black text-white mb-1 tracking-tighter leading-none">
+                100+
               </div>
+              <div class="text-[10px] font-black text-gray-500 tracking-[0.2em]">
+                GOURMET MEALS
+              </div>
+            </div>
 
-              <div class="group p-8 bg-black hover:bg-[#111] transition-all text-center flex flex-col items-center justify-start border-white/10">
-                <i class="fa-solid fa-camera text-5xl text-[#ff5a00] mb-6 transition-transform group-hover:scale-110 inline-block"></i>
-                <h3 class="text-sm font-black text-white mb-3 tracking-[0.1em] uppercase leading-tight">
-                  Media Coverage
-                </h3>
-                <p class="text-[10px] font-bold text-gray-500 leading-relaxed uppercase tracking-tighter">
-                  Professional ride captures
-                </p>
+            <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center">
+              <i class="fa-solid fa-hand-fist text-5xl text-[#ff5a00] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
+              <div class="text-4xl font-black text-white mb-1 tracking-tighter leading-none">
+                24/7
+              </div>
+              <div class="text-[10px] font-black text-gray-500 tracking-[0.2em]">
+                ROAD SUPPORT
               </div>
             </div>
           </div>
@@ -165,10 +95,10 @@
         <div class="max-w-7xl mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-white mb-4 tracking-tighter">
-              RIDE PACKAGES
+              EXPEDITION PACKAGES
             </h2>
             <p class="text-sm md:text-base text-gray-400 font-bold max-w-2xl mx-auto tracking-[0.2em] leading-loose">
-              PACKAGES TAILORED FOR THE MODERN RIDER. ENDURANCE, SKILL, AND PRECISION PLANNING.
+              TWO/FOUR WHEELER PACKAGES TAILORED FOR MODERN ADVENTURES. ENDURANCE, SKILL, AND PRECISION PLANNING.
             </p>
             <div class="w-12 h-1 bg-[#ff5a00] mx-auto mt-6"></div>
           </div>

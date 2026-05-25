@@ -62,7 +62,7 @@
                     onclick="openRegisterModal()"
                     class="bg-[#ff5a00] hover:bg-white hover:text-black text-white px-8 py-3 font-bold text-lg transition-all duration-300"
                 >
-                    JOIN US NOW
+                    BE A MEMBER
                 </button>
             </div>
 
@@ -72,7 +72,7 @@
                     onclick="openRegisterModal()"
                     class="bg-[#ff5a00] text-white px-3 py-2 text-xs font-bold hover:bg-white hover:text-black transition-all"
                 >
-                    JOIN NOW
+                    BE A MEMBER
                 </button>
                 <!-- MOBILE TOGGLE -->
                 <button

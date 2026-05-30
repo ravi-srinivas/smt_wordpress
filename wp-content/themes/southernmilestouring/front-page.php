@@ -36,70 +36,70 @@
       </div>
     </section>
 
-    <section class="py-20 bg-black text-white border-y border-white/10 uppercase tracking-tighter">
+    <section class="py-12 md:py-20 bg-black text-white border-y border-white/10 uppercase tracking-tighter">
       <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-2 lg:grid-cols-5 border border-white/10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 border-t border-l border-white/10">
           <!-- Item -->
-          <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
-            <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
-              <i class="fa-solid fa-users text-[#ff5a00] text-5xl mb-3"></i>
+          <div class="group p-6 md:p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10">
+            <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-[#ff5a00]">
+              <i class="fa-solid fa-users text-4xl md:text-5xl"></i>
             </div>
-            <div class="text-2xl font-black text-white mb-3 leading-none">
+            <div class="text-xl md:text-2xl font-black text-white mb-2 md:mb-3 leading-none">
               Experienced Captains
             </div>
-            <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
+            <div class="text-[10px] font-bold text-gray-500 tracking-[0.15em]">
               Over 4 years of touring expertise
             </div>
           </div>
 
           <!-- Item -->
-          <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
-            <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
-              <i class="fa-solid fa-briefcase-medical text-[#ff5a00] text-5xl mb-3"></i>
+          <div class="group p-6 md:p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
+            <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-[#ff5a00]">
+              <i class="fa-solid fa-briefcase-medical text-[#ff5a00] text-4xl md:text-5xl mb-3"></i>
             </div>
-            <div class="text-2xl font-black text-white mb-3 leading-none">
+            <div class="text-xl md:text-2xl font-black text-white mb-2 md:mb-3 leading-none">
               Medical Support
             </div>
-            <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
+            <div class="text-[10px] font-bold text-gray-500 tracking-[0.15em]">
               On-Tour ERT assistance
             </div>
           </div>
 
           <!-- Item -->
-          <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
-            <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
-              <i class="fa-solid fa-camera text-[#ff5a00] text-5xl mb-3"></i>
+          <div class="group p-6 md:p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
+            <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-[#ff5a00]">
+              <i class="fa-solid fa-camera text-[#ff5a00] text-4xl md:text-5xl mb-3"></i>
             </div>
-            <div class="text-2xl font-black text-white mb-3 leading-none">
+            <div class="text-xl md:text-2xl font-black text-white mb-2 md:mb-3 leading-none">
               Media Support
             </div>
-            <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
+            <div class="text-[10px] font-bold text-gray-500 tracking-[0.15em]">
               Documented by Professionals
             </div>
           </div>
 
           <!-- Item -->
-          <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
-            <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
-              <i class="fa-solid fa-bed text-[#ff5a00] text-5xl mb-6"></i>
+          <div class="group p-6 md:p-10 bg-black hover:bg-[#111] transition-all text-center border-b border-r border-white/10 lg:border-b-0">
+            <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-[#ff5a00]">
+              <i class="fa-solid fa-bed text-[#ff5a00] text-4xl md:text-5xl mb-3"></i>
             </div>
-            <div class="text-2xl font-black text-white mb-3 leading-none">
+            <div class="text-xl md:text-2xl font-black text-white mb-2 md:mb-3 leading-none">
               Luxury Stays
             </div>
-            <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
+            <div class="text-[10px] font-bold text-gray-500 tracking-[0.15em]">
               Handpicked accommodations
             </div>
           </div>
 
           <!-- Item -->
-          <div class="group p-10 bg-black hover:bg-[#111] transition-all text-center border-b lg:border-b-0 border-white/10">
-            <div class="w-10 h-10 mx-auto mb-6 flex items-center justify-center text-[#ff5a00]">
-              <i class="fa-solid fa-screwdriver-wrench text-[#ff5a00] text-5xl mb-6"></i>
+          <div class="group p-6 md:p-10 bg-black hover:bg-[#111] transition-all text-center border-b lg:border-b-0 border-white/10">
+            <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-[#ff5a00]">
+              <i class="fa-solid fa-screwdriver-wrench text-[#ff5a00] text-4xl md:text-5xl mb-3"></i>
             </div>
-            <div class="text-2xl font-black text-white mb-3 leading-none">
+            <div class="text-xl md:text-2xl font-black text-white mb-2 md:mb-3 leading-none">
               Mechanical Support
             </div>
-            <div class="text-xs font-bold text-gray-500 tracking-[0.2em]">
+            <div class="text-[10px] font-bold text-gray-500 tracking-[0.15em]">
               On-Tour assistance
             </div>
           </div>
@@ -115,7 +115,7 @@
             Upcoming Adventures
           </h2>
           <p class="text-sm md:text-base text-gray-400 font-bold max-w-2xl mx-auto tracking-[0.2em] leading-loose">
-            Thrilling expeditions with luxury stays. <br/> All itineraries planned like clockwork.
+            Thrilling expeditions with luxury stays. All itineraries planned like clockwork.
           </p>
           <div class="w-12 h-1 bg-[#ff5a00] mx-auto mt-6"></div>
         </div>
@@ -124,7 +124,7 @@
           <?php 
             $today_ymd = date('Ymd'); 
             $args = array(
-              'post_type'      => 'ride', 
+              'post_type'      => 'rides', 
               'posts_per_page' => 3,
               'orderby'        => array(
                 'start_date_clause' => 'ASC',
@@ -171,8 +171,9 @@
                 $ride_price   = get_field('ride_price', $current_ride_id);
                 
                 // Format dates into a cleaner human-readable display if values exist
-                $display_start = $start_date ? date("M d, Y", strtotime($start_date)) : 'TBD';
-                $display_end   = $end_date ? date("M d, Y", strtotime($end_date)) : 'TBD';
+                $display_start = $start_date ? date("M d", strtotime(str_replace('/', '-', $start_date))) : 'TBD';
+                $display_end   = $end_date ? date("M d", strtotime(str_replace('/', '-', $end_date))) : 'TBD';
+                $current_year  = date("Y", strtotime(str_replace('/', '-', $start_date)));
           ?>
           <div class="group bg-[#0a0a0a] border border-white/5 transition-all duration-300 hover:border-[#ff5a00]/50 flex flex-col overflow-hidden">
             <div class="relative h-56 overflow-hidden">
@@ -200,7 +201,7 @@
                 <div class="flex items-center gap-2">
                   <span class="text-[#ff5a00]"><i class="fas fa-calendar-alt"></i></span>
                   <span>
-                      <?php echo esc_html($display_start); ?> to <?php echo esc_html($display_end); ?>
+                    <?php echo esc_html($display_start) . ' to ' . esc_html($display_end) . ', ' . esc_html($current_year); ?>
                   </span>
                 </div>
                 <div class="flex items-center gap-2">
@@ -279,33 +280,30 @@
         </div>
       </div>
     </section>
-
     
     <section class="py-20 bg-[#111] text-white uppercase tracking-tighter border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center mb-16">
+        <div class="text-center">
           <h2 class="text-5xl lg:text-7xl font-black text-white mb-4 tracking-tighter">
-            RIDERS LOVE US
+            SHARE YOUR ADVENTURE
           </h2>
           <p class="text-sm md:text-base text-gray-500 font-bold max-w-3xl mx-auto mb-10 tracking-widest">
-            REAL RIDERS • REAL ADVENTURES • REAL REVIEWS
+            REAL TESTIMONIALS • REAL ADVENTURES • REAL PEOPLE
           </p>
           <button 
-            onClick=() setIsModalOpen(true) 
+            onclick="openTestimonialModal()"
             class="bg-[#ff5a00] hover:bg-white text-black px-12 py-5 rounded-none text-lg font-black transition-all duration-300 flex items-center gap-3 mx-auto"
           >
             <span>SHARE YOUR STORY</span>
           </button>
+          <div class="testimonial-list w-auto mx-auto mt-12">
+            <?php 
+              echo do_shortcode('[sp_testimonial id="150"]'); 
+            ?>
+          </div>
         </div>
       </div>
-      
-      <TestimonialModal
-        isOpen=isModalOpen
-        onClose=()  setIsModalOpen(false)
-        onSubmit=handleSubmitTestimonial
-      />
     </section>
-
     
     <section class="py-20 bg-black text-white border-y border-white/10 uppercase">
       <div class="max-w-7xl mx-auto px-4">

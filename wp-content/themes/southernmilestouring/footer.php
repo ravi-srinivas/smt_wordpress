@@ -1,4 +1,8 @@
 <!-- FOOTER -->
+<?php 
+  // Automatically retrieve the designated front page ID
+  $front_page_id = get_option('page_on_front');
+?>
 <footer class="bg-black text-white border-t border-white/10 uppercase tracking-tight overflow-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
@@ -20,16 +24,15 @@
           </div>
         </a>
         <p class="text-gray-400 leading-relaxed mb-8 max-w-md font-bold text-xs">
-          Epic motorcycle adventures through South India's ghat roads,
-          coffee estates & coastal highways.
+          Exclusive touring experiences across India on motorcyles, cars and MPV's where every expedition is crafted to perfection.
           <br><br>
           <strong class="text-white">
-            Pro captains • Luxury stays • All meals included
+            India's Premium Touring Experiences Built By Experts
           </strong>
         </p>
         <div class="flex space-x-4">
           <a
-            href="https://instagram.com/southernmiles.in"
+            href="https://instagram.com/<?php echo get_field('instagram', $front_page_id); ?>"
             target="_blank"
             rel="noreferrer"
             class="p-3 border border-white/10 hover:border-[#ff5a00] hover:text-[#ff5a00] transition-all"
@@ -37,7 +40,7 @@
             <i class="fa-brands fa-instagram text-2xl"></i>
           </a>
           <a
-            href="https://youtube.com/@southernmilestouring"
+            href="https://youtube.com/@<?php echo get_field('youtube', $front_page_id); ?>"
             target="_blank"
             rel="noreferrer"
             class="p-3 border border-white/10 hover:border-[#ff5a00] hover:text-[#ff5a00] transition-all"
@@ -50,17 +53,26 @@
       <!-- QUICK LINKS -->
       <div class="md:col-span-4">
         <h4 class="text-xl font-black mb-8 flex items-center gap-3">
-          <span class="text-[#ff5a00] text-2xl">📍</span>
+          <span class="text-[#ff5a00] text-2xl"><i class="fa-solid fa-bookmark"></i></span>
           Quick Links
         </h4>
         <div class="space-y-3">
           <a
-            href="<?php echo esc_url(home_url('/rides')); ?>"
+            href="<?php echo esc_url(home_url('/blog')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
           >
             <span class="w-2 h-2 bg-[#ff5a00]"></span>
             <span class="text-gray-400 group-hover:text-white font-bold text-sm">
-              Upcoming Rides
+              Our Blogs
+            </span>
+          </a>
+          <a
+            href="<?php echo esc_url(home_url('/expeditions')); ?>"
+            class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
+          >
+            <span class="w-2 h-2 bg-[#ff5a00]"></span>
+            <span class="text-gray-400 group-hover:text-white font-bold text-sm">
+              Upcoming Expeditions
             </span>
           </a>
           <a
@@ -69,7 +81,7 @@
           >
             <span class="w-2 h-2 bg-[#ff5a00]"></span>
             <span class="text-gray-400 group-hover:text-white font-bold text-sm">
-              Meet Captains
+              Meet The Captains
             </span>
           </a>
           <a
@@ -87,7 +99,7 @@
       <!-- CONTACT -->
       <div class="md:col-span-4">
         <h4 class="text-xl font-black mb-8 flex items-center gap-3">
-          <span class="text-[#ff5a00] text-2xl">☎</span>
+          <span class="text-[#ff5a00] text-2xl"><i class="fa-solid fa-tty"></i></span>
           Book Your Adventure
         </h4>
         <div class="space-y-5">
@@ -104,17 +116,27 @@
               </p>
             </div>
           </div>
-          <a
-            href="https://wa.me/919999999999"
-            class="group block bg-white hover:bg-[#ff5a00] transition-all p-5"
-          >
-            <p class="font-black text-lg text-black group-hover:text-white">
-              +91 99999 99999
-            </p>
-            <p class="text-[10px] text-black/60 group-hover:text-white/70 tracking-widest mt-1">
+          <p class="group block bg-white hover:bg-[#ff5a00] transition-all p-5">
+            <a
+              href="https://wa.me/919113230676"
+              class="font-black text-lg text-black group-hover:text-white"
+            >
+            +91 91132 30676
+            </a>
+            <span class="text-black/60 group-hover:text-white/70">
+              &nbsp;|&nbsp;
+            </span>
+            <a
+              href="https://wa.me/919019450676"
+              class="font-black text-lg text-black group-hover:text-white"
+            >
+            +91 90194 50676
+            </a>
+            <br />
+            <span class="text-[10px] text-black/60 group-hover:text-white/70 tracking-widest mt-1">
               24/7 Ride Support
-            </p>
-          </a>
+            </span>
+          </p>
           <a
             href="mailto:southernmilestouring@gmail.com"
             class="block border border-white/20 hover:border-[#ff5a00] hover:text-[#ff5a00] transition-all p-5"
@@ -143,15 +165,16 @@
             </h3>
           </div>
           <p class="text-black/80 text-sm font-bold tracking-[0.2em]">
-            Lifetime access • Pro ride captains • Exclusive events
+            Annual Subscription • Pro Ride Captains • Exclusive Locations
           </p>
         </div>
-        <button
-          onclick="openRegisterModal()"
+        <a
+          href="https://forms.gle/48NFJY4QibC5UZ9X9"
+          target="_blank"
           class="bg-black text-white hover:bg-white hover:text-black transition-all duration-300 px-10 py-5 text-sm md:text-base font-black tracking-widest whitespace-nowrap"
         >
           JOIN US NOW
-        </button>
+        </a>
       </div>
     </div>
 
@@ -159,13 +182,14 @@
     <div class="border-t border-white/10 py-8 text-center">
       <p class="text-[10px] text-gray-600 font-bold tracking-[0.25em] leading-loose">
         © 2026 SOUTHERN MILES TOURING.
-        CRAFTING EPIC RIDES ACROSS SOUTH INDIA.
+        CRAFTING EPIC MEMORIES ACROSS INDIA.
         ALL RIGHTS RESERVED.
       </p>
     </div>
   </div>
 </footer>
-<?php get_template_part('template-parts/register-modal'); ?>
+
+<?php get_template_part( 'template-parts/testimonial-modal' ); ?>
 
 <?php wp_footer(); ?>
 </body>

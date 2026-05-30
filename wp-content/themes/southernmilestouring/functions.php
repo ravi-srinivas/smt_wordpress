@@ -49,4 +49,19 @@ function southern_miles_assets() {
 }
 add_action('wp_enqueue_scripts', 'southern_miles_assets');
 
+// Add Global Options Page
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page(array(
+        'page_title'    => 'Global Settings',
+        'menu_title'    => 'Global Settings',
+        'menu_slug'     => 'custom-global-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+}
+function hide_acf_options_menu_link() {
+    remove_menu_page('custom-global-settings');
+}
+add_action('admin_menu', 'hide_acf_options_menu_link', 999);
+
 ?>

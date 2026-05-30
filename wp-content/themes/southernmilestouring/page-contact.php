@@ -1,6 +1,6 @@
 <?php 
   /*
-  Template Name: Contact Us
+  Template Name: Contact Template
   */
   get_header(); 
 ?>
@@ -33,7 +33,7 @@
               RESPONSE WITHIN 2 HOURS
             </div>
             <h1 class="text-5xl lg:text-7xl font-black text-white mb-8 tracking-tighter leading-[0.8]">
-              PLAN YOUR <br/> RIDE
+              Plan Your Adventure <br /> With Us
             </h1>
             <p class="text-sm md:text-lg font-bold text-gray-500 max-w-2xl mx-auto tracking-widest uppercase">
               READY TO CONQUER KARNATAKA'S GHAT ROADS? <br/> OUR RIDE CAPTAINS ARE STANDING BY.
@@ -49,6 +49,24 @@
                 </h2>
               </div>
               <div class="divide-y divide-white/10">
+                <div class="maps flex items-start space-x-8 p-10 group hover:bg-black transition-all">
+                  <div class="flex-1">
+                    <div style="width: 100%">
+                      <iframe 
+                        width="100%" 
+                        height="450" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        style="border:0" 
+                        allowfullscreen="" 
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=Bangalore&amp;maptype=roadmap&amp;zoom=11">
+                      </iframe>
+                    </div>
+                  </div>
+                </div>
+                
                 <div class="flex items-start space-x-8 p-10 group hover:bg-black transition-all">
                   <div class="w-16 h-16 bg-white text-black rounded-none flex items-center justify-center flex-shrink-0 group-hover:bg-[#ff5a00] transition-colors">
                     <i class="fa-solid fa-location-dot text-3xl"></i>
@@ -56,7 +74,7 @@
                   <div class="flex-1 pt-1">
                     <h4 class="text-xs font-black text-gray-500 tracking-[0.2em] mb-2 uppercase">LOCATION</h4>
                     <p class="text-2xl font-black text-white uppercase tracking-tighter">
-                      BANGALORE HQ • MULTIPLE PICKUP POINTS
+                      BANGALORE • MULTIPLE PICKUP POINTS
                     </p>
                   </div>
                 </div>
@@ -68,15 +86,13 @@
                   <div class="flex-1 pt-1">
                     <h4 class="text-xs font-black text-gray-500 tracking-[0.2em] mb-2 uppercase">24/7 HELPLINE</h4>
                     <a 
-                      key=index
-                      href=`tel:+919113230676` 
+                      href="tel:+919113230676" 
                       class="text-3xl font-black text-white hover:text-[#ff5a00] transition-colors tracking-tighter block"
                     >
                       +91-9113230676
                     </a>
                     <a 
-                      key=index
-                      href=`tel:+919019450676` 
+                      href="tel:+919019450676" 
                       class="text-3xl font-black text-white hover:text-[#ff5a00] transition-colors tracking-tighter block"
                     >
                       +91-9019450676
@@ -105,51 +121,20 @@
                   QUICK ACTIONS
                 </h3>
                 <div class="grid sm:grid-cols-2 gap-0 border border-white/10 divide-x divide-white/10">
-                  <a href="<?php echo esc_url(home_url('/rides')); ?>" class="group flex items-center justify-center space-x-3 p-6 bg-black hover:bg-[#ff5a00] transition-all">
-                    <span class="font-black text-xs tracking-[0.2em] text-white group-hover:text-black uppercase">VIEW RIDES</span>
+                  <a href="<?php echo esc_url(home_url('/expeditions')); ?>" class="group flex items-center justify-center space-x-3 p-6 bg-black hover:bg-[#ff5a00] transition-all">
+                    <span class="font-black text-xs tracking-[0.2em] text-white group-hover:text-black uppercase">View Expeditions</span>
                   </a>
                   <a href="<?php echo esc_url(home_url('/team')); ?>" class="group flex items-center justify-center space-x-3 p-6 bg-black hover:bg-[#ff5a00] transition-all">
-                    <span class="font-black text-xs tracking-[0.2em] text-white group-hover:text-black uppercase">MEET TEAM</span>
+                    <span class="font-black text-xs tracking-[0.2em] text-white group-hover:text-black uppercase">Meet The Team</span>
                   </a>
                 </div>
               </div>
 
               
               <div class="bg-white text-black p-10 lg:p-16 rounded-none border-8 border-[#ff5a00] shadow-none">
-                <h2 class="text-5xl font-black mb-2 tracking-tighter uppercase">RIDE ENQUIRY</h2>
+                <h2 class="text-5xl font-black mb-2 tracking-tighter uppercase">Your ENQUIRY</h2>
                 <p class="text-xs font-black text-gray-500 mb-12 tracking-[0.2em] uppercase">TELL US YOUR ADVENTURE DREAMS (30 SECONDS)</p>
-                
-                <form class="space-y-10">
-                  <div class="space-y-8">
-                    <div>
-                      <label class="block text-xs font-black text-gray-400 mb-2 tracking-[0.2em] uppercase">FULL NAME *</label>
-                      <input 
-                        type="text" 
-                        required
-                        class="w-full py-4 text-2xl font-black border-b-4 border-black focus:border-[#ff5a00] outline-none transition-colors placeholder:text-gray-200 uppercase tracking-tighter" 
-                        placeholder="YOUR NAME"
-                      />
-                    </div>
-                    <div>
-                      <label class="block text-xs font-black text-gray-400 mb-2 tracking-[0.2em] uppercase">PHONE *</label>
-                      <input 
-                        type="tel" 
-                        required
-                        class="w-full py-4 text-2xl font-black border-b-4 border-black focus:border-[#ff5a00] outline-none transition-colors placeholder:text-gray-200 uppercase tracking-tighter" 
-                        placeholder="+91"
-                      />
-                    </div>
-                  </div>
-                  
-                  <button 
-                    type="submit" 
-                    class="w-full bg-black text-white py-8 px-12 rounded-none text-2xl font-black hover:bg-[#ff5a00] hover:text-black transition-all flex items-center justify-center space-x-4 group uppercase tracking-tighter"
-                  >
-                    
-                    <span>HIT US NOW!</span>
-                  </button>
-                </form>
-
+                <?php echo do_shortcode('[contact-form-7 id="9f297ec" title="Contact Form"]'); ?>
                 <div class="mt-8 text-center text-[10px] font-black text-gray-400 tracking-[0.2em] uppercase">
                   SECURE FORM • RESPONSE WITHIN 2 HOURS • NO SPAM
                 </div>
@@ -162,13 +147,13 @@
       <section class="bg-black py-16 border-t border-white/10">
         <div class="max-w-7xl mx-auto px-4 text-center">
           <h3 class="text-4xl lg:text-7xl font-black text-white mb-12 tracking-tighter uppercase leading-none">
-            500+ RIDERS TRUST US
+            500+ TOURISTS TRUST US
           </h3>
 
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0 divide-white/10 md:divide-x border border-white/10">
             <div class="p-10 bg-[#0a0a0a] group hover:bg-black transition-all">
               <div class="text-4xl mb-4">
-                🏍️
+                <i class="fa-solid fa-motorcycle"></i>
               </div>
               <div class="text-xs font-black text-[#ff5a00] tracking-[0.3em] uppercase">
                 PRO CAPTAINS
@@ -177,7 +162,7 @@
 
             <div class="p-10 bg-[#0a0a0a] group hover:bg-black transition-all">
               <div class="text-4xl mb-4">
-                🛏️
+                <i class="fa-solid fa-bed"></i>
               </div>
               <div class="text-xs font-black text-[#ff5a00] tracking-[0.3em] uppercase">
                 LUXURY STAYS
@@ -186,7 +171,7 @@
 
             <div class="p-10 bg-[#0a0a0a] group hover:bg-black transition-all">
               <div class="text-4xl mb-4">
-                🍽️
+                <i class="fa-solid fa-utensils"></i>
               </div>
               <div class="text-xs font-black text-[#ff5a00] tracking-[0.3em] uppercase">
                 GOURMET MEALS
@@ -195,7 +180,7 @@
 
             <div class="p-10 bg-[#0a0a0a] group hover:bg-black transition-all">
               <div class="text-4xl mb-4">
-                ⚡
+                <i class="fa-solid fa-bolt"></i>
               </div>
               <div class="text-xs font-black text-[#ff5a00] tracking-[0.3em] uppercase">
                 24/7 SUPPORT
@@ -205,7 +190,7 @@
 
           <!-- Footer Text -->
           <p class="mt-12 text-sm font-bold text-gray-500 tracking-widest uppercase">
-            FROM WEEKEND WARRIORS TO CORPORATE GROUPS — YOUR PERFECT RIDE AWAITS.
+            FROM WEEKEND WARRIORS TO CORPORATE GROUPS — YOUR PERFECT TOUR AWAITS.
           </p>
         </div>
       </section>

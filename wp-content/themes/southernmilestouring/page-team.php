@@ -1,6 +1,6 @@
 <?php 
   /*
-  Template Name: Our Team
+  Template Name: Team Template
   */
   get_header(); 
 ?>
@@ -13,11 +13,11 @@
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 max-w-5xl mx-auto uppercase tracking-tighter">
           <h1 class="text-4xl md:text-6xl lg:text-8xl font-black mb-8 leading-[0.9] tracking-tighter">
-            Avengers!
+            The Avengers!
           </h1>
           <div class="w-24 h-2 bg-[#ff5a00] mb-8"></div>
           <p class="text-sm md:text-lg font-bold tracking-[0.3em] max-w-2xl mx-auto text-gray-300 leading-relaxed">
-            South India's best riders who live for the road
+            Meet the incredible super-heroes behind Southern Miles Touring.
           </p>
         </div>
         <div class="absolute bottom-6 right-6 hidden md:block border border-white/20 px-4 py-2 text-[10px] font-black tracking-widest text-white/40 backdrop-blur-sm">
@@ -28,46 +28,6 @@
 
       <section class="text-white py-16 border-y border-white/10 uppercase tracking-tighter">
         <div class="max-w-7xl mx-auto px-4">
-          
-          <div class="text-center mb-24 border border-white/10 p-12 lg:p-20 bg-[#0a0a0a]">
-            <h1 class="text-5xl lg:text-7xl font-black text-white mb-8 tracking-tighter leading-none">
-              OUR CORE TEAM
-            </h1>
-            <p class="text-sm md:text-base text-gray-500 font-bold max-w-3xl mx-auto mb-16 tracking-[0.2em]">
-              SEASONED LOCALS • GHAT SPECIALISTS • ROAD EXPERTS
-            </p>            
-            <!-- Stats Section -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-white/10 divide-y md:divide-y-0 md:divide-x divide-white/10">
-              <div class="py-10 bg-black text-center">
-                <i class="fa-regular fa-thumbs-up text-5xl text-[#ff5a00] mx-auto mb-4"></i>
-                <div class="text-5xl font-black text-white mb-1">
-                  10+
-                </div>
-                <div class="text-xs font-bold text-gray-500 tracking-widest">
-                  COMBINED RIDES
-                </div>
-              </div>
-              <div class="py-10 bg-black text-center">
-                <i class="fa-solid fa-award text-5xl text-[#ff5a00] mx-auto mb-4"></i>
-                <div class="text-5xl font-black text-white mb-1">
-                  15+
-                </div>
-                <div class="text-xs font-bold text-gray-500 tracking-widest">
-                  YEARS EXPERIENCE
-                </div>
-              </div>
-              <div class="py-10 bg-black text-center">
-                <i class="fa-solid fa-clock text-5xl text-[#ff5a00] mx-auto mb-4"></i>
-                <div class="text-5xl font-black text-white mb-1">
-                  24/7
-                </div>
-                <div class="text-xs font-bold text-gray-500 tracking-widest">
-                  ROADSIDE SUPPORT
-                </div>
-              </div>
-            </div>
-          </div>
-          
           <?php
             $args = array(
               'post_type'      => 'teams', // Replace with your post type slug
@@ -138,19 +98,19 @@
                   <!-- Social Links -->
                   <div class="flex items-center space-x-2">
                     <?php if (!empty($whatsapp_url)) : ?>
-                    <a href="<?php echo esc_url($whatsapp_url); ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
+                    <a href="https://wa.me/91<?php echo $whatsapp_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
                       <i class="fa-brands fa-whatsapp text-lg"></i>
                     </a>
                     <?php endif; ?>
                     
                     <?php if (!empty($instagram_url)) : ?>
-                    <a href="<?php echo esc_url($instagram_url); ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
+                    <a href="https://instagram.com/<?php echo $instagram_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
                       <i class="fa-brands fa-instagram text-lg"></i>
                     </a>
                     <?php endif; ?>
                     
                     <?php if (!empty($youtube_url)) : ?>
-                    <a href="<?php echo esc_url($youtube_url); ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
+                    <a href="https://youtube.com/@<?php echo $youtube_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
                       <i class="fa-brands fa-youtube text-lg"></i>
                     </a>
                     <?php endif; ?>
@@ -172,23 +132,23 @@
               <div class="absolute inset-0 opacity-5 pointer-events-none bg-[url('https://www.transparenttextures.com')]"></div>
               <div class="relative z-10">
                 <h2 class="text-5xl md:text-7xl font-black mb-6 tracking-tighter uppercase leading-none">
-                  RIDDEN WITH <br/> THE BEST?
+                  EXPLORED WITH <br/> THE BEST?
                 </h2>
                 <p class="text-sm md:text-lg font-bold text-gray-600 mb-12 max-w-2xl mx-auto tracking-widest uppercase">
-                  OUR CAPTAINS HAVE GUIDED RIDERS FROM STARTUPS TO CEOs THROUGH KARNATAKA'S TOUGHEST TERRAIN.
+                  Join our tribe of passionate tourers and let's create unforgettable memories together on the open road!
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                   <a 
-                    href="<?php echo home_url('/rides'); ?>" 
+                    href="<?php echo home_url('/expeditions'); ?>" 
                     class="bg-black text-white hover:bg-[#ff5a00] hover:text-black px-12 py-6 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase border-2 border-black"
                   >
-                    VIEW UPCOMING RIDES
+                    VIEW UPCOMING EXPEDITIONS
                   </a>
                   <a 
                     href="<?php echo home_url('/contact'); ?>" 
                     class="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-12 py-6 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase"
                   >
-                    CUSTOM GROUP RIDE
+                    CUSTOM GROUP EXPEDITION
                   </a>
                 </div>
               </div>

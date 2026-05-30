@@ -7,21 +7,25 @@
 </head>
 <body <?php body_class(); ?>>
 
+<?php 
+    // Automatically retrieve the designated front page ID
+    $front_page_id = get_option('page_on_front');
+?>
 <nav class="bg-black/90 backdrop-blur-md text-white sticky top-0 z-50 border-b border-white/10 uppercase tracking-tight">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-4">
+        <div class="flex justify-between items-center h-20 md:h-28">
             <a href="<?php echo home_url(); ?>" class="group flex items-center gap-3 flex-shrink-0">
                 <img 
                     src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png"
                     alt="Southern Miles Logo"
-                    class="h-20 md:h-24 w-auto object-contain"
+                    class="h-12 w-auto md:h-20 object-contain"
                 >
-                <div>
-                    <h1 class="text-md md:text-2xl font-black text-[#ff5a00] leading-none">
+                <div class="flex flex-col justify-center">
+                    <h1 class="sm md:text-2xl font-black text-[#ff5a00] leading-none tracking-normal">
                         Southern Miles
                     </h1>
 
-                    <p class="text-[10px] md:text-sm text-gray-400 font-semibold tracking-[0.2em] mt-1">
+                    <p class="text-[9px] md:text-sm text-gray-400 font-semibold tracking-[0.2em] mt-0.5 md:mt-1.5 leading-none">
                         TOURING
                     </p>
                 </div>
@@ -40,7 +44,7 @@
                 </div>
                 <div class="flex items-center gap-5">
                     <a 
-                        href="https://instagram.com/<?php echo get_field('instagram'); ?>"
+                        href="https://instagram.com/<?php echo get_field('instagram', $front_page_id); ?>"
                         target="_blank"
                         class="hover:text-[#ff5a00] transition-colors duration-300"
                     >
@@ -49,7 +53,7 @@
                         </svg>
                     </a>
                     <a 
-                        href="https://youtube.com/@<?php echo get_field('youtube'); ?>"
+                        href="https://youtube.com/@<?php echo get_field('youtube', $front_page_id); ?>"
                         target="_blank"
                         class="hover:text-[#ff5a00] transition-colors duration-300"
                     >
@@ -58,26 +62,28 @@
                         </svg>
                     </a>
                 </div>
-                <button 
-                    onclick="openRegisterModal()"
+                <a 
+                    href="https://forms.gle/48NFJY4QibC5UZ9X9"
+                    target="_blank"
                     class="bg-[#ff5a00] hover:bg-white hover:text-black text-white px-8 py-3 font-bold text-lg transition-all duration-300"
                 >
                     BE A MEMBER
-                </button>
+                </a>
             </div>
 
             <!-- MOBILE RIGHT -->
-            <div class="flex items-center gap-3 lg:hidden">
-                <button
-                    onclick="openRegisterModal()"
-                    class="bg-[#ff5a00] text-white px-3 py-2 text-xs font-bold hover:bg-white hover:text-black transition-all"
+            <div class="flex items-center gap-1 md:gap-3 lg:hidden">
+                <a
+                    href="https://forms.gle/48NFJY4QibC5UZ9X9"
+                    target="_blank"
+                    class="bg-[#ff5a00] text-white px-3 py-2.5 text-[10px] md:text-xs font-bold hover:bg-white hover:text-black transition-all whitespace-nowrap tracking-normal"
                 >
                     BE A MEMBER
-                </button>
+                </a>
                 <!-- MOBILE TOGGLE -->
                 <button
                     id="mobileMenuButton"
-                    class="text-white p-2"
+                    class="text-white p-2 flex items-center justify-center"
                 >
                     <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -110,7 +116,7 @@
                     SOCIALS :
                 </p>
                 <a
-                    href="https://instagram.com/<?php echo get_field('instagram'); ?>"
+                    href="https://instagram.com/<?php echo get_field('instagram', $front_page_id); ?>"
                     target="_blank"
                     class="flex-1 flex justify-center p-3 hover:text-[#ff5a00] transition-colors"
                 >
@@ -119,7 +125,7 @@
                     </svg>
                 </a>
                 <a
-                    href="https://youtube.com/@<?php echo get_field('youtube'); ?>"
+                    href="https://youtube.com/@<?php echo get_field('youtube', $front_page_id); ?>"
                     target="_blank"
                     class="flex-1 flex justify-center p-3 hover:text-[#ff5a00] transition-colors"
                 >

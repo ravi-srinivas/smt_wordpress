@@ -11,7 +11,7 @@ get_header();
     <div class="absolute inset-0 bg-[radial-gradient(#222_1px,transparent_1px)] [background-size:16px_16px] opacity-30"></div>
     <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
       <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-4 leading-none tracking-tighter">
-        THE RIDE LOGS
+        OUR MEMORY LANE
       </h1>
       <div class="w-24 h-2 bg-[#ff5a00] mx-auto mb-6"></div>
       <p class="text-xs md:text-sm font-bold tracking-[0.3em] text-gray-400">
@@ -50,7 +50,7 @@ get_header();
               <?php else : ?>
                 <div class="w-full h-full bg-[#222] flex items-center justify-center text-gray-600"><i class="fa-solid fa-motorcycle text-6xl"></i></div>
               <?php endif; ?>
-              <span class="absolute top-4 left-4 bg-[#ff5a00] text-black font-black text-xs px-3 py-1">FEATURED RIDE</span>
+              <span class="absolute top-4 left-4 bg-[#ff5a00] text-black font-black text-xs px-3 py-1">FEATURED EXPEDITION</span>
             </div>
             <div class="p-8 md:p-12 flex flex-col justify-center">
               <div class="flex items-center gap-4 text-xs font-bold text-gray-500 mb-4 tracking-widest">

@@ -17,7 +17,7 @@
           </h1>
           <div class="w-24 h-2 bg-[#ff5a00] mb-8"></div>
           <p class="text-sm md:text-lg font-bold tracking-[0.3em] max-w-2xl mx-auto text-gray-300 leading-relaxed">
-            How a bunch of passionate riders became Southern Miles Touring!
+            How a bunch of passionate tourers became Southern Miles Touring!
           </p>
         </div>
         <div class="absolute bottom-6 right-6 hidden md:block border border-white/20 px-4 py-2 text-[10px] font-black tracking-widest text-white/40 backdrop-blur-sm">
@@ -39,8 +39,6 @@
               500+ TOURERS SERVED | 50+ EPIC ROUTES
             </div>
           </div>
-
-          <!-- Mission Grid -->
           <div class="grid lg:grid-cols-3 gap-0 border border-white/10 divide-x divide-white/10">
             <div class="p-12 bg-black hover:bg-[#111] transition-all group border-b lg:border-b-0 border-white/10">
               <i class="fa-solid fa-map-location text-5xl text-[#ff5a00] mb-8 transition-transform group-hover:scale-110 inline-block"></i>
@@ -51,7 +49,6 @@
                 Experience the landscapes shaped by culture, cuisine, heritage, and adventure where every road tells a different story and every stop feels authentic.
               </p>
             </div>
-
             <div class="p-12 bg-black hover:bg-[#111] transition-all group border-b lg:border-b-0 border-white/10">
               <i class="fa-solid fa-users text-5xl text-[#ff5a00] mb-8 transition-transform group-hover:scale-110 inline-block"></i>
               <h3 class="text-3xl font-black text-white mb-6 tracking-tighter">
@@ -61,7 +58,6 @@
                 Every expedition is backed by professional support, dependable assistance, premium accommodations, and regional dining experiences designed for effortless touring.
               </p>
             </div>
-
             <div class="p-12 bg-black hover:bg-[#111] transition-all group border-b lg:border-b-0 border-white/10">
               <i class="fa-solid fa-video text-5xl text-[#ff5a00] mb-8 transition-transform group-hover:scale-110 inline-block"></i>
               <h3 class="text-3xl font-black text-white mb-6 tracking-tighter">
@@ -75,10 +71,10 @@
 
           <div class="max-w-7xl mx-auto py-16 border-t border-white/10 mt-16">
             <div class="grid md:grid-cols-2 gap-16 items-center">
-              <!-- Left Content -->
+
               <div class="space-y-8">
                 <p class="text-xl text-gray-300 leading-tight font-bold mb-12 tracking-tighter">
-                  What sets Southern Miles Touring apart is our commitment to offering not just a ride, but a complete lifestyle experience. Every stay is handpicked to balance luxury with the raw beauty of the wild, creating moments and memories that can only be experienced with us. With a strong focus on safety, hospitality, and premium touring standards, Southern Miles Touring stands among India's emerging leaders in end-to-end adventure touring experiences.
+                  What sets Southern Miles Touring apart is our commitment to offering not just a vacation, but a complete lifestyle experience. Every stay is handpicked to balance luxury with the raw beauty of the wild, creating moments and memories that can only be experienced with us. With a strong focus on safety, hospitality, and premium touring standards, Southern Miles Touring stands among India's emerging leaders in end-to-end adventure touring experiences.
                 </p>
                 <div class="grid grid-cols-2 border border-white/10 divide-x divide-white/10">
                   <div class="p-8 text-center bg-[#111]">
@@ -95,80 +91,16 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Right Slider -->
-              <div class="swiper tribeSlider h-[500px] overflow-hidden">
+              
+              <div class="swiper tribe-slider h-[500px] w-full overflow-hidden relative">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe1.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe2.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe3.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe4.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe5.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe6.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe7.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe8.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe9.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe10.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe11.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe12.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe13.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tribe/tribe14.jpg"
-                        class="w-full h-full object-cover"
-                        alt="">
-                  </div>
+                  <?php for ($i = 1; $i <= 14; $i++): ?>
+                    <div class="swiper-slide h-full w-full">
+                      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/tribe/tribe<?php echo $i; ?>.jpg"
+                          class="w-full h-full object-cover block"
+                          alt="Tribe Image <?php echo $i; ?>">
+                    </div>
+                  <?php endfor; ?>
                 </div>
               </div>
             </div>
@@ -186,10 +118,10 @@
                 </div>
                 <div class="border-b border-white/5 pb-6 w-full">
                   <h4 class="text-2xl font-black text-white mb-2 tracking-tight uppercase">
-                    FIRST GROUP RIDE
+                    FIRST GROUP TOUR
                   </h4>
                   <p class="text-lg text-gray-500 font-bold tracking-tight">
-                    12 bikes, Sakleshpur Ghat. The addiction to organized group rides began.
+                    12 bikes, Sakleshpur Ghat. The addiction to organized group tours began.
                   </p>
                 </div>
               </div>
@@ -202,7 +134,7 @@
                     COORG MULTI-DAY DEBUT
                   </h4>
                   <p class="text-lg text-gray-500 font-bold tracking-tight">
-                    First 3-day tour with stays. Riders demanded more. We delivered.
+                    First 3-day tour with stays. Tourers demanded more. We delivered.
                   </p>
                 </div>
               </div>
@@ -215,7 +147,7 @@
                     COMPANY LAUNCH
                   </h4>
                   <p class="text-lg text-gray-500 font-bold tracking-tight">
-                    Southern Mile Touring is born. Full-time rides, professional support, epic memories guaranteed.
+                    Southern Mile Touring is born. Full-time tourers, professional support, epic memories guaranteed.
                   </p>
                 </div>
               </div>
@@ -228,9 +160,9 @@
                 Enough about us!
               </h2>
               <p class="text-md md:text-xl font-bold text-gray-600 mb-10 uppercase tracking-wide max-w-3xl mx-auto">
-                The real stories begin on the road. Pick your next ride and let's make memories worth talking about.
+                The real stories begin on the road. Pick your next tourers and let's make memories worth talking about.
               </p>
-              <a href="/rides" class="bg-black text-white hover:bg-[#ff5a00] hover:text-black px-12 py-6 rounded-none text-xl md:text-2xl font-black transition-all duration-300 inline-flex items-center space-x-4 uppercase tracking-tighter group w-full sm:w-auto justify-center">
+              <a href="<?php echo esc_url(home_url('/expeditions')); ?>" class="bg-black text-white hover:bg-[#ff5a00] hover:text-black px-12 py-6 rounded-none text-xl md:text-2xl font-black transition-all duration-300 inline-flex items-center space-x-4 uppercase tracking-tighter group w-full sm:w-auto justify-center">
                 <span>START YOUR ADVENTURE</span>
                 <svg xmlns="http://w3.org" class="w-6 h-6 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -259,18 +191,6 @@
             </div>
           </div>
         </div>
-        <script type="text/javascript">
-          new Swiper('.tribeSlider', {
-            loop: true,
-            autoplay: {
-              delay: 2500,
-              disableOnInteraction: false,
-            },
-            speed: 900,
-            slidesPerView: 1,
-            spaceBetween: 0,
-          });
-        </script>
       </section>
     </div>
   

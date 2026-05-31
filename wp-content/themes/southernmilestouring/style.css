@@ -301,3 +301,24 @@ body{
 .sp-testimonial-required-message{
     display: none !important;
 }
+
+.wp-singular.single-expedition .prose h4, .wp-singular.single-expedition .prose p{
+    color: #fff;
+    font-family: "Open Sans";
+}
+.wp-singular.single-expedition .prose h4{
+    font-size: 2em;
+    font-weight: 700;
+}
+.wp-singular.single-expedition .prose h4::before{
+    content: "✦";
+    color: #ff5a00;
+    margin-right: 10px;
+}
+.wp-singular.single-expedition .prose p{
+    font-size: 1em;
+    font-weight: 500;
+}
+.wp-singular.single-expedition .prose .wp-block-separator.has-alpha-channel-opacity{
+    border-color: #ff5a00;
+}

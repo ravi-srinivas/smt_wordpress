@@ -90,7 +90,7 @@
         </div>
       </section>
 
-      <!-- Ride Packages Section -->
+      <!-- Expeditions Packages Section -->
       <section class="py-20 bg-[#111] text-white uppercase">
         <div class="max-w-7xl mx-auto px-4">
           <div class="text-center mb-16">
@@ -107,42 +107,20 @@
             <?php 
               $today_ymd = date('Ymd'); 
               $args = array(
-                'post_type'      => 'rides', 
+                'post_type'      => 'expedition', 
                 'posts_per_page' => -1,
                 'orderby'        => array(
                   'start_date_clause' => 'ASC',
-                ),
-                // 'meta_query'     => array(
-                //   'relation' => 'AND',
-                //   'end_date_clause' => array(
-                //     'relation' => 'OR',
-                //     array(
-                //       'key'     => 'ride_end_date',
-                //       'value'   => $today_ymd,
-                //       'compare' => '>=',
-                //       'type'    => 'NUMERIC',
-                //     ),
-                //     array(
-                //       'key'     => 'ride_end_date',
-                //       'compare' => 'NOT EXISTS', 
-                //     ),
-                //   ),
-                //   'start_date_clause' => array(
-                //     'relation' => 'OR',
-                //     array(
-                //       'key'     => 'ride_start_date',
-                //       'compare' => 'EXISTS', 
-                //     ),
-                //     array( 
-                //       'key'     => 'ride_start_date',
-                //       'compare' => 'NOT EXISTS',
-                //     ),
-                //   ),
-                // ),
+                )
               );
               $upcoming_rides = new WP_Query($args);
+              
+              // Initialize a counter to track the first item
+              $ride_counter = 0;
               if ($upcoming_rides->have_posts()) :
                 while ($upcoming_rides->have_posts()) : $upcoming_rides->the_post(); 
+                  $ride_counter++; // Increment counter on every loop iteration
+                  
                   // Setup local scoped variables to protect data from theme loop conflicts
                   $current_ride_id = get_the_ID();
                   $image_url       = get_the_post_thumbnail_url($current_ride_id, 'full');
@@ -153,38 +131,57 @@
                   $distance_kms = get_field('ride_distance', $current_ride_id);
                   $ride_price   = get_field('ride_price', $current_ride_id);
                   
-                  // Format dates into a cleaner human-readable display if values exist
-                  $display_start = $start_date ? date("M d", strtotime(str_replace('/', '-', $start_date))) : 'TBD';
-                  $display_end   = $end_date ? date("M d", strtotime(str_replace('/', '-', $end_date))) : 'TBD';
-                  $current_year  = date("Y", strtotime(str_replace('/', '-', $start_date)));
+                  // Only show real dates and prices for the first upcoming ride (counter == 1)
+                  if ($ride_counter === 1) {
+                    $display_start = $start_date ? date("M d", strtotime(str_replace('/', '-', $start_date))) : 'TBD';
+                    $display_end   = $end_date ? date("M d", strtotime(str_replace('/', '-', $end_date))) : 'TBD';
+                    $current_year  = $start_date ? date("Y", strtotime(str_replace('/', '-', $start_date))) : '';
+                    $display_year  = $current_year ? ', ' . $current_year : '';
+                    $date_string   = $display_start . ' to ' . $display_end . $display_year;
+                    
+                    $price_string  = $ride_price ? esc_html($ride_price) : 'TBD';
+                    $badge_text    = 'UPCOMING';
+
+                    // Active state layout classes for the first card
+                    $card_border_class  = 'border-[#ff5a00]';
+                    $image_filter_class = 'grayscale-0 brightness-100';
+                    $title_color_class  = 'text-[#ff5a00]';
+                    $is_tentative       = false;
+                  } else {
+                    // Fallback values for all subsequent cards
+                    $date_string   = 'TBD';
+                    $price_string  = 'TBD';
+                    $badge_text    = 'TENTATIVE';
+
+                    // Default standard layout classes for the remaining cards
+                    $card_border_class  = 'border-white/5 hover:border-[#ff5a00]/50';
+                    $image_filter_class = 'grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100';
+                    $title_color_class  = 'group-hover:text-[#ff5a00]';
+                    $is_tentative       = true;
+                  }
             ?>
-            <div class="group bg-[#0a0a0a] p-0 rounded-none border border-white/5 transition-all duration-300 h-full cursor-pointer flex flex-col hover:border-[#ff5a00]/50">
-              <div class="w-full h-56 rounded-none overflow-hidden mb-6 relative">
+            <div class="group bg-[#0a0a0a] border <?php echo $card_border_class; ?> transition-all duration-300 flex flex-col overflow-hidden">
+              <div class="relative h-56 overflow-hidden">
                 <?php if (!empty($image_url)) : ?>
                 <img
                   src="<?php echo esc_url($image_url); ?>"
                   alt="<?php echo esc_attr(get_the_title($current_ride_id)); ?>"
-                  class="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 brightness-75 group-hover:brightness-100"
-                  loading="lazy"
-                  draggable="false"
+                  class="w-full h-full object-cover object-top grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
                 />
-                <?php else : ?>
-                  <!-- Temporary colored fallback tile to show code execution works -->
-                  <div class="w-full h-full bg-neutral-900 flex items-center justify-center text-xs text-neutral-500 font-mono">
-                    No Image Attached (ID: <?php echo $current_ride_id; ?>)
-                  </div>
                 <?php endif; ?>
+                <div class="absolute top-0 left-0 bg-[#ff5a00] text-black text-[10px] font-black px-3 py-1 tracking-widest">
+                  <?php echo esc_html($badge_text); ?>
+                </div>
               </div>
-
-              <div class="px-6 pb-8 flex-grow">
-                <h3 class="text-xl font-black mb-3 uppercase tracking-tighter leading-tight line-clamp-2 transition-colors text-white group-hover:text-[#ff5a00]">
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-xl font-black tracking-tighter leading-tight mb-4 group-hover:text-[#ff5a00] transition-colors">
                   <?php echo esc_html(get_the_title($current_ride_id)); ?>
                 </h3>
-                <div class="space-y-2 mb-6 uppercase tracking-widest text-[10px]">
-                  <div class="flex items-center text-gray-400">
-                    <i class="fa-solid fa-calendar text-[#ff5a00] mr-2"></i>
-                    <span class="font-bold">
-                      <?php echo esc_html($display_start) . ' to ' . esc_html($display_end) . ', ' . esc_html($current_year); ?>
+                <div class="space-y-3 mb-6 text-[10px] tracking-widest text-gray-400 font-bold">
+                  <div class="flex items-center gap-2">
+                    <span class="text-[#ff5a00]"><i class="fas fa-calendar-alt"></i></span>
+                    <span>
+                      <?php echo esc_html($date_string); ?>
                     </span>
                   </div>
                   <div class="flex items-center gap-2">
@@ -192,75 +189,38 @@
                     <span><?php echo $distance_kms ? esc_html($distance_kms) : '0'; ?> KMS</span>
                   </div>
                 </div>
-
-                <p class="text-xs text-gray-500 line-clamp-2 mb-6 font-medium lowercase">
-                  explore the rugged terrains and luxury stays of coorg.
+                <p class="text-xs text-gray-500 lowercase mb-8">
+                  <?php echo esc_html(get_the_excerpt($current_ride_id)); ?>
                 </p>
-
-                <div class="flex items-center justify-between pt-6 border-t border-white/10">
+                <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
                   <div>
-                    <span class="text-2xl font-black block tracking-tighter text-white">
-                      <?php echo $ride_price ? esc_html($ride_price) : 'TBD'; ?>
+                    <span class="block text-2xl font-black tracking-tighter">
+                      <?php echo $price_string; ?>
                     </span>
-                    <span class="text-[9px] text-gray-500 block uppercase font-bold tracking-widest">
-                      per rider
+                    <span class="text-[9px] text-gray-500 tracking-widest">
+                      PER RIDER
                     </span>
                   </div>
-                  <button class="bg-[#ff5a00] hover:bg-white text-black px-5 py-2 rounded-none font-black text-[10px] uppercase transition-all flex items-center space-x-2">
-                    <span>LEARN MORE</span>
-                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                  </button>
+                  <?php if (!$is_tentative) : ?>
+                  <a href="<?php echo esc_url(get_permalink($current_ride_id)); ?>" class="inline-block">
+                    <button class="bg-[#ff5a00] hover:bg-white text-black px-5 py-2 text-[10px] font-black tracking-widest transition-all flex items-center gap-2">
+                      <span>LEARN MORE</span>
+                      <span>→</span>
+                    </button>
+                  </a>
+                  <?php else : ?>
+                  <div class="border border-white/20 text-white/40 px-5 py-2 text-[10px] font-black tracking-widest uppercase cursor-default select-none">
+                    STAY TUNED
+                  </div>
+                  <?php endif; ?>
                 </div>
               </div>
             </div>
             <?php
-            endwhile;
-            wp_reset_postdata();
-            else :
-          ?>
-            <div class="bg-[#0a0a0a] border border-white/5 opacity-70 grayscale flex flex-col overflow-hidden">
-            <div class="relative h-56 overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-                alt="Bhutan Escape"
-                class="w-full h-full object-cover brightness-50"
-              />
-              <div class="absolute top-0 left-0 bg-gray-600 text-black text-[10px] font-black px-3 py-1 tracking-widest">
-                TENTATIVE
-              </div>
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-              <h3 class="text-xl font-black tracking-tighter leading-tight mb-4 text-gray-500">
-                BHUTAN ESCAPE
-              </h3>
-              <div class="space-y-3 mb-6 text-[10px] tracking-widest text-gray-500 font-bold">
-                <div class="flex items-center gap-2">
-                  <span>📅</span>
-                  <span>TBD</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span>📍</span>
-                  <span>1800 KMS</span>
-                </div>
-              </div>
-              <p class="text-xs text-gray-600 lowercase mb-8">
-                details for this ride are currently being finalized.
-              </p>
-              <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
-                <div>
-                  <span class="block text-2xl font-black tracking-tighter text-gray-600 line-through">
-                    ₹ TBD
-                  </span>
-                  <span class="text-[9px] text-gray-600 tracking-widest">
-                    PER RIDER
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <?php
-            endif;
-          ?>
+              endwhile;
+              wp_reset_postdata();
+              endif;
+            ?>
           </div>
         </div>
       </section>

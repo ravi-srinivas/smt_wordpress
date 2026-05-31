@@ -1,6 +1,6 @@
-# Southern Miles Touring — WordPress Theme
+# Southern Miles Touring — WordPress
 
-A custom high-performance WordPress theme built for **Southern Miles Touring**, focused on immersive motorcycle touring experiences, cinematic visuals, and conversion-driven ride packages.
+A custom high-performance WordPress theme built for **Southern Miles Touring**, focused on immersive motorcycle touring experiences, cinematic visuals, and conversion-driven tour packages.
 
 ---
 
@@ -11,9 +11,9 @@ A custom high-performance WordPress theme built for **Southern Miles Touring**, 
 - Swiper.js image sliders
 - Adventure-touring visual design
 - Optimized typography & spacing
-- Dynamic ride packages
+- Dynamic tour packages
 - Team showcase
-- Upcoming rides section
+- Upcoming tours section
 - Gallery & touring utilities
 - WordPress-ready architecture
 - Lightweight and fast-loading

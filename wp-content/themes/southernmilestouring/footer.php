@@ -134,7 +134,7 @@
             </a>
             <br />
             <span class="text-[10px] text-black/60 group-hover:text-white/70 tracking-widest mt-1">
-              24/7 Ride Support
+              24/7 Tour Support
             </span>
           </p>
           <a
@@ -165,7 +165,7 @@
             </h3>
           </div>
           <p class="text-black/80 text-sm font-bold tracking-[0.2em]">
-            Annual Subscription • Pro Ride Captains • Exclusive Locations
+            Annual Subscription • Pro Tour Captains • Exclusive Locations
           </p>
         </div>
         <a

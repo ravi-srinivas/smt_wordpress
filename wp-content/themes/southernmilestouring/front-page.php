@@ -18,15 +18,15 @@
           India's Premium Touring Experiences Built By Experts
         </div>
         <h1 class="text-4xl md:text-6xl lg:text-8xl font-black mb-8 tracking-tighter leading-[0.9]">
-          Ride the <span class="text-white">Southern Mile</span>
+          Feel the <span class="text-white">Southern Mile</span>
         </h1>
         <p class="text-sm md:text-lg lg:text-xl mb-12 max-w-3xl mx-auto leading-loose font-bold tracking-wide">
           Exclusive touring experiences across India on motorcyles, cars and MPV's where every expedition is crafted to perfection.<br /><br />
           <span class="text-[#ff5a00]">Luxury stays • Pro captains • Support Crew • In-house Media</span>
         </p>
         <div class="flex flex-col md:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
-          <a href="<?php echo esc_url(home_url('/road-quests')); ?>" class="bg-[#ff5a00] border-2 border-[#ff5a00] hover:bg-white hover:text-black hover:border-white px-12 py-5 rounded-none text-lg font-black transition-all duration-300 w-full md:w-auto flex items-center justify-center space-x-3">
-            <span>Book The Ride</span>
+          <a href="<?php echo esc_url(home_url('/expeditions')); ?>" class="bg-[#ff5a00] border-2 border-[#ff5a00] hover:bg-white hover:text-black hover:border-white px-12 py-5 rounded-none text-lg font-black transition-all duration-300 w-full md:w-auto flex items-center justify-center space-x-3">
+            <span>Book Now</span>
             <i class="fa-solid fa-arrow-right"></i>
           </a>
           <a href="<?php echo esc_url(home_url('about')); ?>" class="bg-transparent border-2 border-white hover:bg-white hover:text-black px-12 py-5 rounded-none text-lg font-black transition-all duration-300 w-full md:w-auto">
@@ -124,7 +124,7 @@
           <?php 
             $today_ymd = date('Ymd'); 
             $args = array(
-              'post_type'      => 'rides', 
+              'post_type'      => 'expedition', 
               'posts_per_page' => 3,
               'orderby'        => array(
                 'start_date_clause' => 'ASC',
@@ -158,8 +158,13 @@
               ),
             );
             $upcoming_rides = new WP_Query($args);
+            
+            // Initialize a counter to track the first item
+            $ride_counter = 0;
             if ($upcoming_rides->have_posts()) :
               while ($upcoming_rides->have_posts()) : $upcoming_rides->the_post(); 
+                $ride_counter++; // Increment counter on every loop iteration
+                
                 // Setup local scoped variables to protect data from theme loop conflicts
                 $current_ride_id = get_the_ID();
                 $image_url       = get_the_post_thumbnail_url($current_ride_id, 'full');
@@ -170,27 +175,46 @@
                 $distance_kms = get_field('ride_distance', $current_ride_id);
                 $ride_price   = get_field('ride_price', $current_ride_id);
                 
-                // Format dates into a cleaner human-readable display if values exist
-                $display_start = $start_date ? date("M d", strtotime(str_replace('/', '-', $start_date))) : 'TBD';
-                $display_end   = $end_date ? date("M d", strtotime(str_replace('/', '-', $end_date))) : 'TBD';
-                $current_year  = date("Y", strtotime(str_replace('/', '-', $start_date)));
+                // Only show real dates and prices for the first upcoming ride (counter == 1)
+                if ($ride_counter === 1) {
+                  $display_start = $start_date ? date("M d", strtotime(str_replace('/', '-', $start_date))) : 'TBD';
+                  $display_end   = $end_date ? date("M d", strtotime(str_replace('/', '-', $end_date))) : 'TBD';
+                  $current_year  = $start_date ? date("Y", strtotime(str_replace('/', '-', $start_date))) : '';
+                  $display_year  = $current_year ? ', ' . $current_year : '';
+                  $date_string   = $display_start . ' to ' . $display_end . $display_year;
+                  
+                  $price_string  = $ride_price ? esc_html($ride_price) : 'TBD';
+                  $badge_text    = 'UPCOMING';
+
+                  // Active state layout classes for the first card
+                  $card_border_class  = 'border-[#ff5a00]';
+                  $image_filter_class = 'grayscale-0 brightness-100';
+                  $title_color_class  = 'text-[#ff5a00]';
+                  $is_tentative       = false;
+                } else {
+                  // Fallback values for all subsequent cards
+                  $date_string   = 'TBD';
+                  $price_string  = 'TBD';
+                  $badge_text    = 'TENTATIVE';
+
+                  // Default standard layout classes for the remaining cards
+                  $card_border_class  = 'border-white/5 hover:border-[#ff5a00]/50';
+                  $image_filter_class = 'grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100';
+                  $title_color_class  = 'group-hover:text-[#ff5a00]';
+                  $is_tentative       = true;
+                }
           ?>
-          <div class="group bg-[#0a0a0a] border border-white/5 transition-all duration-300 hover:border-[#ff5a00]/50 flex flex-col overflow-hidden">
+          <div class="group bg-[#0a0a0a] border <?php echo $card_border_class; ?> transition-all duration-300 flex flex-col overflow-hidden">
             <div class="relative h-56 overflow-hidden">
               <?php if (!empty($image_url)) : ?>
               <img
                 src="<?php echo esc_url($image_url); ?>"
                 alt="<?php echo esc_attr(get_the_title($current_ride_id)); ?>"
-                class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
+                class="w-full h-full object-cover object-top grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
               />
-              <?php else : ?>
-                <!-- Temporary colored fallback tile to show code execution works -->
-                <div class="w-full h-full bg-neutral-900 flex items-center justify-center text-xs text-neutral-500 font-mono">
-                  No Image Attached (ID: <?php echo $current_ride_id; ?>)
-                </div>
               <?php endif; ?>
               <div class="absolute top-0 left-0 bg-[#ff5a00] text-black text-[10px] font-black px-3 py-1 tracking-widest">
-                UPCOMING
+                <?php echo esc_html($badge_text); ?>
               </div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
@@ -201,7 +225,7 @@
                 <div class="flex items-center gap-2">
                   <span class="text-[#ff5a00]"><i class="fas fa-calendar-alt"></i></span>
                   <span>
-                    <?php echo esc_html($display_start) . ' to ' . esc_html($display_end) . ', ' . esc_html($current_year); ?>
+                    <?php echo esc_html($date_string); ?>
                   </span>
                 </div>
                 <div class="flex items-center gap-2">
@@ -210,71 +234,35 @@
                 </div>
               </div>
               <p class="text-xs text-gray-500 lowercase mb-8">
-                explore the rugged terrains and luxury stays of spiti valley expedition.
+                <?php echo esc_html(get_the_excerpt($current_ride_id)); ?>
               </p>
-              
               <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
                 <div>
                   <span class="block text-2xl font-black tracking-tighter">
-                    <?php echo $ride_price ? esc_html($ride_price) : 'TBD'; ?>
+                    <?php echo $price_string; ?>
                   </span>
                   <span class="text-[9px] text-gray-500 tracking-widest">
-                    PER RIDER
+                    PER TOURER
                   </span>
                 </div>
-                <button class="bg-[#ff5a00] hover:bg-white text-black px-5 py-2 text-[10px] font-black tracking-widest transition-all flex items-center gap-2">
-                  <span>LEARN MORE</span>
-                  <span>→</span>
-                </button>
+                <?php if (!$is_tentative) : ?>
+                <a href="<?php echo esc_url(get_permalink($current_ride_id)); ?>" class="inline-block">
+                  <button class="bg-[#ff5a00] hover:bg-white text-black px-5 py-2 text-[10px] font-black tracking-widest transition-all flex items-center gap-2">
+                    <span>LEARN MORE</span>
+                    <span>→</span>
+                  </button>
+                </a>
+                <?php else : ?>
+                <div class="border border-white/20 text-white/40 px-5 py-2 text-[10px] font-black tracking-widest uppercase cursor-default select-none">
+                  STAY TUNED
+                </div>
+                <?php endif; ?>
               </div>
             </div>
           </div>
           <?php
             endwhile;
             wp_reset_postdata();
-            else :
-          ?>
-          <div class="bg-[#0a0a0a] border border-white/5 opacity-70 grayscale flex flex-col overflow-hidden">
-            <div class="relative h-56 overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-                alt="Bhutan Escape"
-                class="w-full h-full object-cover brightness-50"
-              />
-              <div class="absolute top-0 left-0 bg-gray-600 text-black text-[10px] font-black px-3 py-1 tracking-widest">
-                TENTATIVE
-              </div>
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-              <h3 class="text-xl font-black tracking-tighter leading-tight mb-4 text-gray-500">
-                BHUTAN ESCAPE
-              </h3>
-              <div class="space-y-3 mb-6 text-[10px] tracking-widest text-gray-500 font-bold">
-                <div class="flex items-center gap-2">
-                  <span>📅</span>
-                  <span>TBD</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span>📍</span>
-                  <span>1800 KMS</span>
-                </div>
-              </div>
-              <p class="text-xs text-gray-600 lowercase mb-8">
-                details for this ride are currently being finalized.
-              </p>
-              <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
-                <div>
-                  <span class="block text-2xl font-black tracking-tighter text-gray-600 line-through">
-                    ₹ TBD
-                  </span>
-                  <span class="text-[9px] text-gray-600 tracking-widest">
-                    PER RIDER
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <?php
             endif;
           ?>
         </div>
@@ -313,10 +301,10 @@
             FOLLOW OUR ADVENTURES
           </h3>
 
-          <a href="https://instagram.com/southernmiles.in" target="_blank" class="inline-flex items-center space-x-3 bg-transparent border-2 border-[#ff5a00] text-[#ff5a00] hover:bg-[#ff5a00] hover:text-black px-8 py-4 rounded-none text-sm font-black transition-all group tracking-widest">
+          <a href="https://instagram.com/<?php echo get_field('instagram', get_the_ID()); ?>" target="_blank" class="inline-flex items-center space-x-3 bg-transparent border-2 border-[#ff5a00] text-[#ff5a00] hover:bg-[#ff5a00] hover:text-black px-8 py-4 rounded-none text-sm font-black transition-all group tracking-widest">
             <span>
               <i class="fa-brands fa-instagram"></i>
-              southernmiles.in
+              <?php echo get_field('instagram', get_the_ID()); ?>
             </span>
           </a>
 
@@ -339,10 +327,10 @@
         </p>
         
         <div class="flex flex-col md:flex-row gap-4 justify-center">
-          <a href="/rides" class="bg-black text-white hover:bg-white hover:text-black px-16 py-6 rounded-none text-xl font-black transition-all duration-300 w-full md:w-auto flex items-center justify-center gap-4">
-            <span>VIEW ALL RIDES</span>
+          <a href="<?php echo esc_url(home_url('/expeditions')); ?>" class="bg-black text-white hover:bg-white hover:text-black px-16 py-6 rounded-none text-xl font-black transition-all duration-300 w-full md:w-auto flex items-center justify-center gap-4">
+            <span>VIEW ALL EXPEDITIONS</span>
           </a>
-          <a href="/contact" class="border-4 border-black hover:bg-black hover:text-white px-16 py-6 rounded-none text-xl font-black transition-all duration-300 w-full md:w-auto">
+          <a href="<?php echo esc_url(home_url('/contact')); ?>" class="border-4 border-black hover:bg-black hover:text-white px-16 py-6 rounded-none text-xl font-black transition-all duration-300 w-full md:w-auto">
             GET CUSTOM QUOTE
           </a>
         </div>

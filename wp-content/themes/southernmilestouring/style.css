@@ -322,3 +322,25 @@ body{
 .wp-singular.single-expedition .prose .wp-block-separator.has-alpha-channel-opacity{
     border-color: #ff5a00;
 }
+
+/* Form Validations */
+.wpcf7 form.failed .wpcf7-response-output, .wpcf7 form.aborted .wpcf7-response-output{
+    border-color: #000;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    background-color: #dc3232;
+    color: #000;
+    text-align: center;
+}
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+    border-color: #000;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    background-color: #ffb900;
+    color: #000;
+    text-align: center;
+}
+.wpcf7-not-valid-tip {
+    font-weight: 500;
+    margin-top: 5px;
+}

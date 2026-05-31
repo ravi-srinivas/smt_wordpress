@@ -66,7 +66,7 @@ get_header();
               </p>
               <div>
                 <a href="<?php the_permalink(); ?>" class="inline-flex items-center gap-2 border-b-2 border-[#ff5a00] font-black text-sm pb-1 hover:text-[#ff5a00] transition-colors">
-                  READ FULL LOG <i class="fa-solid fa-arrow-right text-xs"></i>
+                  READ FULL BLOG <i class="fa-solid fa-arrow-right text-xs"></i>
                 </a>
               </div>
             </div>

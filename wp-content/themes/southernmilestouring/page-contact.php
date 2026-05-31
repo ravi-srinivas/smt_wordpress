@@ -14,7 +14,7 @@
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 max-w-5xl mx-auto uppercase tracking-tighter">
           <h1 class="text-4xl md:text-6xl lg:text-8xl font-black mb-8 leading-[0.9] tracking-tighter">
-            Any Queries?
+            Plan Your Route
           </h1>
           <div class="w-24 h-2 bg-[#ff5a00] mb-8"></div>
           <p class="text-sm md:text-lg font-bold tracking-[0.3em] max-w-2xl mx-auto text-gray-300 leading-relaxed">
@@ -36,7 +36,7 @@
               Plan Your Adventure <br /> With Us
             </h1>
             <p class="text-sm md:text-lg font-bold text-gray-500 max-w-2xl mx-auto tracking-widest uppercase">
-              READY TO CONQUER KARNATAKA'S GHAT ROADS? <br/> OUR RIDE CAPTAINS ARE STANDING BY.
+              READY TO CONQUER INDIA'S ROADS? <br/> OUR RIDE CAPTAINS ARE <span class="text-[#ff5a00]">STANDING BY.</span>
             </p>
           </div>
 

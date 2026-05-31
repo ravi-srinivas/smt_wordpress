@@ -64,4 +64,43 @@ function hide_acf_options_menu_link() {
 }
 add_action('admin_menu', 'hide_acf_options_menu_link', 999);
 
+// Comments
+add_action('init', function () {
+    // Close comments on the front-end for posts, pages, and attachments
+    $post_types = get_post_types();
+    foreach ($post_types as $post_type) {
+        if (post_type_supports($post_type, 'comments')) {
+            remove_post_type_support($post_type, 'comments');
+            remove_post_type_support($post_type, 'trackbacks');
+        }
+    }
+});
+
+// Close comments on existing posts globally in the database filters
+add_filter('comments_open', '__return_false', 20, 2);
+add_filter('pings_open', '__return_false', 20, 2);
+
+// Hide existing comments from showing up if templates still query them
+add_filter('comments_array', '__return_empty_array', 10, 2);
+
+// 2. Remove the "Comments" page from the Admin Sidebar Menu
+add_action('admin_menu', function () {
+    remove_menu_page('edit-comments.php');
+});
+
+// 3. Remove comments links and dropdowns from the top Admin Bar
+add_action('wp_before_admin_bar_render', function () {
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_menu('comments');
+});
+
+// 4. Redirect any direct URL attempts to access the comments admin page
+add_action('admin_init', function () {
+    global $pagenow;
+    if ($pagenow === 'edit-comments.php') {
+        wp_redirect(admin_url());
+        exit;
+    }
+});
+
 ?>

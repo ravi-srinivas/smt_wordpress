@@ -1,32 +1,31 @@
 <?php get_header(); ?>
 
-<div class="bg-black text-white min-h-screen uppercase tracking-tighter">
+<div class="bg-black bg-black/40 text-white min-h-screen uppercase tracking-tighter">
   <?php while ( have_posts() ) : the_post(); ?>
     <header class="relative h-[50vh] md:h-[65vh] overflow-hidden bg-black border-b-4 border-[#ff5a00]">
-      <div class="absolute inset-0 grayscale brightness-40 contrast-125 bg-cover bg-center bg-no-repeat">
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat">
         <?php if ( has_post_thumbnail() ) : ?>
-          <?php the_post_thumbnail('full', ['class' => 'w-full h-full object-cover']); ?>
+          <?php the_post_thumbnail('full', ['class' => 'w-full h-full object-none']); ?>
         <?php endif; ?>
       </div>
-      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-      <div class="absolute inset-0 relative z-10 flex flex-col items-center justify-center h-full text-center px-4 max-w-4xl mx-auto">
+    </header>
+    <main class="max-w-7xl mx-auto px-4 py-8">
+      <div class="text-center">
         <div class="mb-4">
           <span class="bg-[#ff5a00] text-black font-black text-xs px-3 py-1">
             <?php the_category(', '); ?>
           </span>
         </div>
-        <h1 class="text-3xl md:text-5xl lg:text-7xl font-black leading-tight mb-6 tracking-tighter">
+        <h1 class="text-2xl md:text-4xl lg:text-6xl font-black leading-tight mb-6 tracking-tighter">
           <?php the_title(); ?>
         </h1>
         <div class="flex items-center justify-center gap-6 text-xs md:text-sm font-bold tracking-widest text-gray-400 border-t border-b border-white/10 py-3 px-6">
           <span>DATE: <?php echo get_the_date(); ?></span>
           <span>•</span>
-          <span>MILER: <?php the_author(); ?></span>
+          <span>AUTHOR: <?php the_author(); ?></span>
         </div>
       </div>
-    </header>
-    <main class="max-w-7xl mx-auto px-4 py-16">
-      <div class="grid lg:grid-cols-12 gap-12">
+      <div class="grid lg:grid-cols-12 gap-12 mt-8">
         <article class="lg:col-span-8 border border-white/10 bg-[#0a0a0a] p-6 md:p-12">
           <div class="entry-content text-gray-300 font-bold normal-case text-base md:text-lg tracking-normal leading-relaxed space-y-6">
             <?php the_content(); ?>

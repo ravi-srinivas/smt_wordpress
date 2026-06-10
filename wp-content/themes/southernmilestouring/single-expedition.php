@@ -27,7 +27,7 @@ if (have_posts()) :
     $display_year  = $current_year ? ', ' . $current_year : '';
 ?>
 
-<main class="bg-[#0a0a0a] text-white min-h-screen py-20 px-4 md:px-8">
+<main class="bg-[#0a0a0a] text-white min-h-screen py-8 px-4 md:px-8">
   <div class="max-w-5xl mx-auto">
     
     <!-- Breadcrumb / Back Link -->
@@ -37,13 +37,18 @@ if (have_posts()) :
       </a>
     </div>
 
+    <section class="relative h-[60vh] md:h-[80vh] mb-8 overflow-hidden bg-black border-b-4 border-[#ff5a00] group">
+      <div
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('<?php echo get_the_post_thumbnail_url($current_ride_id, 'full'); ?>');"
+      ></div>
+    </section>
+
     <div class="grid lg:grid-cols-3 gap-12">
-      
       <div class="lg:col-span-2 space-y-8">
         <h1 class="text-4xl md:text-5xl font-black tracking-tighter leading-tight text-white uppercase">
           <?php the_title(); ?>
         </h1>
-
         <div class="prose prose-invert max-w-none text-gray-400 text-sm leading-relaxed space-y-4">
           <?php the_content(); ?>
         </div>

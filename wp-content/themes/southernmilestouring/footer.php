@@ -24,7 +24,7 @@
           </div>
         </a>
         <p class="text-gray-400 leading-relaxed mb-8 max-w-md font-bold text-xs">
-          Exclusive touring experiences across India on motorcyles, cars and MPV's where every expedition is crafted to perfection.
+          Exclusive touring expeditions across India on motorcyles, cars and MPV's where every expedition is crafted to perfection.
           <br><br>
           <strong class="text-white">
             India's Premium Touring Experiences Built By Experts
@@ -67,21 +67,21 @@
             </span>
           </a>
           <a
-            href="<?php echo esc_url(home_url('/expeditions')); ?>"
+            href="<?php echo esc_url(home_url('/privacy-policy')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
           >
             <span class="w-2 h-2 bg-[#ff5a00]"></span>
             <span class="text-gray-400 group-hover:text-white font-bold text-sm">
-              Upcoming Expeditions
+              PRIVACY POLICY
             </span>
           </a>
           <a
-            href="<?php echo esc_url(home_url('/team')); ?>"
+            href="<?php echo esc_url(home_url('/terms-conditions')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
           >
             <span class="w-2 h-2 bg-[#ff5a00]"></span>
             <span class="text-gray-400 group-hover:text-white font-bold text-sm">
-              Meet The Captains
+              TERMS AND CONDITIONS
             </span>
           </a>
           <a

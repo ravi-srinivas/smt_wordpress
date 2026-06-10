@@ -14,6 +14,43 @@ body{
     font-family:'Open Sans', sans-serif;
 }
 
+.wp-block-heading{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h1.wp-block-heading{
+    font-size: 3rem;
+    line-height: 1;
+}
+
+h2.wp-block-heading{
+    font-size: 2rem;
+    line-height: 1;
+}
+
+h3.wp-block-heading{
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+h4.wp-block-heading{
+    font-size: 1rem;
+    line-height: 1;
+}
+
+h5.wp-block-heading{
+    font-size: 0.5rem;
+    line-height: 1;
+}
+
+h6.wp-block-heading{
+    font-size: 0.25rem;
+    line-height: 1;
+}
+
 .header-menu a:hover{
     color:#ff5a00;
     transition-duration: 300ms;

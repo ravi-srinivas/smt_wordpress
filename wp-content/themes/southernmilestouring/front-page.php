@@ -21,7 +21,7 @@
           Feel the <span class="text-white">Southern Mile</span>
         </h1>
         <p class="text-sm md:text-lg lg:text-xl mb-12 max-w-3xl mx-auto leading-loose font-bold tracking-wide">
-          Exclusive touring experiences across India on motorcyles, cars and MPV's where every expedition is crafted to perfection.<br /><br />
+          Guided touring Expeditions across India on motorcyles, cars and MPV's where every expedition is crafted to perfection.<br /><br />
           <span class="text-[#ff5a00]">Luxury stays • Pro captains • Support Crew • In-house Media</span>
         </p>
         <div class="flex flex-col md:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
@@ -323,7 +323,7 @@
         </h2>
         
         <p class="text-sm md:text-lg font-bold mb-16 max-w-2xl mx-auto leading-loose tracking-wide opacity-80">
-          JOIN SOUTH INDIA'S MOST TRUSTED RIDING COMMUNITY. <br/> FROM FIRST-TIMERS TO HARDCORE TOURERS.
+          JOIN SOUTH INDIA'S MOST TRUSTED TOURING COMMUNITY. <br/> FROM FIRST-TIMERS TO HARDCORE TOURERS.
         </p>
         
         <div class="flex flex-col md:flex-row gap-4 justify-center">

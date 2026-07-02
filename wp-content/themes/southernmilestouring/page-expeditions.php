@@ -146,7 +146,7 @@
                     $card_border_class  = 'border-[#ff5a00]';
                     $image_filter_class = 'grayscale-0 brightness-100';
                     $title_color_class  = 'text-[#ff5a00]';
-                    $is_tentative       = false;
+                    //$is_tentative       = false;
                   } else {
                     // Fallback values for all subsequent cards
                     $date_string   = 'TBD';
@@ -157,7 +157,7 @@
                     $card_border_class  = 'border-white/5 hover:border-[#ff5a00]/50';
                     $image_filter_class = 'grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100';
                     $title_color_class  = 'group-hover:text-[#ff5a00]';
-                    $is_tentative       = true;
+                    //$is_tentative       = true;
                   }
             ?>
             <div class="group bg-[#0a0a0a] border <?php echo $card_border_class; ?> transition-all duration-300 flex flex-col overflow-hidden">
@@ -189,7 +189,7 @@
                     <span><?php echo $distance_kms ? esc_html($distance_kms) : '0'; ?> KMS</span>
                   </div>
                 </div>
-                <p class="text-xs text-gray-500 lowercase mb-8">
+                <p class="text-xs text-gray-500 normal-case mb-8">
                   <?php echo esc_html(get_the_excerpt($current_ride_id)); ?>
                 </p>
                 <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
@@ -201,18 +201,18 @@
                       PER RIDER
                     </span>
                   </div>
-                  <?php if (!$is_tentative) : ?>
+                  <?php //if (!$is_tentative) : ?>
                   <a href="<?php echo esc_url(get_permalink($current_ride_id)); ?>" class="inline-block">
                     <button class="bg-[#ff5a00] hover:bg-white text-black px-5 py-2 text-[10px] font-black tracking-widest transition-all flex items-center gap-2">
                       <span>LEARN MORE</span>
                       <span>→</span>
                     </button>
                   </a>
-                  <?php else : ?>
-                  <div class="border border-white/20 text-white/40 px-5 py-2 text-[10px] font-black tracking-widest uppercase cursor-default select-none">
+                  <?php //else : ?>
+                  <!-- <div class="border border-white/20 text-white/40 px-5 py-2 text-[10px] font-black tracking-widest uppercase cursor-default select-none">
                     STAY TUNED
-                  </div>
-                  <?php endif; ?>
+                  </div> -->
+                  <?php //endif; ?>
                 </div>
               </div>
             </div>

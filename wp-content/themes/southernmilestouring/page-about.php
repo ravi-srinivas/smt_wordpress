@@ -160,7 +160,7 @@
                 Enough about us!
               </h2>
               <p class="text-md md:text-xl font-bold text-gray-600 mb-10 uppercase tracking-wide max-w-3xl mx-auto">
-                The real stories begin on the road. Pick your next tourers and let's make memories worth talking about.
+                The real stories begin on the road. Pick your next tour<br/> and let's make memories worth talking about.
               </p>
               <a href="<?php echo esc_url(home_url('/expeditions')); ?>" class="bg-black text-white hover:bg-[#ff5a00] hover:text-black px-12 py-6 rounded-none text-xl md:text-2xl font-black transition-all duration-300 inline-flex items-center space-x-4 uppercase tracking-tighter group w-full sm:w-auto justify-center">
                 <span>START YOUR ADVENTURE</span>

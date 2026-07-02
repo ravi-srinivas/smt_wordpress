@@ -14,21 +14,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-window.addEventListener('load', function() {
-    const sliderExists = document.querySelector('.tribe-slider');
-    if (sliderExists && typeof Swiper !== 'undefined') {
-        new Swiper('.tribe-slider', {
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            speed: 900,
-            slidesPerView: 1,
-            spaceBetween: 0,
-            observer: true,
-            observeParents: true,
-            resizeObserver: true
-        });
-    }
-});
+// window.addEventListener('load', function() {
+//     const sliderExists = document.querySelector('.tribe-slider');
+//     if (sliderExists && typeof Swiper !== 'undefined') {
+//         new Swiper('.tribe-slider', {
+//             loop: true,
+//             autoplay: {
+//                 delay: 2500,
+//                 disableOnInteraction: false,
+//             },
+//             speed: 900,
+//             slidesPerView: 1,
+//             spaceBetween: 0,
+//             observer: true,
+//             observeParents: true,
+//             resizeObserver: true
+//         });
+//     }
+// });

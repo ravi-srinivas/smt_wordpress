@@ -51,6 +51,20 @@ h6.wp-block-heading{
     line-height: 1;
 }
 
+.wp-singular.single-expedition .prose h3::before{
+    content: "✦";
+    color: #ff5a00;
+    margin-right: 10px;
+}
+
+.wp-singular.single-expedition .prose h2{
+    margin-bottom: 30px;
+}
+
+.wp-singular.single-expedition .prose .wp-block-separator.has-alpha-channel-opacity{
+    border-color: #ff5a00;
+}
+
 .header-menu a:hover{
     color:#ff5a00;
     transition-duration: 300ms;
@@ -337,27 +351,6 @@ h6.wp-block-heading{
 
 .sp-testimonial-required-message{
     display: none !important;
-}
-
-.wp-singular.single-expedition .prose h4, .wp-singular.single-expedition .prose p{
-    color: #fff;
-    font-family: "Open Sans";
-}
-.wp-singular.single-expedition .prose h4{
-    font-size: 2em;
-    font-weight: 700;
-}
-.wp-singular.single-expedition .prose h4::before{
-    content: "✦";
-    color: #ff5a00;
-    margin-right: 10px;
-}
-.wp-singular.single-expedition .prose p{
-    font-size: 1em;
-    font-weight: 500;
-}
-.wp-singular.single-expedition .prose .wp-block-separator.has-alpha-channel-opacity{
-    border-color: #ff5a00;
 }
 
 /* Form Validations */

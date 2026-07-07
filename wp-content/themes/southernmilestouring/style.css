@@ -381,3 +381,9 @@ h6.wp-block-heading{
     font-weight: 500;
     margin-top: 5px;
 }
+
+/* Adding 's to For NRI */
+.header-menu ul li:last-child a::after{
+    content: "'s";
+    text-transform: lowercase;
+}

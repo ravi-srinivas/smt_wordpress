@@ -25,7 +25,7 @@
                         Southern Miles
                     </h1>
 
-                    <p class="text-[9px] md:text-xs text-gray-400 font-semibold tracking-[0.2em] mt-0.5 md:mt-1.5 leading-none">
+                    <p class="text-[9px] md:text-xs text-gray-400 font-semibold tracking-[0.2em] leading-none">
                         TOURING
                     </p>
                 </div>

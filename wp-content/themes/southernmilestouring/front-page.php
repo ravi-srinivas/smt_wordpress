@@ -48,7 +48,7 @@
               Experienced Captains
             </div>
             <div class="text-[10px] font-bold text-gray-500 tracking-[0.15em]">
-              Over 4 years of touring expertise
+              Over 5 years of touring expertise
             </div>
           </div>
 
@@ -115,7 +115,7 @@
             Upcoming Adventures
           </h2>
           <p class="text-sm md:text-base text-gray-400 font-bold max-w-2xl mx-auto tracking-[0.2em] leading-loose">
-            Thrilling expeditions with luxury stays. All itineraries planned like clockwork.
+            Thrilling expeditions with luxury stays.<br/> All itineraries planned like clockwork.
           </p>
           <div class="w-12 h-1 bg-[#ff5a00] mx-auto mt-6"></div>
         </div>
@@ -183,8 +183,8 @@
                   $display_year  = $current_year ? ', ' . $current_year : '';
                   $date_string   = $display_start . ' to ' . $display_end . $display_year;
                   
-                  $price_string  = $ride_price ? esc_html($ride_price) : 'TBD';
-                  $badge_text    = 'UPCOMING';
+                  $price_string  = esc_html($ride_price);
+                  $badge_text    = 'OPENS SOON';
 
                   // Active state layout classes for the first card
                   $card_border_class  = 'border-[#ff5a00]';
@@ -194,8 +194,8 @@
                 } else {
                   // Fallback values for all subsequent cards
                   $date_string   = 'TBD';
-                  $price_string  = 'TBD';
-                  $badge_text    = 'TENTATIVE';
+                  $price_string  = '';
+                  $badge_text    = 'UPCOMING';
 
                   // Default standard layout classes for the remaining cards
                   $card_border_class  = 'border-white/5 hover:border-[#ff5a00]/50';
@@ -238,12 +238,18 @@
               </p>
               <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
                 <div>
+                  <?php if($price_string != ''): ?>
                   <span class="block text-2xl font-black tracking-tighter">
                     <?php echo $price_string; ?>
                   </span>
                   <span class="text-[9px] text-gray-500 tracking-widest">
                     PER TOURER
                   </span>
+                  <?php else: ?>
+                  <span class="block text-2xl font-black tracking-tighter">
+                    <?php echo $price_string; ?>
+                  </span>
+                  <?php endif; ?>
                 </div>
                 <?php if (!$is_tentative) : ?>
                 <a href="<?php echo esc_url(get_permalink($current_ride_id)); ?>" class="inline-block">

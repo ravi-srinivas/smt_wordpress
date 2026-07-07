@@ -65,9 +65,15 @@ if (have_posts()) :
               <span class="text-[#ff5a00] text-lg mt-1"><i class="fas fa-calendar-alt"></i></span>
               <div>
                 <h4 class="text-[10px] text-gray-500 tracking-widest font-black uppercase mb-1">DATES</h4>
+                <?php if($display_start && $display_end): ?>
                 <p class="text-sm font-bold tracking-tight text-white">
                   <?php echo esc_html($display_start . ' to ' . $display_end . $display_year); ?>
                 </p>
+                <?php else: ?>
+                <p class="text-sm font-bold tracking-tight text-white">
+                  <?php echo "TBD"; ?>
+                </p>
+                <?php endif; ?>
               </div>
             </div>
             <div class="flex items-start gap-4">
@@ -96,8 +102,28 @@ if (have_posts()) :
                   Premium Stays
                 </li>
                 <li class="flex items-center uppercase">
+                  <i class="fas fa-route w-4 h-4 mr-4 text-[#ff5a00]"></i> 
+                  Curated Routes
+                </li>
+                <li class="flex items-center uppercase">
                   <i class="fas fa-utensils w-4 h-4 mr-4 text-[#ff5a00]"></i> 
-                  All Meals Covered
+                  Breakfast & Dinner
+                </li>
+                <li class="flex items-center uppercase">
+                  <i class="fas fa-truck-pickup w-4 h-4 mr-4 text-[#ff5a00]"></i> 
+                  Backup Vehicle
+                </li>
+                <li class="flex items-center uppercase">
+                  <i class="fas fa-briefcase-medical w-4 h-4 mr-4 text-[#ff5a00]"></i> 
+                  Medical Kit & ERT
+                </li>
+                <li class="flex items-center uppercase">
+                  <i class="fas fa-wrench w-4 h-4 mr-4 text-[#ff5a00]"></i> 
+                  On Tour Technician
+                </li>
+                <li class="flex items-center uppercase">
+                  <i class="fas fa-video w-4 h-4 mr-4 text-[#ff5a00]"></i> 
+                  In-House Media
                 </li>
               </ul>
             </div>
@@ -109,12 +135,18 @@ if (have_posts()) :
                 <div class="h-[2px] w-12 bg-[#ff5a00]"></div>
               </div>
               <div class="flex items-baseline gap-2">
+                <?php if($ride_price) : ?>
                 <span class="text-3xl font-black tracking-tighter text-white">
-                  <?php echo $ride_price ? esc_html($ride_price) : 'TBD'; ?>
+                  <?php echo esc_html($ride_price); ?>
                 </span>
                 <span class="text-[9px] text-gray-500 tracking-widest font-bold uppercase">
                   PER TOURER
                 </span>
+                <?php else: ?>
+                <span class="text-3xl font-black tracking-tighter text-white">
+                  <?php echo 'Upcoming'; ?>
+                </span>
+                <?php endif; ?>
               </div>
             </div>
           </div>
@@ -128,7 +160,7 @@ if (have_posts()) :
             </a>
             <?php else : ?>
             <div class="w-full border border-white/20 text-white/40 py-4 text-xs font-black tracking-widest text-center uppercase cursor-not-allowed select-none">
-              REGISTRATION CLOSED (TBD)
+              OPENS SOON
             </div>
             <?php endif; ?>
           </div>

@@ -165,7 +165,7 @@
                   $display_year  = $current_year ? ', ' . $current_year : '';
                   $date_string   = $display_start . ' to ' . $display_end . $display_year;
                   
-                  $price_string  = $ride_price ? esc_html($ride_price) : 'TBD';
+                  $price_string  = $ride_price ? esc_html($ride_price) : '';
                   $badge_text    = 'OPENS SOON';
 
                   // Active state layout classes for the first card
@@ -176,7 +176,7 @@
                 } else {
                   // Fallback values for all subsequent cards
                   $date_string   = 'TBD';
-                  $price_string  = 'TBD';
+                  $price_string  = '';
                   $badge_text    = 'UPCOMING';
 
                   // Default standard layout classes for the remaining cards
@@ -220,12 +220,18 @@
                 </p>
                 <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
                   <div>
+                    <?php if($price_string != ""): ?>
                     <span class="block text-2xl font-black tracking-tighter">
                       <?php echo $price_string; ?>
                     </span>
                     <span class="text-[9px] text-gray-500 tracking-widest">
                       PER TOURER
                     </span>
+                    <?php else: ?>
+                    <span class="block text-2xl font-black tracking-tighter">
+                      <?php echo $price_string; ?>
+                    </span>
+                    <?php endif; ?>
                   </div>
                   <?php if (!$is_tentative) : ?>
                   <a href="<?php echo esc_url(get_permalink($current_ride_id)); ?>" class="inline-block">

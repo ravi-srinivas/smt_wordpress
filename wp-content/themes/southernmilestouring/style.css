@@ -64,6 +64,13 @@ h6.wp-block-heading{
 .wp-singular.single-expedition .prose .wp-block-separator.has-alpha-channel-opacity{
     border-color: #ff5a00;
 }
+.wp-singular .wp-block-separator{
+    margin-top: 20px;
+    padding: 10px 0px;
+}
+.wp-singular h2.wp-block-heading{
+    margin-bottom: 20px;
+}
 
 .header-menu a:hover{
     color:#ff5a00;

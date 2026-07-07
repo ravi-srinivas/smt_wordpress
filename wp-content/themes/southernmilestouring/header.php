@@ -21,27 +21,34 @@
                     class="h-12 w-auto md:h-20 object-contain"
                 >
                 <div class="flex flex-col justify-center">
-                    <h1 class="sm md:text-2xl font-black text-[#ff5a00] leading-none tracking-normal">
+                    <h1 class="sm md:text-xl font-black text-[#ff5a00] leading-none tracking-normal">
                         Southern Miles
                     </h1>
 
-                    <p class="text-[9px] md:text-sm text-gray-400 font-semibold tracking-[0.2em] mt-0.5 md:mt-1.5 leading-none">
+                    <p class="text-[9px] md:text-xs text-gray-400 font-semibold tracking-[0.2em] mt-0.5 md:mt-1.5 leading-none">
                         TOURING
                     </p>
                 </div>
             </a>
             <!-- DESKTOP NAVIGATION -->
-            <div class="hidden lg:flex items-center gap-10">
+            <div class="hidden lg:flex items-center gap-8">
                 <div class="header-menu">
                     <?php
                         wp_nav_menu(array(
                             'menu' => 'Header',
                             'container' => false,
-                            'menu_class' => 'flex items-center gap-10 text-lg font-semibold',
+                            'menu_class' => 'flex items-center gap-8 text-lg font-semibold',
                             'fallback_cb' => false
                         ));
                     ?>
                 </div>
+                <a 
+                    href="https://forms.gle/48NFJY4QibC5UZ9X9"
+                    target="_blank"
+                    class="bg-[#ff5a00] hover:bg-white hover:text-black text-white px-8 py-3 font-bold text-lg transition-all duration-300"
+                >
+                    BE A MEMBER
+                </a>
                 <div class="flex items-center gap-5">
                     <a 
                         href="https://instagram.com/<?php echo get_field('instagram', $front_page_id); ?>"
@@ -62,13 +69,6 @@
                         </svg>
                     </a>
                 </div>
-                <a 
-                    href="https://forms.gle/48NFJY4QibC5UZ9X9"
-                    target="_blank"
-                    class="bg-[#ff5a00] hover:bg-white hover:text-black text-white px-8 py-3 font-bold text-lg transition-all duration-300"
-                >
-                    BE A MEMBER
-                </a>
             </div>
 
             <!-- MOBILE RIGHT -->

@@ -8,7 +8,7 @@
       <section class="relative h-[60vh] md:h-[80vh] overflow-hidden bg-black border-b-4 border-[#ff5a00] group">
         <div
           class="absolute inset-0 grayscale brightness-50 contrast-125 group-hover:grayscale-0 transition-all duration-1000 bg-cover bg-center bg-no-repeat"
-          style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/expeditions.jpg');"
+          style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>');"
         ></div>
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 max-w-5xl mx-auto uppercase tracking-tighter">

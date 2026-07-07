@@ -37,11 +37,10 @@ if (have_posts()) :
       </a>
     </div>
 
-    <section class="relative h-[60vh] md:h-[80vh] mb-8 overflow-hidden bg-black border-b-4 border-[#ff5a00] group">
-      <div
-        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style="background-image: url('<?php echo get_the_post_thumbnail_url($current_ride_id, 'full'); ?>');"
-      ></div>
+    <section class="relative mb-8 bg-black border-b-4 border-[#ff5a00] group"> 
+      <div class="w-full bg-contain bg-center bg-no-repeat aspect-video" 
+        style="background-image: url('<?php echo get_the_post_thumbnail_url($current_ride_id, 'full'); ?>');">
+      </div> 
     </section>
 
     <div class="grid lg:grid-cols-3 gap-12">

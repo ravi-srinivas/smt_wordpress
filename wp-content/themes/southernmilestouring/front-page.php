@@ -12,19 +12,19 @@
         Your browser does not support the video tag.
       </video>
       <div class="absolute inset-0 bg-black/60">
-      <div class="relative max-w-7xl mx-auto px-4 lg:py-20 md:py-16 sm:py-8 text-center">
-        <div class="inline-flex items-center bg-black border-2 border-[#ff5a00] text-[#ff5a00] px-6 py-2 rounded-none text-sm font-black sm:mb-10 mb-12 tracking-widest">
+      <div class="banner-text-wrapper relative max-w-7xl my-8 sm:my-10 md:my-12 lg:my-3 px-4 mx-auto lg:py-16 md:py-16 sm:py-8 text-center">
+        <div class="inline-flex items-center bg-black border-2 border-[#ff5a00] text-[#ff5a00] px-6 py-2 rounded-none text-xs sm:text-sm md:text-sm lg:text-sm font-black sm:mb-10 mb-8 sm:mb-10 md:mb-12 lg:mb-12 tracking-widest">
           <i class="fa-solid fa-users"></i>&nbsp;
           India's Premium Touring Experiences Built By Experts
         </div>
-        <h1 class="text-4xl md:text-6xl lg:text-8xl font-black mb-8 sm:mb-4 tracking-tighter leading-[0.9]">
+        <h1 class="text-3xl lg:text-8xl md:text-6xl sm:text-4xl font-black mb-8 sm:mb-4 tracking-tighter leading-[0.9]">
           Feel the <span class="text-white">Southern Mile</span>
         </h1>
         <p class="text-sm md:text-lg lg:text-xl sm:mb-6 mb-12 max-w-3xl mx-auto leading-loose font-bold tracking-wide">
           Guided touring Expeditions across India on motorcyles, cars and MPV's where every expedition is crafted to perfection.<br /><br />
           <span class="text-[#ff5a00]">Luxury stays • Pro captains • Support Crew • In-house Media</span>
         </p>
-        <div class="flex flex-col md:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-4 justify-center items-center max-w-xl md:max-w-2xl sm:max-w-2xl lg:max-w-2xl mx-auto">
           <a href="<?php echo esc_url(home_url('/expeditions')); ?>" class="bg-[#ff5a00] border-2 border-[#ff5a00] hover:bg-white hover:text-black hover:border-white px-12 py-5 rounded-none text-lg font-black transition-all duration-300 w-full md:w-auto flex items-center justify-center space-x-3">
             <span>Book Now</span>
             <i class="fa-solid fa-arrow-right"></i>

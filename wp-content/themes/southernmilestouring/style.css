@@ -377,12 +377,28 @@ h6.wp-block-heading{
     color: #000;
     text-align: center;
 }
+.wpcf7-response-output{
+    border-color: #000;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    background-color: #46b450;
+    color: #000;
+    text-align: center;
+}
 .wpcf7-not-valid-tip {
     font-weight: 500;
     margin-top: 5px;
 }
 
 /* Adding 's to For NRI */
+.header-menu ul li:last-child a{
+    color: #ff5a00;
+    border-bottom: 2px solid #ff5a00;
+}
+.header-menu ul li:last-child a:hover{
+    color: #fff !important;
+    border-bottom: 0px;
+}
 .header-menu ul li:last-child a::after{
     content: "'s";
     text-transform: lowercase;

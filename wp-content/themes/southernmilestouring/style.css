@@ -404,11 +404,14 @@ h6.wp-block-heading{
     text-transform: lowercase;
 }
 
-
 /* Responsive SCreens */
 @media (min-width: 1024px) and (max-width: 1200px) {
     .header-menu #menu-header{
         font-size: 0.98rem !important;
         gap: 1.4rem !important;
     }
+}
+
+.instagram-gallery__actions{
+    display: none !important;
 }

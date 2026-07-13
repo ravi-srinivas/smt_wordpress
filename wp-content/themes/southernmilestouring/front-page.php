@@ -301,19 +301,28 @@
     
     <section class="py-20 bg-black text-white border-y border-white/10 uppercase">
       <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center mb-16">
-          
+        <div class="text-center">
           <h3 class="text-4xl lg:text-5xl font-black text-white mb-6 tracking-tighter">
             FOLLOW OUR ADVENTURES
           </h3>
-
-          <a href="https://instagram.com/<?php echo get_field('instagram', get_the_ID()); ?>" target="_blank" class="inline-flex items-center space-x-3 bg-transparent border-2 border-[#ff5a00] text-[#ff5a00] hover:bg-[#ff5a00] hover:text-black px-8 py-4 rounded-none text-sm font-black transition-all group tracking-widest">
+          <a href="https://instagram.com/<?php echo get_field('instagram', get_the_ID()); ?>" target="_blank" class="inline-flex items-center space-x-3 bg-transparent border-2 border-[#ff5a00] text-[#ff5a00] hover:bg-[#ff5a00] hover:text-black px-4 py-2 mx-2 rounded-none text-xl font-black transition-all group tracking-widest">
             <span>
               <i class="fa-brands fa-instagram"></i>
-              <?php echo get_field('instagram', get_the_ID()); ?>
             </span>
           </a>
-
+          <a href="https://facebook.com/<?php echo get_field('facebook', get_the_ID()); ?>" target="_blank" class="inline-flex items-center space-x-3 bg-transparent border-2 border-[#ff5a00] text-[#ff5a00] hover:bg-[#ff5a00] hover:text-black px-4 py-2 mx-2 rounded-none text-xl font-black transition-all group tracking-widest">
+            <span>
+              <i class="fa-brands fa-facebook"></i>
+            </span>
+          </a>
+          <a href="https://www.threads.com/@<?php echo get_field('threads', get_the_ID()); ?>?hl=en" target="_blank" class="inline-flex items-center space-x-3 bg-transparent border-2 border-[#ff5a00] text-[#ff5a00] hover:bg-[#ff5a00] hover:text-black px-4 py-2 mx-2 rounded-none text-xl font-black transition-all group tracking-widest">
+            <span>
+              <i class="fa-brands fa-threads"></i>
+            </span>
+          </a>
+          <div class="instagram-posts mt-8">
+            <?php echo do_shortcode('[insta-gallery id="0"]'); ?>
+          </div>
         </div>
       </div>
     </section>

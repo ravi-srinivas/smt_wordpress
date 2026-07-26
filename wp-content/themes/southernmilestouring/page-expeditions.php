@@ -104,152 +104,160 @@
           </div>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             <?php 
-            $today_ymd = date('Ymd'); 
-            $args = array(
-              'post_type'      => 'expedition', 
-              'posts_per_page' => -1,
-              'orderby'        => array(
-                'start_date_clause' => 'ASC',
-              ),
-              'meta_query'     => array(
-                'relation' => 'AND',
-                'end_date_clause' => array(
-                  'relation' => 'OR',
-                  array(
-                    'key'     => 'ride_end_date',
-                    'value'   => $today_ymd,
-                    'compare' => '>=',
-                    'type'    => 'NUMERIC',
+              $today_ymd = date('Ymd'); 
+              $args = array(
+                'post_type'      => 'expedition', 
+                'posts_per_page' => -1,
+                'orderby'        => array(
+                  'start_date_clause' => 'ASC',
+                ),
+                'meta_query'     => array(
+                  'relation' => 'AND',
+                  'end_date_clause' => array(
+                    'relation' => 'OR',
+                    array(
+                      'key'     => 'ride_end_date',
+                      'value'   => $today_ymd,
+                      'compare' => '>=',
+                      'type'    => 'NUMERIC',
+                    ),
+                    array(
+                      'key'     => 'ride_end_date',
+                      'compare' => 'NOT EXISTS', 
+                    ),
                   ),
-                  array(
-                    'key'     => 'ride_end_date',
-                    'compare' => 'NOT EXISTS', 
+                  'start_date_clause' => array(
+                    'relation' => 'OR',
+                    array(
+                      'key'     => 'ride_start_date',
+                      'compare' => 'EXISTS', 
+                    ),
+                    array( 
+                      'key'     => 'ride_start_date',
+                      'compare' => 'NOT EXISTS',
+                    ),
                   ),
                 ),
-                'start_date_clause' => array(
-                  'relation' => 'OR',
-                  array(
-                    'key'     => 'ride_start_date',
-                    'compare' => 'EXISTS', 
-                  ),
-                  array( 
-                    'key'     => 'ride_start_date',
-                    'compare' => 'NOT EXISTS',
-                  ),
-                ),
-              ),
-            );
-            $upcoming_rides = new WP_Query($args);
-            
-            // Initialize a counter to track the first item
-            $ride_counter = 0;
-            if ($upcoming_rides->have_posts()) :
-              while ($upcoming_rides->have_posts()) : $upcoming_rides->the_post(); 
-                $ride_counter++; // Increment counter on every loop iteration
-                
-                // Setup local scoped variables to protect data from theme loop conflicts
-                $current_ride_id = get_the_ID();
-                $image_url       = get_the_post_thumbnail_url($current_ride_id, 'full');
-                
-                // Fetch custom meta directly from the specific ID
-                $start_date   = get_field('ride_start_date', $current_ride_id); 
-                $end_date     = get_field('ride_end_date', $current_ride_id);
-                $distance_kms = get_field('ride_distance', $current_ride_id);
-                $ride_price   = get_field('ride_price', $current_ride_id);
-                
-                // Only show real dates and prices for the first upcoming ride (counter == 1)
-                if ($ride_counter === 1) {
-                  $display_start = $start_date ? date("M d", strtotime(str_replace('/', '-', $start_date))) : 'TBD';
-                  $display_end   = $end_date ? date("M d", strtotime(str_replace('/', '-', $end_date))) : 'TBD';
-                  $current_year  = $start_date ? date("Y", strtotime(str_replace('/', '-', $start_date))) : '';
-                  $display_year  = $current_year ? ', ' . $current_year : '';
-                  $date_string   = $display_start . ' to ' . $display_end . $display_year;
+              );
+              $upcoming_rides = new WP_Query($args);
+              
+              $ride_counter = 0;
+              if ($upcoming_rides->have_posts()) :
+                while ($upcoming_rides->have_posts()) : $upcoming_rides->the_post(); 
+                  $ride_counter++; 
                   
-                  $price_string  = $ride_price ? esc_html($ride_price) : '';
-                  $badge_text    = 'OPENS SOON';
+                  $current_ride_id = get_the_ID();
+                  $image_url       = get_the_post_thumbnail_url($current_ride_id, 'full');
+                  
+                  $start_date   = get_field('ride_start_date', $current_ride_id); 
+                  $end_date     = get_field('ride_end_date', $current_ride_id);
+                  $distance_kms = get_field('ride_distance', $current_ride_id);
+                  $ride_price   = get_field('ride_price', $current_ride_id);
+                  
+                  if ($ride_counter === 1) {
+                    $display_start = $start_date ? date("M d", strtotime(str_replace('/', '-', $start_date))) : 'TBD';
+                    $display_end   = $end_date ? date("M d", strtotime(str_replace('/', '-', $end_date))) : 'TBD';
+                    $current_year  = $start_date ? date("Y", strtotime(str_replace('/', '-', $start_date))) : '';
+                    $display_year  = $current_year ? ', ' . $current_year : '';
+                    $date_string   = $display_start . ' to ' . $display_end . $display_year;
+                    
+                    $price_string  = esc_html($ride_price);
+                    $badge_text    = 'OPENS SOON';
 
-                  // Active state layout classes for the first card
-                  $card_border_class  = 'border-[#ff5a00]';
-                  $image_filter_class = 'grayscale-0 brightness-100';
-                  $title_color_class  = 'text-[#ff5a00]';
-                  $is_tentative       = false;
-                } else {
-                  // Fallback values for all subsequent cards
-                  $date_string   = 'TBD';
-                  $price_string  = '';
-                  $badge_text    = 'UPCOMING';
+                    $card_border_class  = 'border-[#ff5a00] bg-[#0d0d0d]';
+                    $image_filter_class = 'grayscale-0 brightness-100 scale-100 group-hover:scale-105';
+                    $title_color_class  = 'text-[#ff5a00]';
+                    $is_tentative       = false;
+                  } else {
+                    $date_string   = 'TBD';
+                    $price_string  = '';
+                    $badge_text    = 'UPCOMING';
 
-                  // Default standard layout classes for the remaining cards
-                  $card_border_class  = 'border-white/5 hover:border-[#ff5a00]/50';
-                  $image_filter_class = 'grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100';
-                  $title_color_class  = 'group-hover:text-[#ff5a00]';
-                  $is_tentative       = true;
-                }
+                    $card_border_class  = 'border-white/5 hover:border-[#ff5a00]/40 hover:bg-[#0d0d0d]';
+                    $image_filter_class = 'grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 scale-100 group-hover:scale-105';
+                    $title_color_class  = 'group-hover:text-[#ff5a00]';
+                    $is_tentative       = true;
+                  }
             ?>
-            <div class="group bg-[#0a0a0a] border <?php echo $card_border_class; ?> transition-all duration-300 flex flex-col overflow-hidden">
+            <div class="group bg-[#0a0a0a] border <?php echo $card_border_class; ?> transform transition-all duration-300 ease-out hover:-translate-y-1 flex flex-col overflow-hidden shadow-xl">
+              
+              <!-- Media Container with Interactive Parallax Zoom Trigger -->
               <div class="relative h-56 overflow-hidden">
                 <?php if (!empty($image_url)) : ?>
                 <img
                   src="<?php echo esc_url($image_url); ?>"
                   alt="<?php echo esc_attr(get_the_title($current_ride_id)); ?>"
-                  class="w-full h-full object-cover object-top grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
+                  class="w-full h-full object-cover object-top transition-all duration-700 ease-out <?php echo $image_filter_class; ?>"
                 />
                 <?php endif; ?>
-                <div class="absolute top-0 left-0 bg-[#ff5a00] text-black text-[10px] font-black px-3 py-1 tracking-widest">
+                
+                <!-- Subtle vignette dark top overlay for text crispness -->
+                <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent pointer-events-none"></div>
+                
+                <div class="absolute top-0 left-0 bg-[#ff5a00] text-black text-[10px] font-black px-4 py-1.5 tracking-widest shadow-md">
                   <?php echo esc_html($badge_text); ?>
                 </div>
               </div>
-              <div class="p-6 flex flex-col flex-grow">
-                <h3 class="text-xl font-black tracking-tighter leading-tight mb-4 group-hover:text-[#ff5a00] transition-colors">
+
+              <!-- Content Area -->
+              <div class="p-6 md:p-8 flex flex-col flex-grow relative">
+                <h3 class="text-xl font-black tracking-tighter leading-tight mb-4 transition-colors duration-200 <?php echo $title_color_class; ?>">
                   <?php echo esc_html(get_the_title($current_ride_id)); ?>
                 </h3>
+                
+                <!-- Route Specifications Metadata Block -->
                 <div class="space-y-3 mb-6 text-[10px] tracking-widest text-gray-400 font-bold">
-                  <div class="flex items-center gap-2">
-                    <span class="text-[#ff5a00]"><i class="fas fa-calendar-alt"></i></span>
+                  <div class="flex items-center gap-3 transition-colors group-hover:text-gray-300">
+                    <span class="text-[#ff5a00] w-4 text-center"><i class="fas fa-calendar-alt text-xs"></i></span>
                     <span>
                       <?php echo esc_html($date_string); ?>
                     </span>
                   </div>
-                  <div class="flex items-center gap-2">
-                    <span class="text-[#ff5a00]"><i class="fas fa-map-marker-alt"></i></span>
+                  <div class="flex items-center gap-3 transition-colors group-hover:text-gray-300">
+                    <span class="text-[#ff5a00] w-4 text-center"><i class="fas fa-map-marker-alt text-xs"></i></span>
                     <span><?php echo $distance_kms ? esc_html($distance_kms) : '0'; ?> KMS</span>
                   </div>
                 </div>
-                <p class="text-xs text-gray-500 lowercase mb-8">
+                
+                <p class="text-xs text-gray-500 lowercase mb-8 line-clamp-3 leading-relaxed group-hover:text-gray-400 transition-colors duration-300">
                   <?php echo esc_html(get_the_excerpt($current_ride_id)); ?>
                 </p>
+
+                <!-- Pricing & Interface Actions Row Layout -->
                 <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
-                  <div>
-                    <?php if($price_string != ""): ?>
-                    <span class="block text-2xl font-black tracking-tighter">
+                  <div class="transition-transform duration-300 group-hover:translate-x-0.5">
+                    <?php if($price_string != ''): ?>
+                    <span class="block text-2xl font-black tracking-tighter text-white">
                       <?php echo $price_string; ?>
                     </span>
-                    <span class="text-[9px] text-gray-500 tracking-widest">
+                    <span class="text-[9px] text-gray-500 tracking-widest font-bold">
                       PER TOURER
                     </span>
                     <?php else: ?>
-                    <span class="block text-2xl font-black tracking-tighter">
+                    <span class="block text-2xl font-black tracking-tighter text-white">
                       <?php echo $price_string; ?>
                     </span>
                     <?php endif; ?>
                   </div>
+
                   <?php if (!$is_tentative) : ?>
-                  <a href="<?php echo esc_url(get_permalink($current_ride_id)); ?>" class="inline-block">
-                    <button class="bg-[#ff5a00] hover:bg-white text-black px-5 py-2 text-[10px] font-black tracking-widest transition-all flex items-center gap-2">
+                  <a href="<?php echo esc_url(get_permalink($current_ride_id)); ?>" class="inline-block group/btn">
+                    <button class="bg-[#ff5a00] hover:bg-white text-black px-5 py-2.5 text-[10px] font-black tracking-widest transition-all duration-300 flex items-center gap-2 transform active:scale-95 shadow-md">
                       <span>LEARN MORE</span>
-                      <span>→</span>
+                      <span class="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                     </button>
                   </a>
                   <?php else : ?>
-                  <div class="border border-white/20 text-white/40 px-5 py-2 text-[10px] font-black tracking-widest uppercase cursor-default select-none">
+                  <div class="border border-white/10 text-white/40 group-hover:border-white/20 group-hover:text-white/60 px-5 py-2.5 text-[10px] font-black tracking-widest uppercase cursor-default select-none transition-all duration-300">
                     STAY TUNED
                   </div>
                   <?php endif; ?>
                 </div>
               </div>
+
             </div>
             <?php
-              endwhile;
+                endwhile;
               wp_reset_postdata();
               endif;
             ?>
@@ -259,7 +267,7 @@
       
       <section class="bg-black py-16">
         <div class="max-w-7xl mx-auto px-4">
-          <div class="bg-white text-black p-12 md:p-24 rounded-none border-8 border-[#ff5a00] text-center relative overflow-hidden">
+          <div class="bg-white text-black p-12 rounded-none border-8 border-[#ff5a00] text-center relative overflow-hidden">
             <div class="inline-flex items-center bg-black text-[#ff5a00] px-6 py-2 rounded-none text-xs font-black mb-8 tracking-[0.3em] uppercase">
               CURATED EXPERIENCES FOR EVERY GROUP
             </div>

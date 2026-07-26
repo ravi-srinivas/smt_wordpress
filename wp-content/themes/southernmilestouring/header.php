@@ -47,27 +47,43 @@
                     target="_blank"
                     class="bg-[#ff5a00] hover:bg-white hover:text-black text-white px-8 py-3 font-bold text-lg transition-all duration-300"
                 >
-                    BE A MEMBER
+                    JOIN TRIBE
                 </a>
-                <div class="flex items-center gap-5">
-                    <a 
-                        href="https://instagram.com/<?php echo get_field('instagram', $front_page_id); ?>"
-                        target="_blank"
-                        class="hover:text-[#ff5a00] transition-colors duration-300"
+                <div class="relative group flex items-center">
+                    <!-- Trigger Button -->
+                    <button 
+                        type="button"
+                        class="flex items-center gap-2 bg-white/5 hover:bg-[#ff5a00] border border-white/10 hover:border-[#ff5a00] text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-sm"
                     >
+                        <!-- Pulsing Indicator -->
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff5a00] group-hover:bg-white opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-[#ff5a00] group-hover:bg-white"></span>
+                        </span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                            <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+                            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z"/>
                         </svg>
-                    </a>
-                    <a 
-                        href="https://youtube.com/@<?php echo get_field('youtube', $front_page_id); ?>"
-                        target="_blank"
-                        class="hover:text-[#ff5a00] transition-colors duration-300"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                            <path d="M23.498 6.186a2.978 2.978 0 0 0-2.094-2.108C19.555 3.5 12 3.5 12 3.5s-7.555 0-9.404.578A2.978 2.978 0 0 0 .502 6.186C0 8.063 0 12 0 12s0 3.937.502 5.814a2.978 2.978 0 0 0 2.094 2.108C4.445 20.5 12 20.5 12 20.5s7.555 0 9.404-.578a2.978 2.978 0 0 0 2.094-2.108C24 15.937 24 12 24 12s0-3.937-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z"/>
-                        </svg>
-                    </a>
+                    </button>
+
+                    <!-- Dropdown Menu -->
+                    <div class="absolute right-0 top-full hidden group-hover:flex group-focus-within:flex flex-row items-center gap-4 bg-black/90 backdrop-blur-md p-3 rounded-lg border border-white/10 shadow-xl transition-all duration-200 z-50">
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/<?php echo get_field('instagram', $front_page_id); ?>" target="_blank" class="hover:text-[#ff5a00] transition-colors">
+                            <i class="fa-brands fa-instagram text-2xl"></i>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="https://youtube.com/@<?php echo get_field('youtube', $front_page_id); ?>" target="_blank" class="hover:text-[#ff5a00] transition-colors">
+                            <i class="fa-brands fa-youtube text-2xl"></i>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="https://facebook.com/<?php echo get_field('facebook', $front_page_id); ?>" target="_blank" class="hover:text-[#ff5a00] transition-colors">
+                            <i class="fa-brands fa-facebook text-2xl"></i>
+                        </a>
+                        <!-- Threads -->
+                        <a href="https://www.threads.com/@<?php echo get_field('threads', $front_page_id); ?>?hl=en" target="_blank" class="hover:text-[#ff5a00] transition-colors">
+                            <i class="fa-brands fa-threads text-2xl"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -120,18 +136,28 @@
                     target="_blank"
                     class="flex-1 flex justify-center p-3 hover:text-[#ff5a00] transition-colors"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                        <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
-                    </svg>
+                    <i class="fa-brands fa-instagram text-2xl"></i>
                 </a>
                 <a
                     href="https://youtube.com/@<?php echo get_field('youtube', $front_page_id); ?>"
                     target="_blank"
                     class="flex-1 flex justify-center p-3 hover:text-[#ff5a00] transition-colors"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                        <path d="M23.498 6.186a2.978 2.978 0 0 0-2.094-2.108C19.555 3.5 12 3.5 12 3.5s-7.555 0-9.404.578A2.978 2.978 0 0 0 .502 6.186C0 8.063 0 12 0 12s0 3.937.502 5.814a2.978 2.978 0 0 0 2.094 2.108C4.445 20.5 12 20.5 12 20.5s7.555 0 9.404-.578a2.978 2.978 0 0 0 2.094-2.108C24 15.937 24 12 24 12s0-3.937-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z"/>
-                    </svg>
+                    <i class="fa-brands fa-youtube text-2xl"></i>
+                </a>
+                <a
+                    href="https://facebook.com/<?php echo get_field('facebook', $front_page_id); ?>"
+                    target="_blank"
+                    class="flex-1 flex justify-center p-3 hover:text-[#ff5a00] transition-colors"
+                >
+                    <i class="fa-brands fa-facebook text-2xl"></i>
+                </a>
+                <a
+                    href="https://www.threads.com/@<?php echo get_field('threads', $front_page_id); ?>?hl=en"
+                    target="_blank"
+                    class="flex-1 flex justify-center p-3 hover:text-[#ff5a00] transition-colors"
+                >
+                    <i class="fa-brands fa-threads text-2xl"></i>
                 </a>
             </div>
         </div>

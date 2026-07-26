@@ -47,6 +47,22 @@
           >
             <i class="fa-brands fa-youtube text-2xl"></i>
           </a>
+          <a
+            href="https://facebook.com/<?php echo get_field('facebook', $front_page_id); ?>"
+            target="_blank"
+            rel="noreferrer"
+            class="p-3 border border-white/10 hover:border-[#ff5a00] hover:text-[#ff5a00] transition-all"
+          >
+            <i class="fa-brands fa-facebook text-2xl"></i>
+          </a>
+          <a
+            href="https://www.threads.com/@<?php echo get_field('threads', $front_page_id); ?>?hl=en"
+            target="_blank"
+            rel="noreferrer"
+            class="p-3 border border-white/10 hover:border-[#ff5a00] hover:text-[#ff5a00] transition-all"
+          >
+            <i class="fa-brands fa-threads text-2xl"></i>
+          </a>
         </div>
       </div>
 

@@ -404,7 +404,7 @@ h6.wp-block-heading{
     text-transform: lowercase;
 }
 
-/* Responsive SCreens */
+/* Responsive Screens */
 @media (min-width: 1024px) and (max-width: 1200px) {
     .header-menu #menu-header{
         font-size: 0.98rem !important;

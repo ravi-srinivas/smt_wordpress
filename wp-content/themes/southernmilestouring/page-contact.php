@@ -44,7 +44,7 @@
     </div>
 
     <!-- Corner Tactical HUD Details -->
-    <div class="absolute bottom-6 right-6 hidden md:flex items-center gap-3 border border-white/20 px-4 py-2 text-[10px] font-mono tracking-widest text-white/50 backdrop-blur-md bg-black/40">
+    <div class="absolute bottom-6 right-6 hidden md:flex items-center gap-3 border border-white/20 px-4 py-2 text-[10px] font-open-sans tracking-widest text-white/50 backdrop-blur-md bg-black/40">
       <span class="w-2 h-2 rounded-full bg-[#ff5a00] animate-pulse"></span>
       <span>SOUTHERN MILES TOURING / EST 2026</span>
     </div>
@@ -78,7 +78,7 @@
     <div class="max-w-7xl mx-auto px-4 space-y-20 relative z-10">
       
       <!-- Top Response Banner Block -->
-      <div class="text-center bg-[#0a0a0a] border border-white/10 p-12 lg:p-24 relative overflow-hidden shadow-2xl backdrop-blur-md">
+      <div class="text-center bg-[#0a0a0a] border border-white/10 p-12 lg:p-20 relative overflow-hidden shadow-2xl backdrop-blur-md">
         <div class="absolute -top-12 -left-12 w-24 h-24 border-t-2 border-l-2 border-[#ff5a00]/40 pointer-events-none"></div>
         <div class="absolute -bottom-12 -right-12 w-24 h-24 border-b-2 border-r-2 border-[#ff5a00]/40 pointer-events-none"></div>
 
@@ -113,12 +113,12 @@
           <div class="divide-y divide-white/10">
             
             <!-- Map Section -->
-            <div class="maps flex items-start space-x-8 p-6 md:p-10 group hover:bg-black transition-all">
+            <div class="maps flex items-start space-x-8 group hover:bg-black transition-all">
               <div class="flex-1 relative border border-white/20 p-1 bg-black">
                 <div style="width: 100%">
                   <iframe 
                     width="100%" 
-                    height="450" 
+                    height="620" 
                     frameborder="0" 
                     scrolling="no" 
                     marginheight="0" 
@@ -138,7 +138,7 @@
               </div>
               <div class="flex-1 pt-1">
                 <h4 class="text-xs font-black text-gray-500 tracking-[0.2em] mb-2 uppercase">LOCATION</h4>
-                <p class="text-2xl font-black text-white uppercase tracking-tighter">
+                <p class="text-xl font-black text-white uppercase tracking-tighter">
                   BANGALORE • MULTIPLE PICKUP POINTS
                 </p>
               </div>
@@ -153,13 +153,13 @@
                 <h4 class="text-xs font-black text-gray-500 tracking-[0.2em] mb-2 uppercase">24/7 HELPLINE</h4>
                 <a 
                   href="tel:+919113230676" 
-                  class="text-3xl font-black text-white hover:text-[#ff5a00] transition-colors tracking-tighter block"
+                  class="text-2xl font-black text-white hover:text-[#ff5a00] transition-colors tracking-tighter block"
                 >
                   +91-9113230676
                 </a>
                 <a 
                   href="tel:+919019450676" 
-                  class="text-3xl font-black text-white hover:text-[#ff5a00] transition-colors tracking-tighter block mt-1"
+                  class="text-2xl font-black text-white hover:text-[#ff5a00] transition-colors tracking-tighter block mt-1"
                 >
                   +91-9019450676
                 </a>
@@ -173,7 +173,7 @@
               </div>
               <div class="flex-1 pt-1">
                 <h4 class="text-xs font-black text-gray-500 tracking-[0.2em] mb-2 uppercase">EMAIL US</h4>
-                <a href="mailto:southernmilestouring@gmail.com" class="text-xl md:text-2xl font-black text-white hover:text-[#ff5a00] transition-colors tracking-tighter break-all">
+                <a href="mailto:southernmilestouring@gmail.com" class="text-xl md:text-xl font-black text-white hover:text-[#ff5a00] transition-colors tracking-tighter break-all">
                   southernmilestouring@gmail.com
                 </a>
               </div>

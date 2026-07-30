@@ -12,12 +12,12 @@
         Your browser does not support the video tag.
       </video>
       <div class="absolute inset-0 bg-black/60">
-      <div class="banner-text-wrapper relative max-w-7xl my-8 sm:my-10 md:my-12 lg:my-3 px-4 mx-auto lg:py-16 md:py-16 sm:py-8 text-center">
+      <div class="banner-text-wrapper relative max-w-7xl my-8 sm:my-10 md:my-12 lg:my-3 px-4 mx-auto lg:py-20 md:py-20 sm:py-8 text-center">
         <div class="inline-flex items-center bg-black border-2 border-[#ff5a00] text-[#ff5a00] px-6 py-2 rounded-none text-xs sm:text-sm md:text-sm lg:text-sm font-black sm:mb-10 mb-8 sm:mb-10 md:mb-12 lg:mb-12 tracking-widest">
           <i class="fa-solid fa-users"></i>&nbsp;
           India's Premium Touring Experiences Built By Experts
         </div>
-        <h1 class="text-3xl lg:text-8xl md:text-6xl sm:text-4xl font-black mb-8 sm:mb-4 tracking-tighter leading-[0.9]">
+        <h1 class="text-4xl md:text-6xl lg:text-8xl font-black mb-8 sm:mb-4 tracking-tighter leading-[0.9]">
           Feel the <span class="text-white">Southern Mile</span>
         </h1>
         <p class="text-sm md:text-lg lg:text-xl sm:mb-6 mb-12 max-w-3xl mx-auto leading-loose font-bold tracking-wide">
@@ -36,7 +36,7 @@
       </div>
     </section>
 
-    <section class="py-16 md:py-24 bg-black text-white border-y border-white/10 uppercase tracking-tighter overflow-hidden">
+    <section class="py-20 md:py-24 bg-black text-white border-y border-white/10 uppercase tracking-tighter overflow-hidden">
       <div class="max-w-7xl mx-auto px-4">
         <!-- Main interactive grid system -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 border-t border-l border-white/10">
@@ -145,12 +145,12 @@
 
         <div class="absolute top-1/4 left-10 flex items-center gap-2 opacity-20 animate-[bounce_4s_infinite]">
           <span class="w-3 h-3 rounded-full border-2 border-[#ff5a00] bg-black"></span>
-          <span class="text-[9px] font-mono tracking-widest text-[#ff5a00]">WAYPOINT 01 // NORTHERN LOOP</span>
+          <span class="text-[9px] font-open-sans tracking-widest text-[#ff5a00]">WAYPOINT 01 // NORTHERN LOOP</span>
         </div>
 
         <div class="absolute bottom-10 right-12 flex items-center gap-2 opacity-20 animate-[bounce_5s_infinite_1s]">
           <span class="w-3 h-3 rounded-full border-2 border-[#ff5a00] bg-black"></span>
-          <span class="text-[9px] font-mono tracking-widest text-[#ff5a00]">WAYPOINT 02 // SOUTHERN LOOP</span>
+          <span class="text-[9px] font-open-sans tracking-widest text-[#ff5a00]">WAYPOINT 02 // SOUTHERN LOOP</span>
         </div>
 
       </div>
@@ -369,12 +369,12 @@
 
         <div class="absolute top-12 left-10 hidden md:flex items-center gap-2 opacity-30">
           <span class="w-2 h-2 rounded-full bg-[#ff5a00] animate-ping"></span>
-          <span class="text-[9px] font-mono tracking-widest text-[#ff5a00]">SOUTHERN MILE // SOCIAL PLAYGROUND</span>
+          <span class="text-[9px] font-open-sans tracking-widest text-[#ff5a00]">SOUTHERN MILE // SOCIAL PLAYGROUND</span>
         </div>
 
         <div class="absolute bottom-12 right-10 hidden md:flex items-center gap-2 opacity-30">
           <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
-          <span class="text-[9px] font-mono tracking-widest text-zinc-400">COMMUNITY DISPATCH // ACTIVE</span>
+          <span class="text-[9px] font-open-sans tracking-widest text-zinc-400">COMMUNITY DISPATCH // ACTIVE</span>
         </div>
 
       </div>
@@ -452,7 +452,7 @@
       }
     </style>
 
-    <section class="py-20 md:py-32 bg-[#ff5a00] text-black uppercase relative overflow-hidden group/section select-none">
+    <section class="py-20 bg-[#ff5a00] text-black uppercase relative overflow-hidden group/section select-none">
       <!-- BACKGROUND ANIMATION CONTAINER -->
       <div class="absolute inset-0 pointer-events-none overflow-hidden">
         

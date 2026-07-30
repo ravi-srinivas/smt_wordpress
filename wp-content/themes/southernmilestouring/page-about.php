@@ -44,14 +44,14 @@
     </div>
 
     <!-- Corner Tactical HUD Details -->
-    <div class="absolute bottom-6 right-6 hidden md:flex items-center gap-3 border border-white/20 px-4 py-2 text-[10px] font-mono tracking-widest text-white/50 backdrop-blur-md bg-black/40">
+    <div class="absolute bottom-6 right-6 hidden md:flex items-center gap-3 border border-white/20 px-4 py-2 text-[10px] font-open-sans tracking-widest text-white/50 backdrop-blur-md bg-black/40">
       <span class="w-2 h-2 rounded-full bg-[#ff5a00] animate-pulse"></span>
       <span>SOUTHERN MILES TOURING / EST 2026</span>
     </div>
 
   </section>
 
-  <section id="main" class="relative py-12 md:py-24 text-white border-y border-white/10 tracking-tighter overflow-hidden select-none">
+  <section id="main" class="relative py-12 md:py-20 text-white border-y border-white/10 tracking-tighter overflow-hidden select-none">
     
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
       <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
@@ -69,13 +69,13 @@
       <div class="absolute bottom-1/4 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent animate-[stream_12s_linear_infinite_3s]"></div>
 
       <div class="absolute top-1/3 left-10 hidden md:flex items-center gap-2 opacity-25 animate-[bounce_5s_infinite]">
-        <span class="w-3 h-3 rounded-full border-2 border-[#ff5a00] bg-black"></span>
-        <span class="text-[9px] font-mono tracking-widest text-[#ff5a00]">EXPEDITION HQ // BANGALORE</span>
+        <span class="w-2 h-2 rounded-full bg-[#ff5a00] animate-ping"></span>
+        <span class="text-[9px] font-open-sans tracking-widest text-[#ff5a00]">EXPEDITION HQ // BANGALORE</span>
       </div>
 
       <div class="absolute bottom-1/3 right-10 hidden md:flex items-center gap-2 opacity-25 animate-[bounce_6s_infinite_1s]">
-        <span class="w-3 h-3 rounded-full border-2 border-white bg-black"></span>
-        <span class="text-[9px] font-mono tracking-widest text-gray-400">WAYPOINT // ALL-TERRAIN ROUTE</span>
+        <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
+        <span class="text-[9px] font-open-sans tracking-widest text-zinc-400">WAYPOINT // ALL-TERRAIN ROUTE</span>
       </div>
 
     </div>
@@ -132,7 +132,7 @@
       </div>
 
       <!-- Stats & Swiper Gallery Split Block -->
-      <div class="max-w-7xl mx-auto py-16 border-t border-white/10 mt-16">
+      <div class="max-w-7xl mx-auto py-20 border-t border-white/10 mt-16">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           <!-- Left Description & Counter Stats -->
@@ -161,7 +161,7 @@
           <div class="relative border border-white/10 p-2 bg-[#0a0a0a] shadow-2xl group">
             <div class="swiper tribe-slider h-[380px] md:h-[480px] w-full overflow-hidden relative">
               <div class="swiper-wrapper">
-                <?php for ($i = 1; $i <= 14; $i++): ?>
+                <?php for ($i = 1; $i <= 1; $i++): ?>
                   <div class="swiper-slide h-full w-full">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/tribe/tribe<?php echo $i; ?>.jpg"
                         class="w-full h-full object-cover block transition-transform duration-700 group-hover:scale-105"
@@ -227,49 +227,162 @@
         </div>
       </div> -->
 
+      <div class="max-w-7xl mx-auto py-20 border-t border-white/10 mt-16">
+        <h2 class="text-5xl md:text-7xl font-black text-center mb-6 tracking-tighter uppercase leading-none">
+          EXPLORED WITH <br/> THE BEST?
+        </h2>
+        <p class="text-sm md:text-lg font-bold text-gray-600 mb-12 max-w-2xl mx-auto tracking-widest uppercase">
+          Join the tribe of passionate tourers and let's create unforgettable memories together on the open road!
+        </p>
+        <?php
+          $args = array(
+            'post_type'      => 'teams', // Replace with your post type slug
+            'posts_per_page' => -1,
+            'orderby'        => 'menu_order',
+            'order'          => 'ASC',
+          );
+
+          $team_query = new WP_Query($args);
+          if ($team_query->have_posts()) : 
+            $total_posts = $team_query->post_count;
+            $count = 0;
+        ?>
+        <div class="grid md:grid-cols-2 gap-8">
+          <?php 
+            while ($team_query->have_posts()) : $team_query->the_post(); 
+              $count++;
+              
+              // Fetch your custom fields (Advanced Custom Fields)
+              $role          = get_post_meta(get_the_ID(), 'team_ride_role', true);
+              $rides_led     = get_post_meta(get_the_ID(), 'team_rides_led', true);
+              $whatsapp_url  = get_post_meta(get_the_ID(), 'team_whatsapp', true);
+              $instagram_url = get_post_meta(get_the_ID(), 'team_instagram', true);
+              $youtube_url   = get_post_meta(get_the_ID(), 'team_youtube', true);
+              
+              // Logic: Check if it's the very last post AND the grand total is an odd number
+              $is_last_item = ($count === $total_posts);
+              $is_total_odd = ($total_posts % 2 !== 0);
+              
+              // Dynamically inject centering utilities only on the odd-numbered final item
+              $center_classes = ($is_last_item && $is_total_odd) 
+                ? 'md:col-span-2 md:mx-auto md:w-full md:max-w-[calc(50%-1rem)]' 
+                : '';
+          ?>
+          <div class="group bg-[#111] border border-white/10 rounded-none overflow-hidden hover:border-[#ff5a00] transition-colors duration-500 <?php echo esc_attr($center_classes); ?>">
+            <div class="grid lg:grid-cols-2 h-full">
+              <div class="relative overflow-hidden aspect-square lg:aspect-auto">
+              <?php if (has_post_thumbnail()) : ?>
+                <?php the_post_thumbnail('large', array(
+                  'class' => 'w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-80 group-hover:opacity-100',
+                  'loading' => 'lazy'
+                  )); ?>
+              <?php else : ?>
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder.png" alt="<?php the_title_attribute(); ?>" class="w-full h-full object-cover grayscale">
+              <?php endif; ?>
+                <?php if (!empty($rides_led)) : ?>
+                <div class="absolute top-0 left-0 bg-[#ff5a00] text-black px-4 py-2 text-xs font-black tracking-widest uppercase">
+                  <?php echo esc_html($rides_led); ?>+ RIDES LED
+                </div>
+                <?php endif; ?>
+              </div>
+              <!-- Content Block -->
+              <div class="p-8 flex flex-col justify-between">
+                <div>
+                  <?php if (!empty($role)) : ?>
+                  <div class="text-xs font-black text-[#ff5a00] tracking-[0.2em] mb-2 uppercase">
+                    <?php echo esc_html($role); ?>
+                  </div>
+                  <?php endif; ?>
+                  <h3 class="text-3xl font-black text-white mb-4 tracking-tighter uppercase">
+                    <?php the_title(); ?>
+                  </h3>
+                  <p class="text-gray-500 text-sm font-bold tracking-tight leading-relaxed mb-8 uppercase">
+                    <?php echo esc_html(get_the_excerpt()); ?>
+                  </p>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="flex items-center space-x-2">
+                  <?php if (!empty($whatsapp_url)) : ?>
+                  <a href="https://wa.me/91<?php echo $whatsapp_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                  </a>
+                  <?php endif; ?>
+                  
+                  <?php if (!empty($instagram_url)) : ?>
+                  <a href="https://instagram.com/<?php echo $instagram_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
+                    <i class="fa-brands fa-instagram text-lg"></i>
+                  </a>
+                  <?php endif; ?>
+                  
+                  <?php if (!empty($youtube_url)) : ?>
+                  <a href="https://youtube.com/@<?php echo $youtube_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
+                    <i class="fa-brands fa-youtube text-lg"></i>
+                  </a>
+                  <?php endif; ?>
+                </div>
+              </div>
+            </div>
+          </div>
+          <?php 
+            endwhile; 
+            wp_reset_postdata();
+          ?>
+        </div>
+        <?php 
+          endif; 
+        ?>
+      </div>
+
       <!-- Enough About Us -->
-      <div class="relative bg-white text-black py-16 md:py-20 rounded-none text-center my-16 border-4 md:border-8 border-[#ff5a00] shadow-[0_0_40px_rgba(255,90,0,0.2)] overflow-hidden">
+      <div class="relative bg-white text-black py-20 md:py-20 rounded-none text-center my-16 border-4 md:border-8 border-[#ff5a00] shadow-[0_0_40px_rgba(255,90,0,0.2)] overflow-hidden">
         
         <div class="absolute inset-0 bg-[linear-gradient(45deg,#00000008_25%,transparent_25%,transparent_50%,#00000008_50%,#00000008_75%,transparent_75%,transparent)] bg-[size:1rem_1rem] pointer-events-none"></div>
 
         <div class="max-w-3xl mx-auto px-4 relative z-10">
-          <h2 class="text-4xl md:text-6xl font-black mb-4 tracking-tighter uppercase leading-none">
+          <h2 class="text-4xl md:text-6xl font-black mb-4 tracking-tighter uppercase">
             Enough about us!
           </h2>
-          <p class="text-sm md:text-lg font-bold text-gray-700 mb-8 uppercase tracking-wide max-w-2xl mx-auto">
-            The real stories begin on the road. Pick your next tour<br class="hidden sm:inline"/> and let's make memories worth talking about.
+          <p class="text-md md:text-xl font-bold text-gray-600 mb-10 uppercase tracking-wide max-w-3xl mx-auto">
+            The real stories begin on the road. Pick your next tour<br/> and let's make memories worth talking about.
           </p>
-          <a href="<?php echo esc_url(home_url('/expeditions')); ?>" class="bg-black text-white hover:bg-[#ff5a00] hover:text-black px-8 md:px-12 py-5 rounded-none text-lg md:text-xl font-black transition-all duration-300 inline-flex items-center space-x-4 uppercase tracking-tighter group w-full sm:w-auto justify-center shadow-xl">
-            <span>START YOUR ADVENTURE</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="<?php echo home_url('/expeditions'); ?>" 
+              class="bg-black text-white hover:bg-[#ff5a00] hover:text-black px-12 py-6 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase border-2 border-black"
+            >
+              VIEW UPCOMING EXPEDITIONS
+            </a>
+            <a 
+              href="<?php echo home_url('/contact'); ?>" 
+              class="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-12 py-6 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase"
+            >
+              CUSTOM GROUP EXPEDITION
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Bottom Next-Steps Navigation -->
-      <div class="text-center pt-12 border-t border-white/10">
-        <h3 class="text-3xl md:text-5xl font-black text-white mb-6 tracking-tighter uppercase">
+      <div class="text-center pt-16 border-t border-white/10">
+        <h3 class="text-5xl font-black text-white mb-8 tracking-tighter uppercase">
           WANT TO KNOW MORE?
         </h3>
-        <p class="text-sm md:text-base text-gray-400 font-bold mb-10 max-w-2xl mx-auto tracking-widest uppercase">
-          Explore our blogs, meet the captains, or get a custom quote for your group expedition.
+        <p class="text-lg text-gray-500 font-bold mb-12 max-w-2xl mx-auto tracking-tight uppercase">
+          Explore our blogs, view our gallery, or get a custom quote for your group expedition.
         </p>
-        
-        <div class="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center max-w-3xl mx-auto">
-          <a href="<?php echo esc_url(home_url('blog')); ?>" class="bg-[#ff5a00] text-black hover:bg-white hover:text-black px-8 py-4 rounded-none text-xs md:text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase shadow-lg">
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="<?php echo esc_url(home_url('blog')); ?>" class="bg-[#ff5a00] text-white hover:bg-white hover:text-[#ff5a00] px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
             READ OUR BLOG
           </a>
-          <a href="<?php echo esc_url(home_url('team')); ?>" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-none text-xs md:text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase shadow-lg">
-            MEET THE CAPTAINS
+          <a href="<?php echo esc_url(home_url('gallery')); ?>" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
+            VIEW OUR GALLERY
           </a>
-          <a href="<?php echo esc_url(home_url('contact')); ?>" class="bg-transparent border-2 border-[#ff5a00] text-[#ff5a00] hover:bg-[#ff5a00] hover:text-black px-8 py-4 rounded-none text-xs md:text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase shadow-lg">
+          <a href="<?php echo esc_url(home_url('contact')); ?>" class="bg-[#ff5a00] border-2 border-[#ff5a00] text-black hover:bg-transparent hover:text-[#ff5a00] px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
             CONTACT US
           </a>
         </div>
       </div>
-
+      
     </div>
   </section>
 </div>

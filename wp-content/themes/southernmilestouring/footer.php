@@ -72,7 +72,7 @@
           <span class="text-[#ff5a00] text-2xl"><i class="fa-solid fa-bookmark"></i></span>
           Quick Links
         </h4>
-        <div class="space-y-3">
+        <div class="space-y">
           <a
             href="<?php echo esc_url(home_url('/blog')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
@@ -82,24 +82,24 @@
               Our Blogs
             </span>
           </a>
-          <a
-            href="<?php echo esc_url(home_url('/privacy-policy')); ?>"
+          <!-- <a
+            href="<?php echo esc_url(home_url('/faq')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
           >
             <span class="w-2 h-2 bg-[#ff5a00]"></span>
             <span class="text-gray-400 group-hover:text-white font-bold text-sm">
-              PRIVACY POLICY
+              FAQs
             </span>
           </a>
           <a
-            href="<?php echo esc_url(home_url('/terms-conditions')); ?>"
+            href="<?php echo esc_url(home_url('/travel-tips')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
           >
             <span class="w-2 h-2 bg-[#ff5a00]"></span>
             <span class="text-gray-400 group-hover:text-white font-bold text-sm">
-              TERMS AND CONDITIONS
+              Travel Tips
             </span>
-          </a>
+          </a> -->
           <a
             href="<?php echo esc_url(home_url('/contact')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
@@ -195,8 +195,21 @@
     </div>
 
     <!-- COPYRIGHT -->
-    <div class="border-t border-white/10 py-8 text-center">
+    <div class="border-t border-white/10 py-4 text-center">
       <p class="text-[10px] text-gray-600 font-bold tracking-[0.25em] leading-loose">
+        <a href="<?php echo esc_url(home_url('/privacy-policy')); ?>" class="hover:text-[#ff5a00] transition-colors">
+          Privacy Policy
+        </a>
+        &nbsp;|&nbsp;
+        <a href="<?php echo esc_url(home_url('/terms-conditions')); ?>" class="hover:text-[#ff5a00] transition-colors">
+          Terms & Conditions
+        </a>
+        &nbsp;|&nbsp;
+        <a href="<?php echo esc_url(home_url('/cancellation-refund-policy')); ?>" class="hover:text-[#ff5a00] transition-colors">
+          Cancellation & Refund Policy
+        </a>
+      </p>
+      <p class="text-[10px] mt-2 text-gray-600 font-bold tracking-[0.25em] leading-loose">
         © 2026 SOUTHERN MILES TOURING.
         CRAFTING EPIC MEMORIES ACROSS INDIA.
         ALL RIGHTS RESERVED.

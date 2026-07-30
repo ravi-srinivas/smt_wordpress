@@ -403,6 +403,60 @@ h6.wp-block-heading{
     content: "'s";
     text-transform: lowercase;
 }
+.inclusion-list ul, .exclusion-list ul{
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.6rem;
+}
+.inclusion-list ul li:before{
+    content: "\2713";
+    color: #ff5a00;
+}
+.exclusion-list ul li:before{
+    content: "\2715";
+    color: #ff5a00;
+}
+.inclusion-list ul li, .exclusion-list ul li{
+    gap: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+/* Style the trigger text */
+.acf-tooltip {
+    border-bottom: 1px dotted #333;
+    cursor: help;
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip container styling */
+.acf-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 6em;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 999;
+}
+
+/* Show tooltip on hover */
+.acf-tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 /* Responsive Screens */
 @media (min-width: 1024px) and (max-width: 1200px) {

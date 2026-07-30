@@ -26,7 +26,7 @@
 
       </section>
 
-      <section class="text-white py-16 border-y border-white/10 uppercase tracking-tighter">
+      <section class="text-white py-20 border-y border-white/10 uppercase tracking-tighter">
         <div class="max-w-7xl mx-auto px-4">
           <?php
             $args = array(

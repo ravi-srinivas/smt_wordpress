@@ -44,14 +44,14 @@
     </div>
 
     <!-- Corner Tactical HUD Details -->
-    <div class="absolute bottom-6 right-6 hidden md:flex items-center gap-3 border border-white/20 px-4 py-2 text-[10px] font-mono tracking-widest text-white/50 backdrop-blur-md bg-black/40">
+    <div class="absolute bottom-6 right-6 hidden md:flex items-center gap-3 border border-white/20 px-4 py-2 text-[10px] font-open-sans tracking-widest text-white/50 backdrop-blur-md bg-black/40">
       <span class="w-2 h-2 rounded-full bg-[#ff5a00] animate-pulse"></span>
       <span>SOUTHERN MILES TOURING / EST 2026</span>
     </div>
 
   </section>
 
-  <section class="relative py-16 text-white border-y border-white/10 uppercase tracking-tighter overflow-hidden select-none">
+  <section class="relative py-20 text-white border-y border-white/10 uppercase tracking-tighter overflow-hidden select-none">
     
     <!-- DYNAMIC BACKGROUND ANIMATION CONTAINER -->
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
@@ -71,7 +71,7 @@
 
       <div class="absolute top-12 left-10 hidden md:flex items-center gap-2 opacity-25 animate-[bounce_5s_infinite]">
         <span class="w-3 h-3 rounded-full border-2 border-[#ff5a00] bg-black"></span>
-        <span class="text-[9px] font-mono tracking-widest text-[#ff5a00]">EXPEDITION HQ // BANGALORE</span>
+        <span class="text-[9px] font-open-sans tracking-widest text-[#ff5a00]">EXPEDITION HQ // BANGALORE</span>
       </div>
     </div>
 
@@ -333,7 +333,7 @@
   </section>
   
   <!-- ================= CHOOSE YOUR KIND OF ESCAPE ================= -->
-  <section class="bg-black py-16 md:py-24 select-none">
+  <section class="bg-black py-20 md:py-24 select-none">
     <div class="max-w-7xl mx-auto px-4">
       
       <!-- Callout Box Container -->

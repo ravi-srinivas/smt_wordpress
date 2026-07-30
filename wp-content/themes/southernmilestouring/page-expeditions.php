@@ -4,10 +4,10 @@
   */
   get_header(); 
 ?>
-<div class="bg-black text-white selection:bg-[#ff5a00] selection:text-black">
+<div class="bg-black text-white selection:bg-[#ff6600] selection:text-black">
 
   <!-- ================= HERO SECTION ================= -->
-  <section class="relative h-[60vh] md:h-[80vh] overflow-hidden bg-black border-b-4 border-[#ff5a00] group select-none">
+  <section class="relative h-[60vh] md:h-[80vh] overflow-hidden bg-black border-b-4 border-[#ff6600] group select-none">
     
     <!-- Background Hero Image -->
     <div
@@ -20,13 +20,13 @@
     <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
 
     <!-- Radar Sweep Line Effect -->
-    <div class="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#ff5a00]/40 to-transparent animate-[radar_6s_ease-in-out_infinite] pointer-events-none"></div>
+    <div class="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#ff6600]/40 to-transparent animate-[radar_6s_ease-in-out_infinite] pointer-events-none"></div>
 
     <!-- Hero Content Block -->
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 max-w-5xl mx-auto uppercase tracking-tighter">
       
       <!-- Top Pill Badge -->
-      <div class="inline-flex items-center gap-2 bg-black/80 border border-[#ff5a00]/40 text-[#ff5a00] px-4 py-1.5 rounded-none text-[10px] md:text-xs font-black tracking-widest mb-6 shadow-2xl backdrop-blur-sm">
+      <div class="inline-flex items-center gap-2 bg-black/80 border border-[#ff6600]/40 text-[#ff6600] px-4 py-1.5 rounded-none text-[10px] md:text-xs font-black tracking-widest mb-6 shadow-2xl backdrop-blur-sm">
         <i class="fa-solid fa-compass text-xs animate-spin-slow"></i>
         <span>EXPEDITIONS & ESCAPES</span>
       </div>
@@ -35,7 +35,7 @@
         YOUR NEXT ESCAPE
       </h1>
       
-      <div class="w-24 h-2 bg-[#ff5a00] mb-8 group-hover:w-40 transition-all duration-500 shadow-[0_0_15px_#ff5a00]"></div>
+      <div class="w-24 h-2 bg-[#ff6600] mb-8 group-hover:w-40 transition-all duration-500 shadow-[0_0_15px_#ff6600]"></div>
       
       <p class="text-sm md:text-lg font-bold tracking-[0.3em] max-w-2xl mx-auto text-gray-300 leading-relaxed drop-shadow">
         Explore our diverse expedition packages designed for every adventurer!
@@ -45,7 +45,7 @@
 
     <!-- Corner Tactical HUD Details -->
     <div class="absolute bottom-6 right-6 hidden md:flex items-center gap-3 border border-white/20 px-4 py-2 text-[10px] font-open-sans tracking-widest text-white/50 backdrop-blur-md bg-black/40">
-      <span class="w-2 h-2 rounded-full bg-[#ff5a00] animate-pulse"></span>
+      <span class="w-2 h-2 rounded-full bg-[#ff6600] animate-pulse"></span>
       <span>SOUTHERN MILES TOURING / EST 2026</span>
     </div>
 
@@ -57,7 +57,7 @@
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
       <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
 
-      <svg class="absolute inset-0 w-full h-full opacity-10 text-[#ff5a00]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <svg class="absolute inset-0 w-full h-full opacity-10 text-[#ff6600]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
         <defs>
           <pattern id="topo-lines-expedition" width="400" height="400" patternUnits="userSpaceOnUse">
             <path d="M0,100 Q100,50 200,100 T400,100 M0,200 Q100,150 200,200 T400,200 M0,300 Q100,250 200,300 T400,300" fill="none" stroke="currentColor" stroke-width="1.5" class="animate-[pulse_6s_ease-in-out_infinite]" />
@@ -66,18 +66,18 @@
         <rect width="100%" height="100%" fill="url(#topo-lines-expedition)" />
       </svg>
 
-      <div class="absolute top-1/3 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#ff5a00]/30 to-transparent animate-[stream_8s_linear_infinite]"></div>
+      <div class="absolute top-1/3 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#ff6600]/30 to-transparent animate-[stream_8s_linear_infinite]"></div>
       <div class="absolute bottom-1/4 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent animate-[stream_12s_linear_infinite_3s]"></div>
 
       <div class="absolute top-12 left-10 hidden md:flex items-center gap-2 opacity-25 animate-[bounce_5s_infinite]">
-        <span class="w-3 h-3 rounded-full border-2 border-[#ff5a00] bg-black"></span>
-        <span class="text-[9px] font-open-sans tracking-widest text-[#ff5a00]">EXPEDITION HQ // BANGALORE</span>
+        <span class="w-3 h-3 rounded-full border-2 border-[#ff6600] bg-black"></span>
+        <span class="text-[9px] font-open-sans tracking-widest text-[#ff6600]">EXPEDITION HQ // BANGALORE</span>
       </div>
     </div>
 
     <!-- MAIN CONTENT -->
     <div class="relative z-10 text-center max-w-7xl mx-auto px-4">
-      <div class="inline-flex items-center gap-2 bg-[#ff5a00] text-black px-6 py-2 rounded-none text-xs font-black mb-8 tracking-[0.3em] shadow-[0_0_15px_rgba(255,90,0,0.3)]">
+      <div class="inline-flex items-center gap-2 bg-[#ff6600] text-black px-6 py-2 rounded-none text-xs font-black mb-8 tracking-[0.3em] shadow-[0_0_15px_rgba(255,90,0,0.3)]">
         <i class="fa-solid fa-flag text-xs"></i>
         <span>SOUTHERN MILES • GUIDED BY PASSION</span>
       </div>
@@ -93,7 +93,7 @@
         <p class="text-md text-gray-400 font-medium leading-relaxed tracking-wide mb-6 normal-case">
           Southern Miles Touring is a premium adventure touring company offering end-to-end curated touring experiences for motorcycle enthusiasts, car enthusiasts, families, and travel communities across India. Founded by passionate and experienced tourers, we specialize in guided motorcycle and car expeditions, while also offering custom-quoted MPV and group touring packages for families, riding clubs, and automotive communities. From expert tour captains, backup support, medical and mechanic assistance, to professional media coverage and handpicked luxury stays, every detail is seamlessly managed so you can focus purely on the journey. Blending adventure, nature, wilderness, and premium hospitality, Southern Miles Touring delivers experiences that are immersive, effortless, and truly unforgettable. 
         </p>
-        <p class="text-sm text-[#ff5a00] font-bold tracking-widest uppercase">
+        <p class="text-sm text-[#ff6600] font-bold tracking-widest uppercase">
           Adventure, Wilderness, and Premium Hospitality. Blended perfectly.
         </p>
       </div>
@@ -103,7 +103,7 @@
         
         <!-- Item 1 -->
         <div class="group p-10 bg-black/80 hover:bg-[#0f0f0f] transition-all text-center">
-          <i class="fa-solid fa-route text-5xl text-[#ff5a00] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
+          <i class="fa-solid fa-route text-5xl text-[#ff6600] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
           <div class="text-4xl font-black text-white mb-1 tracking-tighter leading-none">
             50+
           </div>
@@ -114,7 +114,7 @@
 
         <!-- Item 2 -->
         <div class="group p-10 bg-black/80 hover:bg-[#0f0f0f] transition-all text-center">
-          <i class="fa-solid fa-bed text-5xl text-[#ff5a00] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
+          <i class="fa-solid fa-bed text-5xl text-[#ff6600] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
           <div class="text-4xl font-black text-white mb-1 tracking-tighter leading-none">
             25+
           </div>
@@ -125,7 +125,7 @@
 
         <!-- Item 3 -->
         <div class="group p-10 bg-black/80 hover:bg-[#0f0f0f] transition-all text-center">
-          <i class="fa-solid fa-utensils text-5xl text-[#ff5a00] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
+          <i class="fa-solid fa-utensils text-5xl text-[#ff6600] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
           <div class="text-4xl font-black text-white mb-1 tracking-tighter leading-none">
             100+
           </div>
@@ -136,7 +136,7 @@
 
         <!-- Item 4 -->
         <div class="group p-10 bg-black/80 hover:bg-[#0f0f0f] transition-all text-center">
-          <i class="fa-solid fa-hand-fist text-5xl text-[#ff5a00] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
+          <i class="fa-solid fa-hand-fist text-5xl text-[#ff6600] mx-auto mb-6 transition-transform group-hover:scale-110 inline-block"></i>
           <div class="text-4xl font-black text-white mb-1 tracking-tighter leading-none">
             24/7
           </div>
@@ -164,7 +164,7 @@
         <p class="text-sm md:text-base text-gray-400 font-bold max-w-2xl mx-auto tracking-[0.2em] leading-loose">
           TWO/FOUR WHEELER PACKAGES TAILORED FOR MODERN ADVENTURES. ENDURANCE, SKILL, AND PRECISION PLANNING.
         </p>
-        <div class="w-12 h-1 bg-[#ff5a00] mx-auto mt-6 shadow-[0_0_10px_#ff5a00]"></div>
+        <div class="w-12 h-1 bg-[#ff6600] mx-auto mt-6 shadow-[0_0_10px_#ff6600]"></div>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -229,18 +229,18 @@
                 $price_string  = esc_html($ride_price);
                 $badge_text    = 'OPENS SOON';
 
-                $card_border_class  = 'border-[#ff5a00] bg-[#0d0d0d] shadow-[0_0_20px_rgba(255,90,0,0.15)]';
+                $card_border_class  = 'border-[#ff6600] bg-[#0d0d0d] shadow-[0_0_20px_rgba(255,90,0,0.15)]';
                 $image_filter_class = 'grayscale-0 brightness-100 scale-100 group-hover:scale-105';
-                $title_color_class  = 'text-[#ff5a00]';
+                $title_color_class  = 'text-[#ff6600]';
                 $is_tentative       = false;
               } else {
                 $date_string   = 'TBD';
                 $price_string  = '';
                 $badge_text    = 'UPCOMING';
 
-                $card_border_class  = 'border-white/10 hover:border-[#ff5a00]/40 hover:bg-[#0d0d0d]';
+                $card_border_class  = 'border-white/10 hover:border-[#ff6600]/40 hover:bg-[#0d0d0d]';
                 $image_filter_class = 'grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 scale-100 group-hover:scale-105';
-                $title_color_class  = 'group-hover:text-[#ff5a00]';
+                $title_color_class  = 'group-hover:text-[#ff6600]';
                 $is_tentative       = true;
               }
         ?>
@@ -261,7 +261,7 @@
             <!-- Vignette top overlay for crisp badge readability -->
             <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none"></div>
             
-            <div class="absolute top-0 left-0 bg-[#ff5a00] text-black text-[10px] font-black px-4 py-1.5 tracking-widest shadow-md">
+            <div class="absolute top-0 left-0 bg-[#ff6600] text-black text-[10px] font-black px-4 py-1.5 tracking-widest shadow-md">
               <?php echo esc_html($badge_text); ?>
             </div>
           </div>
@@ -275,13 +275,13 @@
             <!-- Route Specifications Metadata Block -->
             <div class="space-y-3 mb-6 text-[10px] tracking-widest text-gray-400 font-bold">
               <div class="flex items-center gap-3 transition-colors group-hover:text-gray-300">
-                <span class="text-[#ff5a00] w-4 text-center"><i class="fas fa-calendar-alt text-xs"></i></span>
+                <span class="text-[#ff6600] w-4 text-center"><i class="fas fa-calendar-alt text-xs"></i></span>
                 <span>
                   <?php echo esc_html($date_string); ?>
                 </span>
               </div>
               <div class="flex items-center gap-3 transition-colors group-hover:text-gray-300">
-                <span class="text-[#ff5a00] w-4 text-center"><i class="fas fa-map-marker-alt text-xs"></i></span>
+                <span class="text-[#ff6600] w-4 text-center"><i class="fas fa-map-marker-alt text-xs"></i></span>
                 <span><?php echo $distance_kms ? esc_html($distance_kms) : '0'; ?> KMS</span>
               </div>
             </div>
@@ -309,7 +309,7 @@
 
               <?php if (!$is_tentative) : ?>
               <a href="<?php echo esc_url(get_permalink($current_ride_id)); ?>" class="inline-block group/btn">
-                <button class="bg-[#ff5a00] hover:bg-white text-black px-5 py-2.5 text-[10px] font-black tracking-widest transition-all duration-300 flex items-center gap-2 transform active:scale-95 shadow-md">
+                <button class="bg-[#ff6600] hover:bg-white text-black px-5 py-2.5 text-[10px] font-black tracking-widest transition-all duration-300 flex items-center gap-2 transform active:scale-95 shadow-md">
                   <span>LEARN MORE</span>
                   <span class="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                 </button>
@@ -337,13 +337,13 @@
     <div class="max-w-7xl mx-auto px-4">
       
       <!-- Callout Box Container -->
-      <div class="bg-white text-black p-8 md:p-16 rounded-none border-4 md:border-8 border-[#ff5a00] text-center relative overflow-hidden shadow-[0_0_50px_rgba(255,90,0,0.2)]">
+      <div class="bg-white text-black p-8 md:p-16 rounded-none border-4 md:border-8 border-[#ff6600] text-center relative overflow-hidden shadow-[0_0_50px_rgba(255,90,0,0.2)]">
         
         <!-- Diagonal Pattern Overlay Texture -->
         <div class="absolute inset-0 bg-[linear-gradient(45deg,#00000008_25%,transparent_25%,transparent_50%,#00000008_50%,#00000008_75%,transparent_75%,transparent)] bg-[size:1rem_1rem] pointer-events-none"></div>
 
         <div class="relative z-10 max-w-5xl mx-auto">
-          <div class="inline-flex items-center gap-2 bg-black text-[#ff5a00] px-6 py-2 rounded-none text-xs font-black mb-8 tracking-[0.3em] uppercase shadow-lg">
+          <div class="inline-flex items-center gap-2 bg-black text-[#ff6600] px-6 py-2 rounded-none text-xs font-black mb-8 tracking-[0.3em] uppercase shadow-lg">
             <i class="fa-solid fa-layer-group text-xs"></i>
             <span>CURATED EXPERIENCES FOR EVERY GROUP</span>
           </div>
@@ -360,42 +360,42 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 text-left">
             
             <div class="border-4 border-black p-8 bg-white hover:bg-black hover:text-white transition-all duration-300 group">
-              <h3 class="text-2xl font-black uppercase mb-4 group-hover:text-[#ff5a00] transition-colors">Motorcycle Tours</h3>
+              <h3 class="text-2xl font-black uppercase mb-4 group-hover:text-[#ff6600] transition-colors">Motorcycle Tours</h3>
               <p class="text-sm font-bold tracking-wide uppercase leading-relaxed text-gray-800 group-hover:text-gray-300 transition-colors">
                 Epic rides through winding roads, mountain trails, coastlines, and hidden destinations.
               </p>
             </div>
 
             <div class="border-4 border-black p-8 bg-white hover:bg-black hover:text-white transition-all duration-300 group">
-              <h3 class="text-2xl font-black uppercase mb-4 group-hover:text-[#ff5a00] transition-colors">Luxury Road Trips</h3>
+              <h3 class="text-2xl font-black uppercase mb-4 group-hover:text-[#ff6600] transition-colors">Luxury Road Trips</h3>
               <p class="text-sm font-bold tracking-wide uppercase leading-relaxed text-gray-800 group-hover:text-gray-300 transition-colors">
                 Premium car & MPV journeys designed for comfort, exploration, and unforgettable drives.
               </p>
             </div>
 
             <div class="border-4 border-black p-8 bg-white hover:bg-black hover:text-white transition-all duration-300 group">
-              <h3 class="text-2xl font-black uppercase mb-4 group-hover:text-[#ff5a00] transition-colors">Corporate Retreats</h3>
+              <h3 class="text-2xl font-black uppercase mb-4 group-hover:text-[#ff6600] transition-colors">Corporate Retreats</h3>
               <p class="text-sm font-bold tracking-wide uppercase leading-relaxed text-gray-800 group-hover:text-gray-300 transition-colors">
                 Team outings, offsites, and curated experiences built to recharge and reconnect.
               </p>
             </div>
 
             <div class="border-4 border-black p-8 bg-white hover:bg-black hover:text-white transition-all duration-300 group">
-              <h3 class="text-2xl font-black uppercase mb-4 group-hover:text-[#ff5a00] transition-colors">Family Escapes</h3>
+              <h3 class="text-2xl font-black uppercase mb-4 group-hover:text-[#ff6600] transition-colors">Family Escapes</h3>
               <p class="text-sm font-bold tracking-wide uppercase leading-relaxed text-gray-800 group-hover:text-gray-300 transition-colors">
                 Relaxed journeys with handpicked stays, scenic routes, and experiences for all ages.
               </p>
             </div>
 
             <div class="border-4 border-black p-8 bg-white hover:bg-black hover:text-white transition-all duration-300 group">
-              <h3 class="text-2xl font-black uppercase mb-4 group-hover:text-[#ff5a00] transition-colors">Kitty & Group Trips</h3>
+              <h3 class="text-2xl font-black uppercase mb-4 group-hover:text-[#ff6600] transition-colors">Kitty & Group Trips</h3>
               <p class="text-sm font-bold tracking-wide uppercase leading-relaxed text-gray-800 group-hover:text-gray-300 transition-colors">
                 Fun-filled getaways crafted for friends, social groups, celebrations, and reunions.
               </p>
             </div>
 
             <div class="border-4 border-black p-8 bg-white hover:bg-black hover:text-white transition-all duration-300 group">
-              <h3 class="text-2xl font-black uppercase mb-4 group-hover:text-[#ff5a00] transition-colors">Staycations & Workations</h3>
+              <h3 class="text-2xl font-black uppercase mb-4 group-hover:text-[#ff6600] transition-colors">Staycations & Workations</h3>
               <p class="text-sm font-bold tracking-wide uppercase leading-relaxed text-gray-800 group-hover:text-gray-300 transition-colors">
                 Balance productivity and relaxation with serene stays and thoughtfully planned escapes.
               </p>
@@ -407,7 +407,7 @@
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
               href="<?php echo esc_url(home_url('/contact')); ?>" 
-              class="w-full sm:w-auto bg-black text-white hover:bg-[#ff5a00] hover:text-black px-12 md:px-16 py-6 rounded-none text-sm md:text-base font-black tracking-[0.2em] transition-all duration-300 uppercase flex items-center justify-center gap-4 group shadow-2xl"
+              class="w-full sm:w-auto bg-black text-white hover:bg-[#ff6600] hover:text-black px-12 md:px-16 py-6 rounded-none text-sm md:text-base font-black tracking-[0.2em] transition-all duration-300 uppercase flex items-center justify-center gap-4 group shadow-2xl"
             >
               <span>PLAN YOUR EXPERIENCE NOW</span>
               <i class="fa-solid fa-arrow-right transform group-hover:translate-x-2 transition-transform duration-300"></i>

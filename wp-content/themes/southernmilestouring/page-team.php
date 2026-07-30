@@ -5,7 +5,7 @@
   get_header(); 
 ?>
     <div class="bg-black">
-      <section class="relative h-[60vh] md:h-[80vh] overflow-hidden bg-black border-b-4 border-[#ff5a00] group">
+      <section class="relative h-[60vh] md:h-[80vh] overflow-hidden bg-black border-b-4 border-[#ff6600] group">
         <div
           class="absolute inset-0 grayscale brightness-50 contrast-125 group-hover:grayscale-0 transition-all duration-1000 bg-cover bg-center bg-no-repeat"
           style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>');"
@@ -15,7 +15,7 @@
           <h1 class="text-4xl md:text-6xl lg:text-8xl font-black mb-8 leading-[0.9] tracking-tighter">
             The Avengers!
           </h1>
-          <div class="w-24 h-2 bg-[#ff5a00] mb-8"></div>
+          <div class="w-24 h-2 bg-[#ff6600] mb-8"></div>
           <p class="text-sm md:text-lg font-bold tracking-[0.3em] max-w-2xl mx-auto text-gray-300 leading-relaxed">
             Meet the incredible super-heroes behind Southern Miles Touring.
           </p>
@@ -62,7 +62,7 @@
                   ? 'md:col-span-2 md:mx-auto md:w-full md:max-w-[calc(50%-1rem)]' 
                   : '';
             ?>
-            <div class="group bg-[#111] border border-white/10 rounded-none overflow-hidden hover:border-[#ff5a00] transition-colors duration-500 <?php echo esc_attr($center_classes); ?>">
+            <div class="group bg-[#111] border border-white/10 rounded-none overflow-hidden hover:border-[#ff6600] transition-colors duration-500 <?php echo esc_attr($center_classes); ?>">
               <div class="grid lg:grid-cols-2 h-full">
                 <div class="relative overflow-hidden aspect-square lg:aspect-auto">
                 <?php if (has_post_thumbnail()) : ?>
@@ -74,7 +74,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder.png" alt="<?php the_title_attribute(); ?>" class="w-full h-full object-cover grayscale">
                 <?php endif; ?>
                   <?php if (!empty($rides_led)) : ?>
-                  <div class="absolute top-0 left-0 bg-[#ff5a00] text-black px-4 py-2 text-xs font-black tracking-widest uppercase">
+                  <div class="absolute top-0 left-0 bg-[#ff6600] text-black px-4 py-2 text-xs font-black tracking-widest uppercase">
                     <?php echo esc_html($rides_led); ?>+ RIDES LED
                   </div>
                   <?php endif; ?>
@@ -83,7 +83,7 @@
                 <div class="p-8 flex flex-col justify-between">
                   <div>
                     <?php if (!empty($role)) : ?>
-                    <div class="text-xs font-black text-[#ff5a00] tracking-[0.2em] mb-2 uppercase">
+                    <div class="text-xs font-black text-[#ff6600] tracking-[0.2em] mb-2 uppercase">
                       <?php echo esc_html($role); ?>
                     </div>
                     <?php endif; ?>
@@ -98,19 +98,19 @@
                   <!-- Social Links -->
                   <div class="flex items-center space-x-2">
                     <?php if (!empty($whatsapp_url)) : ?>
-                    <a href="https://wa.me/91<?php echo $whatsapp_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
+                    <a href="https://wa.me/91<?php echo $whatsapp_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff6600] hover:text-black transition-all duration-300">
                       <i class="fa-brands fa-whatsapp text-lg"></i>
                     </a>
                     <?php endif; ?>
                     
                     <?php if (!empty($instagram_url)) : ?>
-                    <a href="https://instagram.com/<?php echo $instagram_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
+                    <a href="https://instagram.com/<?php echo $instagram_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff6600] hover:text-black transition-all duration-300">
                       <i class="fa-brands fa-instagram text-lg"></i>
                     </a>
                     <?php endif; ?>
                     
                     <?php if (!empty($youtube_url)) : ?>
-                    <a href="https://youtube.com/@<?php echo $youtube_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
+                    <a href="https://youtube.com/@<?php echo $youtube_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff6600] hover:text-black transition-all duration-300">
                       <i class="fa-brands fa-youtube text-lg"></i>
                     </a>
                     <?php endif; ?>
@@ -128,7 +128,7 @@
           ?>
 
           <div class="text-center mt-24 px-4">
-            <div class="bg-white text-black p-16 md:p-24 rounded-none border-8 border-[#ff5a00] relative overflow-hidden">
+            <div class="bg-white text-black p-16 md:p-24 rounded-none border-8 border-[#ff6600] relative overflow-hidden">
               <div class="absolute inset-0 opacity-5 pointer-events-none bg-[url('https://www.transparenttextures.com')]"></div>
               <div class="relative z-10">
                 <h2 class="text-5xl md:text-7xl font-black mb-6 tracking-tighter uppercase leading-none">
@@ -140,7 +140,7 @@
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                   <a 
                     href="<?php echo home_url('/expeditions'); ?>" 
-                    class="bg-black text-white hover:bg-[#ff5a00] hover:text-black px-12 py-6 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase border-2 border-black"
+                    class="bg-black text-white hover:bg-[#ff6600] hover:text-black px-12 py-6 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase border-2 border-black"
                   >
                     VIEW UPCOMING EXPEDITIONS
                   </a>

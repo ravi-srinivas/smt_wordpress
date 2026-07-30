@@ -4,10 +4,10 @@
   */
   get_header(); 
 ?>
-<div class="bg-black text-white selection:bg-[#ff5a00] selection:text-black">
+<div class="bg-black text-white selection:bg-[#ff6600] selection:text-black">
 
   <!-- ================= HERO SECTION ================= -->
-  <section class="relative h-[60vh] md:h-[80vh] overflow-hidden bg-black border-b-4 border-[#ff5a00] group select-none">
+  <section class="relative h-[60vh] md:h-[80vh] overflow-hidden bg-black border-b-4 border-[#ff6600] group select-none">
     
     <!-- Background Hero Image -->
     <div
@@ -20,13 +20,13 @@
     <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
 
     <!-- Radar Sweep Line Effect -->
-    <div class="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#ff5a00]/40 to-transparent animate-[radar_6s_ease-in-out_infinite] pointer-events-none"></div>
+    <div class="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#ff6600]/40 to-transparent animate-[radar_6s_ease-in-out_infinite] pointer-events-none"></div>
 
     <!-- Hero Content Block -->
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 max-w-5xl mx-auto uppercase tracking-tighter">
       
       <!-- Top Pill Badge -->
-      <div class="inline-flex items-center gap-2 bg-black/80 border border-[#ff5a00]/40 text-[#ff5a00] px-4 py-1.5 rounded-none text-[10px] md:text-xs font-black tracking-widest mb-6 shadow-2xl backdrop-blur-sm">
+      <div class="inline-flex items-center gap-2 bg-black/80 border border-[#ff6600]/40 text-[#ff6600] px-4 py-1.5 rounded-none text-[10px] md:text-xs font-black tracking-widest mb-6 shadow-2xl backdrop-blur-sm">
         <i class="fa-solid fa-headset text-xs animate-pulse"></i>
         <span>24/7 HELPLINE</span>
       </div>
@@ -35,7 +35,7 @@
         PLAN YOUR ROUTE
       </h1>
       
-      <div class="w-24 h-2 bg-[#ff5a00] mb-8 group-hover:w-40 transition-all duration-500 shadow-[0_0_15px_#ff5a00]"></div>
+      <div class="w-24 h-2 bg-[#ff6600] mb-8 group-hover:w-40 transition-all duration-500 shadow-[0_0_15px_#ff6600]"></div>
       
       <p class="text-sm md:text-lg font-bold tracking-[0.3em] max-w-2xl mx-auto text-gray-300 leading-relaxed drop-shadow">
         Drop us a message and we'll get back to you soon!
@@ -45,7 +45,7 @@
 
     <!-- Corner Tactical HUD Details -->
     <div class="absolute bottom-6 right-6 hidden md:flex items-center gap-3 border border-white/20 px-4 py-2 text-[10px] font-open-sans tracking-widest text-white/50 backdrop-blur-md bg-black/40">
-      <span class="w-2 h-2 rounded-full bg-[#ff5a00] animate-pulse"></span>
+      <span class="w-2 h-2 rounded-full bg-[#ff6600] animate-pulse"></span>
       <span>SOUTHERN MILES TOURING / EST 2026</span>
     </div>
 
@@ -60,7 +60,7 @@
       <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
 
       <!-- 2. Dynamic Topography Lines SVG -->
-      <svg class="absolute inset-0 w-full h-full opacity-10 text-[#ff5a00]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <svg class="absolute inset-0 w-full h-full opacity-10 text-[#ff6600]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
         <defs>
           <pattern id="topo-lines-contact" width="400" height="400" patternUnits="userSpaceOnUse">
             <path d="M0,100 Q100,50 200,100 T400,100 M0,200 Q100,150 200,200 T400,200 M0,300 Q100,250 200,300 T400,300" fill="none" stroke="currentColor" stroke-width="1.5" class="animate-[pulse_6s_ease-in-out_infinite]" />
@@ -70,7 +70,7 @@
       </svg>
 
       <!-- 3. Sweeping Data Stream Overlay Lines -->
-      <div class="absolute top-1/4 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#ff5a00]/30 to-transparent animate-[stream_8s_linear_infinite]"></div>
+      <div class="absolute top-1/4 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#ff6600]/30 to-transparent animate-[stream_8s_linear_infinite]"></div>
       <div class="absolute bottom-1/3 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent animate-[stream_12s_linear_infinite_3s]"></div>
     </div>
 
@@ -79,10 +79,10 @@
       
       <!-- Top Response Banner Block -->
       <div class="text-center bg-[#0a0a0a] border border-white/10 p-12 lg:p-20 relative overflow-hidden shadow-2xl backdrop-blur-md">
-        <div class="absolute -top-12 -left-12 w-24 h-24 border-t-2 border-l-2 border-[#ff5a00]/40 pointer-events-none"></div>
-        <div class="absolute -bottom-12 -right-12 w-24 h-24 border-b-2 border-r-2 border-[#ff5a00]/40 pointer-events-none"></div>
+        <div class="absolute -top-12 -left-12 w-24 h-24 border-t-2 border-l-2 border-[#ff6600]/40 pointer-events-none"></div>
+        <div class="absolute -bottom-12 -right-12 w-24 h-24 border-b-2 border-r-2 border-[#ff6600]/40 pointer-events-none"></div>
 
-        <div class="inline-flex items-center gap-2 bg-[#ff5a00] text-black px-8 py-3 rounded-none text-xs font-black mb-10 tracking-[0.3em] uppercase shadow-[0_0_20px_rgba(255,90,0,0.4)]">
+        <div class="inline-flex items-center gap-2 bg-[#ff6600] text-black px-8 py-3 rounded-none text-xs font-black mb-10 tracking-[0.3em] uppercase shadow-[0_0_20px_rgba(255,90,0,0.4)]">
           <i class="fa-solid fa-clock text-xs"></i>
           <span>RESPONSE WITHIN 2 HOURS</span>
         </div>
@@ -92,7 +92,7 @@
         </h1>
         
         <p class="text-sm md:text-lg font-bold text-gray-400 max-w-2xl mx-auto tracking-widest uppercase">
-          READY TO CONQUER INDIA'S ROADS? <br/> OUR RIDE CAPTAINS ARE <span class="text-[#ff5a00] font-black">STANDING BY.</span>
+          READY TO CONQUER INDIA'S ROADS? <br/> OUR RIDE CAPTAINS ARE <span class="text-[#ff6600] font-black">STANDING BY.</span>
         </p>
       </div>
 
@@ -104,10 +104,10 @@
           
           <div class="p-10 border-b border-white/10 flex items-center justify-between">
             <h2 class="text-3xl font-black text-white flex items-center tracking-tighter uppercase">
-              <i class="fas fa-map-marker-alt text-[#ff5a00] mr-4 animate-bounce"></i>
+              <i class="fas fa-map-marker-alt text-[#ff6600] mr-4 animate-bounce"></i>
               BASE CAMP HQ
             </h2>
-            <span class="text-[10px] font-open-sans text-[#ff5a00] border border-[#ff5a00]/30 px-3 py-1">HQ ONLINE</span>
+            <span class="text-[10px] font-open-sans text-[#ff6600] border border-[#ff6600]/30 px-3 py-1">HQ ONLINE</span>
           </div>
 
           <div class="divide-y divide-white/10">
@@ -133,7 +133,7 @@
             
             <!-- Location -->
             <div class="flex items-start space-x-8 p-10 group hover:bg-black transition-all">
-              <div class="w-16 h-16 bg-white text-black rounded-none flex items-center justify-center flex-shrink-0 group-hover:bg-[#ff5a00] transition-colors shadow-lg">
+              <div class="w-16 h-16 bg-white text-black rounded-none flex items-center justify-center flex-shrink-0 group-hover:bg-[#ff6600] transition-colors shadow-lg">
                 <i class="fa-solid fa-location-dot text-3xl"></i>
               </div>
               <div class="flex-1 pt-1">
@@ -146,20 +146,20 @@
             
             <!-- Phone Helpline -->
             <div class="flex items-start space-x-8 p-10 group hover:bg-black transition-all">
-              <div class="w-16 h-16 bg-white text-black rounded-none flex items-center justify-center flex-shrink-0 group-hover:bg-[#ff5a00] transition-colors shadow-lg">
+              <div class="w-16 h-16 bg-white text-black rounded-none flex items-center justify-center flex-shrink-0 group-hover:bg-[#ff6600] transition-colors shadow-lg">
                 <i class="fa-solid fa-phone text-3xl"></i>
               </div>
               <div class="flex-1 pt-1">
                 <h4 class="text-xs font-black text-gray-500 tracking-[0.2em] mb-2 uppercase">24/7 HELPLINE</h4>
                 <a 
                   href="tel:+919113230676" 
-                  class="text-2xl font-black text-white hover:text-[#ff5a00] transition-colors tracking-tighter block"
+                  class="text-2xl font-black text-white hover:text-[#ff6600] transition-colors tracking-tighter block"
                 >
                   +91-9113230676
                 </a>
                 <a 
                   href="tel:+919019450676" 
-                  class="text-2xl font-black text-white hover:text-[#ff5a00] transition-colors tracking-tighter block mt-1"
+                  class="text-2xl font-black text-white hover:text-[#ff6600] transition-colors tracking-tighter block mt-1"
                 >
                   +91-9019450676
                 </a>
@@ -168,12 +168,12 @@
         
             <!-- Email -->
             <div class="flex items-start space-x-8 p-10 group hover:bg-black transition-all">
-              <div class="w-16 h-16 bg-white text-black rounded-none flex items-center justify-center flex-shrink-0 group-hover:bg-[#ff5a00] transition-colors shadow-lg">
+              <div class="w-16 h-16 bg-white text-black rounded-none flex items-center justify-center flex-shrink-0 group-hover:bg-[#ff6600] transition-colors shadow-lg">
                 <i class="fa-solid fa-envelope text-3xl"></i>
               </div>
               <div class="flex-1 pt-1">
                 <h4 class="text-xs font-black text-gray-500 tracking-[0.2em] mb-2 uppercase">EMAIL US</h4>
-                <a href="mailto:southernmilestouring@gmail.com" class="text-xl md:text-xl font-black text-white hover:text-[#ff5a00] transition-colors tracking-tighter break-all">
+                <a href="mailto:southernmilestouring@gmail.com" class="text-xl md:text-xl font-black text-white hover:text-[#ff6600] transition-colors tracking-tighter break-all">
                   southernmilestouring@gmail.com
                 </a>
               </div>
@@ -188,21 +188,21 @@
           <!-- Quick Action Buttons Block -->
           <div class="bg-[#0a0a0a] border border-white/10 p-8 rounded-none">
             <h3 class="text-xl font-black text-white mb-8 flex items-center uppercase tracking-tighter">
-              <i class="fa-solid fa-bolt text-[#ff5a00] mr-4"></i>
+              <i class="fa-solid fa-bolt text-[#ff6600] mr-4"></i>
               QUICK ACTIONS
             </h3>
             <div class="grid sm:grid-cols-2 gap-0 border border-white/10 divide-x divide-white/10">
-              <a href="<?php echo esc_url(home_url('/expeditions')); ?>" class="group flex items-center justify-center space-x-3 p-6 bg-black hover:bg-[#ff5a00] transition-all">
+              <a href="<?php echo esc_url(home_url('/expeditions')); ?>" class="group flex items-center justify-center space-x-3 p-6 bg-black hover:bg-[#ff6600] transition-all">
                 <span class="font-black text-xs tracking-[0.2em] text-white group-hover:text-black uppercase">View Expeditions</span>
               </a>
-              <a href="<?php echo esc_url(home_url('/about#team')); ?>" class="group flex items-center justify-center space-x-3 p-6 bg-black hover:bg-[#ff5a00] transition-all">
+              <a href="<?php echo esc_url(home_url('/about#team')); ?>" class="group flex items-center justify-center space-x-3 p-6 bg-black hover:bg-[#ff6600] transition-all">
                 <span class="font-black text-xs tracking-[0.2em] text-white group-hover:text-black uppercase">Meet The Team</span>
               </a>
             </div>
           </div>
 
           <!-- Form Callout Container -->
-          <div class="bg-white text-black p-8 md:p-14 rounded-none border-4 md:border-8 border-[#ff5a00] relative overflow-hidden shadow-[0_0_40px_rgba(255,90,0,0.15)]">
+          <div class="bg-white text-black p-8 md:p-14 rounded-none border-4 md:border-8 border-[#ff6600] relative overflow-hidden shadow-[0_0_40px_rgba(255,90,0,0.15)]">
             
             <!-- Diagonal Caution Texture Overlay -->
             <div class="absolute inset-0 bg-[linear-gradient(45deg,#00000008_25%,transparent_25%,transparent_50%,#00000008_50%,#00000008_75%,transparent_75%,transparent)] bg-[size:1rem_1rem] pointer-events-none"></div>
@@ -238,7 +238,7 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-0 border border-white/10 divide-x divide-y md:divide-y-0 divide-white/10 bg-[#0a0a0a] shadow-2xl">
         
         <div class="p-10 group hover:bg-black transition-all text-center">
-          <div class="text-4xl mb-4 text-[#ff5a00] group-hover:scale-110 transition-transform inline-block">
+          <div class="text-4xl mb-4 text-[#ff6600] group-hover:scale-110 transition-transform inline-block">
             <i class="fa-solid fa-motorcycle"></i>
           </div>
           <div class="text-xs font-black text-white tracking-[0.3em] uppercase">
@@ -247,7 +247,7 @@
         </div>
 
         <div class="p-10 group hover:bg-black transition-all text-center">
-          <div class="text-4xl mb-4 text-[#ff5a00] group-hover:scale-110 transition-transform inline-block">
+          <div class="text-4xl mb-4 text-[#ff6600] group-hover:scale-110 transition-transform inline-block">
             <i class="fa-solid fa-bed"></i>
           </div>
           <div class="text-xs font-black text-white tracking-[0.3em] uppercase">
@@ -256,7 +256,7 @@
         </div>
 
         <div class="p-10 group hover:bg-black transition-all text-center">
-          <div class="text-4xl mb-4 text-[#ff5a00] group-hover:scale-110 transition-transform inline-block">
+          <div class="text-4xl mb-4 text-[#ff6600] group-hover:scale-110 transition-transform inline-block">
             <i class="fa-solid fa-utensils"></i>
           </div>
           <div class="text-xs font-black text-white tracking-[0.3em] uppercase">
@@ -265,7 +265,7 @@
         </div>
 
         <div class="p-10 group hover:bg-black transition-all text-center">
-          <div class="text-4xl mb-4 text-[#ff5a00] group-hover:scale-110 transition-transform inline-block">
+          <div class="text-4xl mb-4 text-[#ff6600] group-hover:scale-110 transition-transform inline-block">
             <i class="fa-solid fa-bolt"></i>
           </div>
           <div class="text-xs font-black text-white tracking-[0.3em] uppercase">

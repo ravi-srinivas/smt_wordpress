@@ -4,10 +4,10 @@
   */
   get_header(); 
 ?>
-<div class="bg-black text-white selection:bg-[#ff5a00] selection:text-black">
+<div class="bg-black text-white selection:bg-[#ff6600] selection:text-black">
 
   <!-- ================= HERO SECTION ================= -->
-  <section class="relative h-[60vh] md:h-[80vh] overflow-hidden bg-black border-b-4 border-[#ff5a00] group select-none">
+  <section class="relative h-[60vh] md:h-[80vh] overflow-hidden bg-black border-b-4 border-[#ff6600] group select-none">
     
     <!-- Background Hero Image -->
     <div
@@ -20,13 +20,13 @@
     <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
 
     <!-- Radar Sweep Line Effect -->
-    <div class="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#ff5a00]/40 to-transparent animate-[radar_6s_ease-in-out_infinite] pointer-events-none"></div>
+    <div class="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#ff6600]/40 to-transparent animate-[radar_6s_ease-in-out_infinite] pointer-events-none"></div>
 
     <!-- Hero Content Block -->
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 max-w-5xl mx-auto uppercase tracking-tighter">
       
       <!-- Top Pill Badge -->
-      <div class="inline-flex items-center gap-2 bg-black/80 border border-[#ff5a00]/40 text-[#ff5a00] px-4 py-1.5 rounded-none text-[10px] md:text-xs font-black tracking-widest mb-6 shadow-2xl backdrop-blur-sm">
+      <div class="inline-flex items-center gap-2 bg-black/80 border border-[#ff6600]/40 text-[#ff6600] px-4 py-1.5 rounded-none text-[10px] md:text-xs font-black tracking-widest mb-6 shadow-2xl backdrop-blur-sm">
         <i class="fa-solid fa-compass text-xs animate-spin-slow"></i>
         <span>THE SOUTHERN MILES STORY</span>
       </div>
@@ -35,7 +35,7 @@
         KNOW US!
       </h1>
       
-      <div class="w-24 h-2 bg-[#ff5a00] mb-8 group-hover:w-40 transition-all duration-500 shadow-[0_0_15px_#ff5a00]"></div>
+      <div class="w-24 h-2 bg-[#ff6600] mb-8 group-hover:w-40 transition-all duration-500 shadow-[0_0_15px_#ff6600]"></div>
       
       <p class="text-xs md:text-base font-bold tracking-[0.25em] max-w-2xl mx-auto text-gray-300 leading-relaxed drop-shadow">
         How a bunch of passionate tourers became Southern Miles Touring!
@@ -45,7 +45,7 @@
 
     <!-- Corner Tactical HUD Details -->
     <div class="absolute bottom-6 right-6 hidden md:flex items-center gap-3 border border-white/20 px-4 py-2 text-[10px] font-open-sans tracking-widest text-white/50 backdrop-blur-md bg-black/40">
-      <span class="w-2 h-2 rounded-full bg-[#ff5a00] animate-pulse"></span>
+      <span class="w-2 h-2 rounded-full bg-[#ff6600] animate-pulse"></span>
       <span>SOUTHERN MILES TOURING / EST 2026</span>
     </div>
 
@@ -56,7 +56,7 @@
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
       <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
 
-      <svg class="absolute inset-0 w-full h-full opacity-10 text-[#ff5a00]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <svg class="absolute inset-0 w-full h-full opacity-10 text-[#ff6600]" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
         <defs>
           <pattern id="topo-lines-about" width="400" height="400" patternUnits="userSpaceOnUse">
             <path d="M0,100 Q100,50 200,100 T400,100 M0,200 Q100,150 200,200 T400,200 M0,300 Q100,250 200,300 T400,300" fill="none" stroke="currentColor" stroke-width="1.5" class="animate-[pulse_6s_ease-in-out_infinite]" />
@@ -65,12 +65,12 @@
         <rect width="100%" height="100%" fill="url(#topo-lines-about)" />
       </svg>
 
-      <div class="absolute top-1/4 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#ff5a00]/30 to-transparent animate-[stream_8s_linear_infinite]"></div>
+      <div class="absolute top-1/4 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#ff6600]/30 to-transparent animate-[stream_8s_linear_infinite]"></div>
       <div class="absolute bottom-1/4 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent animate-[stream_12s_linear_infinite_3s]"></div>
 
       <div class="absolute top-1/3 left-10 hidden md:flex items-center gap-2 opacity-25 animate-[bounce_5s_infinite]">
-        <span class="w-2 h-2 rounded-full bg-[#ff5a00] animate-ping"></span>
-        <span class="text-[9px] font-open-sans tracking-widest text-[#ff5a00]">EXPEDITION HQ // BANGALORE</span>
+        <span class="w-2 h-2 rounded-full bg-[#ff6600] animate-ping"></span>
+        <span class="text-[9px] font-open-sans tracking-widest text-[#ff6600]">EXPEDITION HQ // BANGALORE</span>
       </div>
 
       <div class="absolute bottom-1/3 right-10 hidden md:flex items-center gap-2 opacity-25 animate-[bounce_6s_infinite_1s]">
@@ -90,7 +90,7 @@
         <p class="text-base md:text-lg text-gray-400 max-w-4xl mx-auto leading-relaxed font-bold tracking-tight">
           Founded in 2026 by a group of passionate and experienced tourers, Southern Miles Touring is a premium adventure touring company built for those who seek exploration without compromise. Specializing in motorcycle tours, car expeditions, and MPV touring experiences, Southern Miles curates unforgettable journeys designed for travelers who want to focus purely on the road while every other detail is taken care of.
         </p>
-        <div class="mt-10 inline-flex items-center gap-3 bg-[#ff5a00] text-black px-8 py-4 rounded-none text-lg md:text-xl font-black tracking-wider shadow-[0_0_25px_rgba(255,90,0,0.3)] transform hover:scale-105 transition-all">
+        <div class="mt-10 inline-flex items-center gap-3 bg-[#ff6600] text-black px-8 py-4 rounded-none text-lg md:text-xl font-black tracking-wider shadow-[0_0_25px_rgba(255,90,0,0.3)] transform hover:scale-105 transition-all">
           <i class="fa-solid fa-award text-xl"></i>
           <span>500+ TOURERS SERVED | 50+ EPIC ROUTES</span>
         </div>
@@ -100,8 +100,8 @@
       <div class="grid lg:grid-cols-3 gap-0 border border-white/10 divide-y lg:divide-y-0 lg:divide-x divide-white/10 bg-black/60 backdrop-blur-md shadow-2xl">
         
         <div class="p-8 md:p-12 bg-black/70 hover:bg-[#0f0f0f] transition-all duration-300 group">
-          <i class="fa-solid fa-map-location text-5xl text-[#ff5a00] mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3 inline-block"></i>
-          <h3 class="text-2xl md:text-3xl font-black text-white mb-6 tracking-tighter uppercase group-hover:text-[#ff5a00] transition-colors">
+          <i class="fa-solid fa-map-location text-5xl text-[#ff6600] mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3 inline-block"></i>
+          <h3 class="text-2xl md:text-3xl font-black text-white mb-6 tracking-tighter uppercase group-hover:text-[#ff6600] transition-colors">
             EPIC ROUTES
           </h3>
           <p class="text-gray-400 text-sm font-bold tracking-wide leading-relaxed uppercase">
@@ -110,8 +110,8 @@
         </div>
 
         <div class="p-8 md:p-12 bg-black/70 hover:bg-[#0f0f0f] transition-all duration-300 group">
-          <i class="fa-solid fa-users text-5xl text-[#ff5a00] mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3 inline-block"></i>
-          <h3 class="text-2xl md:text-3xl font-black text-white mb-6 tracking-tighter uppercase group-hover:text-[#ff5a00] transition-colors">
+          <i class="fa-solid fa-users text-5xl text-[#ff6600] mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3 inline-block"></i>
+          <h3 class="text-2xl md:text-3xl font-black text-white mb-6 tracking-tighter uppercase group-hover:text-[#ff6600] transition-colors">
             PRO SUPPORT
           </h3>
           <p class="text-gray-400 text-sm font-bold tracking-wide leading-relaxed uppercase">
@@ -120,8 +120,8 @@
         </div>
 
         <div class="p-8 md:p-12 bg-black/70 hover:bg-[#0f0f0f] transition-all duration-300 group">
-          <i class="fa-solid fa-video text-5xl text-[#ff5a00] mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3 inline-block"></i>
-          <h3 class="text-2xl md:text-3xl font-black text-white mb-6 tracking-tighter uppercase group-hover:text-[#ff5a00] transition-colors">
+          <i class="fa-solid fa-video text-5xl text-[#ff6600] mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3 inline-block"></i>
+          <h3 class="text-2xl md:text-3xl font-black text-white mb-6 tracking-tighter uppercase group-hover:text-[#ff6600] transition-colors">
             MEDIA CREW
           </h3>
           <p class="text-gray-400 text-sm font-bold tracking-wide leading-relaxed uppercase">
@@ -143,13 +143,13 @@
             
             <div class="grid grid-cols-2 border border-white/10 divide-x divide-white/10 bg-[#0a0a0a]">
               <div class="p-6 md:p-8 text-center hover:bg-[#111] transition-colors">
-                <div class="text-4xl md:text-6xl font-black text-[#ff5a00] mb-1 tracking-tighter">50+</div>
+                <div class="text-4xl md:text-6xl font-black text-[#ff6600] mb-1 tracking-tighter">50+</div>
                 <div class="text-[10px] md:text-xs font-bold text-gray-500 tracking-[0.2em] uppercase">
                   TOUR EXPERIENCES
                 </div>
               </div>
               <div class="p-6 md:p-8 text-center hover:bg-[#111] transition-colors">
-                <div class="text-4xl md:text-6xl font-black text-[#ff5a00] mb-1 tracking-tighter">500+</div>
+                <div class="text-4xl md:text-6xl font-black text-[#ff6600] mb-1 tracking-tighter">500+</div>
                 <div class="text-[10px] md:text-xs font-bold text-gray-500 tracking-[0.2em] uppercase">
                   HAPPY TOURERS
                 </div>
@@ -171,7 +171,7 @@
               </div>
             </div>
             <!-- Overlay Corner Badge for Swiper -->
-            <div class="absolute top-4 left-4 z-20 bg-black/80 border border-[#ff5a00]/40 text-[#ff5a00] px-3 py-1 text-[9px] font-open-sans tracking-widest uppercase backdrop-blur-sm">
+            <div class="absolute top-4 left-4 z-20 bg-black/80 border border-[#ff6600]/40 text-[#ff6600] px-3 py-1 text-[9px] font-open-sans tracking-widest uppercase backdrop-blur-sm">
               THE TRIBE IN ACTION
             </div>
           </div>
@@ -186,7 +186,7 @@
         </h3>
         <div class="space-y-0 border-l border-white/10 ml-4 md:ml-0">
           <div class="flex items-center space-x-8 group mb-16 relative">
-            <div class="w-20 h-20 bg-[#ff5a00] text-black rounded-none flex items-center justify-center font-black text-2xl flex-shrink-0 z-10">
+            <div class="w-20 h-20 bg-[#ff6600] text-black rounded-none flex items-center justify-center font-black text-2xl flex-shrink-0 z-10">
               '22
             </div>
             <div class="border-b border-white/5 pb-6 w-full">
@@ -199,7 +199,7 @@
             </div>
           </div>
           <div class="flex items-center space-x-8 group mb-16 relative">
-            <div class="w-20 h-20 bg-[#ff5a00] text-black rounded-none flex items-center justify-center font-black text-2xl flex-shrink-0 z-10">
+            <div class="w-20 h-20 bg-[#ff6600] text-black rounded-none flex items-center justify-center font-black text-2xl flex-shrink-0 z-10">
               '24
             </div>
             <div class="border-b border-white/5 pb-6 w-full">
@@ -212,7 +212,7 @@
             </div>
           </div>
           <div class="flex items-center space-x-8 group mb-16 relative">
-            <div class="w-20 h-20 bg-[#ff5a00] text-black rounded-none flex items-center justify-center font-black text-2xl flex-shrink-0 z-10">
+            <div class="w-20 h-20 bg-[#ff6600] text-black rounded-none flex items-center justify-center font-black text-2xl flex-shrink-0 z-10">
               '26
             </div>
             <div class="border-b border-white/5 pb-6 w-full">
@@ -268,7 +268,7 @@
                 ? 'md:col-span-2 md:mx-auto md:w-full md:max-w-[calc(50%-1rem)]' 
                 : '';
           ?>
-          <div class="group bg-[#111] border border-white/10 rounded-none overflow-hidden hover:border-[#ff5a00] transition-colors duration-500 <?php echo esc_attr($center_classes); ?>">
+          <div class="group bg-[#111] border border-white/10 rounded-none overflow-hidden hover:border-[#ff6600] transition-colors duration-500 <?php echo esc_attr($center_classes); ?>">
             <div class="grid lg:grid-cols-2 h-full">
               <div class="relative overflow-hidden aspect-square lg:aspect-auto">
               <?php if (has_post_thumbnail()) : ?>
@@ -280,7 +280,7 @@
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder.png" alt="<?php the_title_attribute(); ?>" class="w-full h-full object-cover grayscale">
               <?php endif; ?>
                 <?php if (!empty($rides_led)) : ?>
-                <div class="absolute top-0 left-0 bg-[#ff5a00] text-black px-4 py-2 text-xs font-black tracking-widest uppercase">
+                <div class="absolute top-0 left-0 bg-[#ff6600] text-black px-4 py-2 text-xs font-black tracking-widest uppercase">
                   <?php echo esc_html($rides_led); ?>+ RIDES LED
                 </div>
                 <?php endif; ?>
@@ -289,7 +289,7 @@
               <div class="p-8 flex flex-col justify-between">
                 <div>
                   <?php if (!empty($role)) : ?>
-                  <div class="text-xs font-black text-[#ff5a00] tracking-[0.2em] mb-2 uppercase">
+                  <div class="text-xs font-black text-[#ff6600] tracking-[0.2em] mb-2 uppercase">
                     <?php echo esc_html($role); ?>
                   </div>
                   <?php endif; ?>
@@ -304,19 +304,19 @@
                 <!-- Social Links -->
                 <div class="flex items-center space-x-2">
                   <?php if (!empty($whatsapp_url)) : ?>
-                  <a href="https://wa.me/91<?php echo $whatsapp_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
+                  <a href="https://wa.me/91<?php echo $whatsapp_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff6600] hover:text-black transition-all duration-300">
                     <i class="fa-brands fa-whatsapp text-lg"></i>
                   </a>
                   <?php endif; ?>
                   
                   <?php if (!empty($instagram_url)) : ?>
-                  <a href="https://instagram.com/<?php echo $instagram_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
+                  <a href="https://instagram.com/<?php echo $instagram_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff6600] hover:text-black transition-all duration-300">
                     <i class="fa-brands fa-instagram text-lg"></i>
                   </a>
                   <?php endif; ?>
                   
                   <?php if (!empty($youtube_url)) : ?>
-                  <a href="https://youtube.com/@<?php echo $youtube_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff5a00] hover:text-black transition-all duration-300">
+                  <a href="https://youtube.com/@<?php echo $youtube_url; ?>" target="_blank" rel="noopener" class="p-3 bg-black border border-white/10 text-white hover:bg-[#ff6600] hover:text-black transition-all duration-300">
                     <i class="fa-brands fa-youtube text-lg"></i>
                   </a>
                   <?php endif; ?>
@@ -335,7 +335,7 @@
       </div>
 
       <!-- Enough About Us -->
-      <div class="relative bg-white text-black py-20 md:py-20 rounded-none text-center my-16 border-4 md:border-8 border-[#ff5a00] shadow-[0_0_40px_rgba(255,90,0,0.2)] overflow-hidden">
+      <div class="relative bg-white text-black py-20 md:py-20 rounded-none text-center my-16 border-4 md:border-8 border-[#ff6600] shadow-[0_0_40px_rgba(255,90,0,0.2)] overflow-hidden">
         
         <div class="absolute inset-0 bg-[linear-gradient(45deg,#00000008_25%,transparent_25%,transparent_50%,#00000008_50%,#00000008_75%,transparent_75%,transparent)] bg-[size:1rem_1rem] pointer-events-none"></div>
 
@@ -349,7 +349,7 @@
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="<?php echo home_url('/expeditions'); ?>" 
-              class="bg-black text-white hover:bg-[#ff5a00] hover:text-black px-12 py-6 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase border-2 border-black"
+              class="bg-black text-white hover:bg-[#ff6600] hover:text-black px-12 py-6 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase border-2 border-black"
             >
               VIEW UPCOMING EXPEDITIONS
             </a>
@@ -371,13 +371,13 @@
           Explore our blogs, view our gallery, or get a custom quote for your group expedition.
         </p>
         <div class="flex flex-col sm:flex-row gap-6 justify-center">
-          <a href="<?php echo esc_url(home_url('blog')); ?>" class="bg-[#ff5a00] text-white hover:bg-white hover:text-[#ff5a00] px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
+          <a href="<?php echo esc_url(home_url('blog')); ?>" class="bg-[#ff6600] text-white hover:bg-white hover:text-[#ff6600] px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
             READ OUR BLOG
           </a>
           <a href="<?php echo esc_url(home_url('gallery')); ?>" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
             VIEW OUR GALLERY
           </a>
-          <a href="<?php echo esc_url(home_url('contact')); ?>" class="bg-[#ff5a00] border-2 border-[#ff5a00] text-black hover:bg-transparent hover:text-[#ff5a00] px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
+          <a href="<?php echo esc_url(home_url('contact')); ?>" class="bg-[#ff6600] border-2 border-[#ff6600] text-black hover:bg-transparent hover:text-[#ff6600] px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
             CONTACT US
           </a>
         </div>

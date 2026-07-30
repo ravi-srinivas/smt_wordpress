@@ -21,7 +21,7 @@
                     class="h-12 w-auto md:h-20 object-contain"
                 >
                 <div class="flex flex-col justify-center">
-                    <h1 class="sm md:text-xl font-black text-[#ff5a00] leading-none tracking-normal">
+                    <h1 class="sm md:text-xl font-black text-[#ff6600] leading-none tracking-normal">
                         Southern Miles
                     </h1>
 
@@ -45,7 +45,7 @@
                 <a 
                     href="https://forms.gle/48NFJY4QibC5UZ9X9"
                     target="_blank"
-                    class="bg-[#ff5a00] hover:bg-white hover:text-black text-white px-8 py-3 font-bold text-lg transition-all duration-300"
+                    class="bg-[#ff6600] hover:bg-white hover:text-black text-white px-8 py-3 font-bold text-lg transition-all duration-300"
                 >
                     JOIN TRIBE
                 </a>
@@ -53,12 +53,12 @@
                     <!-- Trigger Button -->
                     <button 
                         type="button"
-                        class="flex items-center gap-2 bg-white/5 hover:bg-[#ff5a00] border border-white/10 hover:border-[#ff5a00] text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-sm"
+                        class="flex items-center gap-2 bg-white/5 hover:bg-[#ff6600] border border-white/10 hover:border-[#ff6600] text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-sm"
                     >
                         <!-- Pulsing Indicator -->
                         <span class="relative flex h-2 w-2">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff5a00] group-hover:bg-white opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2 w-2 bg-[#ff5a00] group-hover:bg-white"></span>
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff6600] group-hover:bg-white opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-[#ff6600] group-hover:bg-white"></span>
                         </span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                             <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z"/>
@@ -68,19 +68,19 @@
                     <!-- Dropdown Menu -->
                     <div class="absolute right-0 top-full hidden group-hover:flex group-focus-within:flex flex-row items-center gap-4 bg-black/90 backdrop-blur-md p-3 rounded-lg border border-white/10 shadow-xl transition-all duration-200 z-50">
                         <!-- Instagram -->
-                        <a href="https://instagram.com/<?php echo get_field('instagram', $front_page_id); ?>" target="_blank" class="hover:text-[#ff5a00] transition-colors">
+                        <a href="https://instagram.com/<?php echo get_field('instagram', $front_page_id); ?>" target="_blank" class="hover:text-[#ff6600] transition-colors">
                             <i class="fa-brands fa-instagram text-2xl"></i>
                         </a>
                         <!-- YouTube -->
-                        <a href="https://youtube.com/@<?php echo get_field('youtube', $front_page_id); ?>" target="_blank" class="hover:text-[#ff5a00] transition-colors">
+                        <a href="https://youtube.com/@<?php echo get_field('youtube', $front_page_id); ?>" target="_blank" class="hover:text-[#ff6600] transition-colors">
                             <i class="fa-brands fa-youtube text-2xl"></i>
                         </a>
                         <!-- Facebook -->
-                        <a href="https://facebook.com/<?php echo get_field('facebook', $front_page_id); ?>" target="_blank" class="hover:text-[#ff5a00] transition-colors">
+                        <a href="https://facebook.com/<?php echo get_field('facebook', $front_page_id); ?>" target="_blank" class="hover:text-[#ff6600] transition-colors">
                             <i class="fa-brands fa-facebook text-2xl"></i>
                         </a>
                         <!-- Threads -->
-                        <a href="https://www.threads.com/@<?php echo get_field('threads', $front_page_id); ?>?hl=en" target="_blank" class="hover:text-[#ff5a00] transition-colors">
+                        <a href="https://www.threads.com/@<?php echo get_field('threads', $front_page_id); ?>?hl=en" target="_blank" class="hover:text-[#ff6600] transition-colors">
                             <i class="fa-brands fa-threads text-2xl"></i>
                         </a>
                     </div>
@@ -92,7 +92,7 @@
                 <a
                     href="https://forms.gle/48NFJY4QibC5UZ9X9"
                     target="_blank"
-                    class="bg-[#ff5a00] text-white px-3 py-2.5 text-[10px] md:text-xs font-bold hover:bg-white hover:text-black transition-all whitespace-nowrap tracking-normal"
+                    class="bg-[#ff6600] text-white px-3 py-2.5 text-[10px] md:text-xs font-bold hover:bg-white hover:text-black transition-all whitespace-nowrap tracking-normal"
                 >
                     BE A MEMBER
                 </a>
@@ -134,28 +134,28 @@
                 <a
                     href="https://instagram.com/<?php echo get_field('instagram', $front_page_id); ?>"
                     target="_blank"
-                    class="flex-1 flex justify-center p-3 hover:text-[#ff5a00] transition-colors"
+                    class="flex-1 flex justify-center p-3 hover:text-[#ff6600] transition-colors"
                 >
                     <i class="fa-brands fa-instagram text-2xl"></i>
                 </a>
                 <a
                     href="https://youtube.com/@<?php echo get_field('youtube', $front_page_id); ?>"
                     target="_blank"
-                    class="flex-1 flex justify-center p-3 hover:text-[#ff5a00] transition-colors"
+                    class="flex-1 flex justify-center p-3 hover:text-[#ff6600] transition-colors"
                 >
                     <i class="fa-brands fa-youtube text-2xl"></i>
                 </a>
                 <a
                     href="https://facebook.com/<?php echo get_field('facebook', $front_page_id); ?>"
                     target="_blank"
-                    class="flex-1 flex justify-center p-3 hover:text-[#ff5a00] transition-colors"
+                    class="flex-1 flex justify-center p-3 hover:text-[#ff6600] transition-colors"
                 >
                     <i class="fa-brands fa-facebook text-2xl"></i>
                 </a>
                 <a
                     href="https://www.threads.com/@<?php echo get_field('threads', $front_page_id); ?>?hl=en"
                     target="_blank"
-                    class="flex-1 flex justify-center p-3 hover:text-[#ff5a00] transition-colors"
+                    class="flex-1 flex justify-center p-3 hover:text-[#ff6600] transition-colors"
                 >
                     <i class="fa-brands fa-threads text-2xl"></i>
                 </a>

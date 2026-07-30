@@ -103,4 +103,13 @@ add_action('admin_init', function () {
     }
 });
 
+add_shortcode('tooltip', 'acf_tooltip_shortcode');
+function acf_tooltip_shortcode($atts, $content = null) {
+    $atts = shortcode_atts(array(
+        'text' => ''
+    ), $atts, 'tooltip');
+
+    return '<span class="acf-tooltip" data-tooltip="' . esc_attr($atts['text']) . '">' . do_shortcode($content) . '</span>';
+}
+
 ?>

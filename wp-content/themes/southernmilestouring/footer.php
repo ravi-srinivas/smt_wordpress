@@ -18,7 +18,7 @@
               Southern Miles
             </h2>
 
-            <p class="text-sm text-[#ff5a00] font-bold tracking-[0.25em] mt-1">
+            <p class="text-sm text-[#ff6600] font-bold tracking-[0.25em] mt-1">
               TOURING
             </p>
           </div>
@@ -35,7 +35,7 @@
             href="https://instagram.com/<?php echo get_field('instagram', $front_page_id); ?>"
             target="_blank"
             rel="noreferrer"
-            class="p-3 border border-white/10 hover:border-[#ff5a00] hover:text-[#ff5a00] transition-all"
+            class="p-3 border border-white/10 hover:border-[#ff6600] hover:text-[#ff6600] transition-all"
           >
             <i class="fa-brands fa-instagram text-2xl"></i>
           </a>
@@ -43,7 +43,7 @@
             href="https://youtube.com/@<?php echo get_field('youtube', $front_page_id); ?>"
             target="_blank"
             rel="noreferrer"
-            class="p-3 border border-white/10 hover:border-[#ff5a00] hover:text-[#ff5a00] transition-all"
+            class="p-3 border border-white/10 hover:border-[#ff6600] hover:text-[#ff6600] transition-all"
           >
             <i class="fa-brands fa-youtube text-2xl"></i>
           </a>
@@ -51,7 +51,7 @@
             href="https://facebook.com/<?php echo get_field('facebook', $front_page_id); ?>"
             target="_blank"
             rel="noreferrer"
-            class="p-3 border border-white/10 hover:border-[#ff5a00] hover:text-[#ff5a00] transition-all"
+            class="p-3 border border-white/10 hover:border-[#ff6600] hover:text-[#ff6600] transition-all"
           >
             <i class="fa-brands fa-facebook text-2xl"></i>
           </a>
@@ -59,7 +59,7 @@
             href="https://www.threads.com/@<?php echo get_field('threads', $front_page_id); ?>?hl=en"
             target="_blank"
             rel="noreferrer"
-            class="p-3 border border-white/10 hover:border-[#ff5a00] hover:text-[#ff5a00] transition-all"
+            class="p-3 border border-white/10 hover:border-[#ff6600] hover:text-[#ff6600] transition-all"
           >
             <i class="fa-brands fa-threads text-2xl"></i>
           </a>
@@ -69,42 +69,42 @@
       <!-- QUICK LINKS -->
       <div class="md:col-span-4">
         <h4 class="text-xl font-black mb-8 flex items-center gap-3">
-          <span class="text-[#ff5a00] text-2xl"><i class="fa-solid fa-bookmark"></i></span>
+          <span class="text-[#ff6600] text-2xl"><i class="fa-solid fa-bookmark"></i></span>
           Quick Links
         </h4>
-        <div class="space-y-3">
+        <div class="space-y">
           <a
             href="<?php echo esc_url(home_url('/blog')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
           >
-            <span class="w-2 h-2 bg-[#ff5a00]"></span>
+            <span class="w-2 h-2 bg-[#ff6600]"></span>
             <span class="text-gray-400 group-hover:text-white font-bold text-sm">
               Our Blogs
             </span>
           </a>
-          <a
-            href="<?php echo esc_url(home_url('/privacy-policy')); ?>"
+          <!-- <a
+            href="<?php echo esc_url(home_url('/faq')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
           >
-            <span class="w-2 h-2 bg-[#ff5a00]"></span>
+            <span class="w-2 h-2 bg-[#ff6600]"></span>
             <span class="text-gray-400 group-hover:text-white font-bold text-sm">
-              PRIVACY POLICY
+              FAQs
             </span>
           </a>
           <a
-            href="<?php echo esc_url(home_url('/terms-conditions')); ?>"
+            href="<?php echo esc_url(home_url('/travel-tips')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
           >
-            <span class="w-2 h-2 bg-[#ff5a00]"></span>
+            <span class="w-2 h-2 bg-[#ff6600]"></span>
             <span class="text-gray-400 group-hover:text-white font-bold text-sm">
-              TERMS AND CONDITIONS
+              Travel Tips
             </span>
-          </a>
+          </a> -->
           <a
             href="<?php echo esc_url(home_url('/contact')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
           >
-            <span class="w-2 h-2 bg-[#ff5a00]"></span>
+            <span class="w-2 h-2 bg-[#ff6600]"></span>
             <span class="text-gray-400 group-hover:text-white font-bold text-sm">
               Get Custom Quote
             </span>
@@ -115,12 +115,12 @@
       <!-- CONTACT -->
       <div class="md:col-span-4">
         <h4 class="text-xl font-black mb-8 flex items-center gap-3">
-          <span class="text-[#ff5a00] text-2xl"><i class="fa-solid fa-tty"></i></span>
+          <span class="text-[#ff6600] text-2xl"><i class="fa-solid fa-tty"></i></span>
           Book Your Adventure
         </h4>
         <div class="space-y-5">
           <div class="bg-[#111] border border-white/5 p-5 flex gap-4">
-            <div class="text-[#ff5a00] text-xl">
+            <div class="text-[#ff6600] text-xl">
               <i class="fa-solid fa-earth-asia"></i>
             </div>
             <div>
@@ -132,7 +132,7 @@
               </p>
             </div>
           </div>
-          <p class="group block bg-white hover:bg-[#ff5a00] transition-all p-5">
+          <p class="group block bg-white hover:bg-[#ff6600] transition-all p-5">
             <a
               href="https://wa.me/919113230676"
               class="font-black text-lg text-black group-hover:text-white"
@@ -155,7 +155,7 @@
           </p>
           <a
             href="mailto:southernmilestouring@gmail.com"
-            class="block border border-white/20 hover:border-[#ff5a00] hover:text-[#ff5a00] transition-all p-5"
+            class="block border border-white/20 hover:border-[#ff6600] hover:text-[#ff6600] transition-all p-5"
           >
             <p class="font-bold text-lg">
               Drop us an email
@@ -169,7 +169,7 @@
     </div>
 
     <!-- CTA SECTION -->
-    <div class="bg-[#ff5a00] px-6 py-10 md:px-12 mb-12">
+    <div class="bg-[#ff6600] px-6 py-10 md:px-12 mb-12">
       <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
         <div class="text-center lg:text-left">
           <div class="flex flex-col sm:flex-row items-center gap-4 mb-4">
@@ -195,8 +195,21 @@
     </div>
 
     <!-- COPYRIGHT -->
-    <div class="border-t border-white/10 py-8 text-center">
+    <div class="border-t border-white/10 py-4 text-center">
       <p class="text-[10px] text-gray-600 font-bold tracking-[0.25em] leading-loose">
+        <a href="<?php echo esc_url(home_url('/privacy-policy')); ?>" class="hover:text-[#ff6600] transition-colors">
+          Privacy Policy
+        </a>
+        &nbsp;|&nbsp;
+        <a href="<?php echo esc_url(home_url('/terms-conditions')); ?>" class="hover:text-[#ff6600] transition-colors">
+          Terms & Conditions
+        </a>
+        &nbsp;|&nbsp;
+        <a href="<?php echo esc_url(home_url('/cancellation-refund-policy')); ?>" class="hover:text-[#ff6600] transition-colors">
+          Cancellation & Refund Policy
+        </a>
+      </p>
+      <p class="text-[10px] mt-2 text-gray-600 font-bold tracking-[0.25em] leading-loose">
         © 2026 SOUTHERN MILES TOURING.
         CRAFTING EPIC MEMORIES ACROSS INDIA.
         ALL RIGHTS RESERVED.

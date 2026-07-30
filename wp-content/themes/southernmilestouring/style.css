@@ -53,7 +53,7 @@ h6.wp-block-heading{
 
 .wp-singular.single-expedition .prose h3::before{
     content: "✦";
-    color: #ff5a00;
+    color: #ff6600;
     margin-right: 10px;
 }
 
@@ -62,7 +62,7 @@ h6.wp-block-heading{
 }
 
 .wp-singular.single-expedition .prose .wp-block-separator.has-alpha-channel-opacity{
-    border-color: #ff5a00;
+    border-color: #ff6600;
 }
 .wp-singular .wp-block-separator{
     margin-top: 20px;
@@ -73,7 +73,7 @@ h6.wp-block-heading{
 }
 
 .header-menu a:hover{
-    color:#ff5a00;
+    color:#ff6600;
     transition-duration: 300ms;
 }
 
@@ -91,7 +91,7 @@ h6.wp-block-heading{
     transition: color 0.2s ease-in-out;
 }
 #mobileMenu ul li a:hover {
-    color: #ff5a00;
+    color: #ff6600;
 }
 
 /* Typography & Labels */
@@ -140,7 +140,7 @@ h6.wp-block-heading{
 }
 /* Input Focus state */
 .custom-cf7-form input.custom-input:focus {
-    border-bottom-color: #ff5a00;
+    border-bottom-color: #ff6600;
 }
 /* Placeholder styling */
 .custom-cf7-form input.custom-input::placeholder, .custom-cf7-form textarea::placeholder {
@@ -167,7 +167,7 @@ h6.wp-block-heading{
 }
 /* Button Hover state */
 .custom-cf7-form input.custom-submit:hover {
-    background-color: #ff5a00;
+    background-color: #ff6600;
     color: #000000;
 }
 /* Clean up default CF7 loading spinners and response layouts */
@@ -197,7 +197,7 @@ h6.wp-block-heading{
     justify-content: space-between;
 }
 .sp-testimonial-free-wrapper .sp-testimonial-item:hover{
-    border-color: #ff5a00;
+    border-color: #ff6600;
     background-color: #111;
 }
 .tfree-style-theme-one-v2 .sp-testimonial-free .sp-testimonial-client-image {
@@ -205,7 +205,7 @@ h6.wp-block-heading{
     height: auto;
     margin: 20px auto;
     padding: 10px;
-    border: 1px solid #ff5a00;
+    border: 1px solid #ff6600;
     transition: all 0.4s ease;
 }
 .sp-testimonial-free-section .sp-testimonial-client-image img {
@@ -217,7 +217,7 @@ h6.wp-block-heading{
 }
 .sp-testimonial-free-wrapper .sp-testimonial-item:hover .sp-testimonial-client-image img {
     filter: grayscale(0%);
-    border: 1px solid #ff5a00;
+    border: 1px solid #ff6600;
 }
 .sp-testimonial-free-section .sp-testimonial-client-testimonial p{
     font-size: 1rem;
@@ -238,7 +238,7 @@ h6.wp-block-heading{
 .sp-testimonial-free-wrapper .sp-testimonial-free-section .sp-testimonial-client-name{
     font-size: 1rem;
     font-weight: 900;
-    color: #ff5a00 !important;
+    color: #ff6600 !important;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     position: relative;
@@ -264,7 +264,7 @@ h6.wp-block-heading{
     padding: 0 !important;
 }
 #testimonial_form_149.sp-tpro-fronted-form .sp-tpro-form-submit-button input[type='submit']{
-    background-color: #ff5a00 !important;
+    background-color: #ff6600 !important;
     font-family: 'Open Sans' !important;
     font-weight: 700;
     font-size: 16px !important;
@@ -339,7 +339,7 @@ h6.wp-block-heading{
 }
 
 .sp-testimonial-input-field-img input[type="file"]:focus ~ .tpro_client_after.photo {
-    outline: 2px solid #ff5a00;
+    outline: 2px solid #ff6600;
     outline-offset: 2px;
 }
 
@@ -392,8 +392,8 @@ h6.wp-block-heading{
 
 /* Adding 's to For NRI */
 .header-menu ul li:last-child a{
-    color: #ff5a00;
-    border-bottom: 2px solid #ff5a00;
+    color: #ff6600;
+    border-bottom: 2px solid #ff6600;
 }
 .header-menu ul li:last-child a:hover{
     color: #fff !important;
@@ -403,6 +403,60 @@ h6.wp-block-heading{
     content: "'s";
     text-transform: lowercase;
 }
+.inclusion-list ul, .exclusion-list ul{
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.6rem;
+}
+.inclusion-list ul li:before{
+    content: "\2713";
+    color: #ff6600;
+}
+.exclusion-list ul li:before{
+    content: "\2715";
+    color: #ff6600;
+}
+.inclusion-list ul li, .exclusion-list ul li{
+    gap: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+/* Style the trigger text */
+.acf-tooltip {
+    border-bottom: 1px dotted #333;
+    cursor: help;
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip container styling */
+.acf-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 6em;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 999;
+}
+
+/* Show tooltip on hover */
+.acf-tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 /* Responsive Screens */
 @media (min-width: 1024px) and (max-width: 1200px) {

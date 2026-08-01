@@ -52,7 +52,7 @@
   </section>
 
   <!-- ================= MAIN CONTENT SECTION ================= -->
-  <section class="relative text-white py-20 border-y border-white/10 uppercase tracking-tighter overflow-hidden select-none">
+  <section class="relative text-white py-16 border-y border-white/10 uppercase tracking-tighter overflow-hidden select-none">
     
     <!-- DYNAMIC BACKGROUND ANIMATION CONTAINER -->
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
@@ -228,7 +228,7 @@
   </section>
 
   <!-- ================= TRUST STATS SECTION ================= -->
-  <section class="bg-black py-20 border-t border-white/10 select-none">
+  <section class="bg-black py-16 border-t border-white/10 select-none">
     <div class="max-w-7xl mx-auto px-4 text-center">
       
       <h3 class="text-4xl lg:text-7xl font-black text-white mb-12 tracking-tighter uppercase leading-none">

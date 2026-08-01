@@ -51,7 +51,7 @@
 
   </section>
 
-  <section class="relative py-20 text-white border-y border-white/10 uppercase tracking-tighter overflow-hidden select-none">
+  <section class="relative py-16 text-white border-y border-white/10 uppercase tracking-tighter overflow-hidden select-none">
     
     <!-- DYNAMIC BACKGROUND ANIMATION CONTAINER -->
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
@@ -99,7 +99,7 @@
       </div>
       
       <!-- Core Metric Counters Grid -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-0 mt-20 border border-white/10 divide-x divide-y md:divide-y-0 divide-white/10 bg-black/60 backdrop-blur-md shadow-2xl">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-0 mt-16 border border-white/10 divide-x divide-y md:divide-y-0 divide-white/10 bg-black/60 backdrop-blur-md shadow-2xl">
         
         <!-- Item 1 -->
         <div class="group p-10 bg-black/80 hover:bg-[#0f0f0f] transition-all text-center">
@@ -150,7 +150,7 @@
   </section>
 
   <!-- ================= EXPEDITION PACKAGES SECTION ================= -->
-  <section class="relative py-20 bg-[#0a0a0a] text-white uppercase border-b border-white/10 select-none">
+  <section class="relative py-16 bg-[#0a0a0a] text-white uppercase border-b border-white/10 select-none">
     
     <!-- Background Grid Texture -->
     <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
@@ -333,7 +333,7 @@
   </section>
   
   <!-- ================= CHOOSE YOUR KIND OF ESCAPE ================= -->
-  <section class="bg-black py-20 md:py-24 select-none">
+  <section class="bg-black py-16 md:py-24 select-none">
     <div class="max-w-7xl mx-auto px-4">
       
       <!-- Callout Box Container -->

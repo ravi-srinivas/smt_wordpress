@@ -49,7 +49,7 @@ get_header();
   </section>
 
   <!-- ================= MAIN CONTENT AREA ================= -->
-  <section id="main" class="relative py-12 md:py-20 text-white border-y border-white/10 tracking-tighter overflow-hidden select-none">
+  <section id="main" class="relative py-12 md:py-16 text-white border-y border-white/10 tracking-tighter overflow-hidden select-none">
     
     <!-- DYNAMIC BACKGROUND ANIMATION CONTAINER -->
     <div class="absolute inset-0 pointer-events-none overflow-hidden">

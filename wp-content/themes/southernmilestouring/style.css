@@ -424,6 +424,10 @@ h6.wp-block-heading{
     display: flex;
     align-items: center;
 }
+#team {
+  scroll-margin-top: 5em; 
+}
+
 /* Style the trigger text */
 .acf-tooltip {
     border-bottom: 1px dotted #333;

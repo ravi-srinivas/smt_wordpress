@@ -27,9 +27,6 @@ get_header();
       <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/70 z-10"></div>
       <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] z-10"></div>
 
-      <!-- Radar Sweep Line Effect -->
-      <div class="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#ff6600]/40 to-transparent animate-[radar_6s_ease-in-out_infinite] pointer-events-none z-10"></div>
-
       <!-- Hero Header Floating Badge -->
       <div class="relative z-20 flex flex-col items-center justify-end h-full text-center text-white px-4 pb-12 max-w-5xl mx-auto uppercase tracking-tighter">
         <div class="inline-flex items-center gap-2 bg-black/80 border border-[#ff6600]/40 text-[#ff6600] px-4 py-1.5 rounded-none text-[10px] md:text-xs font-black tracking-widest shadow-2xl backdrop-blur-sm">

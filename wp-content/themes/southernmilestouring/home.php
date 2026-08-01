@@ -16,9 +16,6 @@ get_header();
     <!-- Background Radial Grid Pattern -->
     <div class="absolute inset-0 bg-[radial-gradient(#ff6600_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
 
-    <!-- Radar Sweep Line Effect -->
-    <div class="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#ff6600]/40 to-transparent animate-[radar_6s_ease-in-out_infinite] pointer-events-none z-10"></div>
-
     <!-- Hero Content Block -->
     <div class="relative z-20 text-center px-4 max-w-5xl mx-auto uppercase tracking-tighter">
       

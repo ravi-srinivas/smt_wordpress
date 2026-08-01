@@ -14,6 +14,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+window.addEventListener('DOMContentLoaded', () => {
+  // Check if a hash exists in the URL
+  if (window.location.hash) {
+    const targetElement = document.querySelector(window.location.hash);
+    if (targetElement) {
+      // Safely scroll to the element after a tiny layout timeout
+      setTimeout(() => {
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  }
+});
+
 // window.addEventListener('load', function() {
 //     const sliderExists = document.querySelector('.tribe-slider');
 //     if (sliderExists && typeof Swiper !== 'undefined') {

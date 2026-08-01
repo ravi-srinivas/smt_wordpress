@@ -49,7 +49,7 @@ get_header();
   </section>
 
   <!-- ================= MAIN CONTENT AREA ================= -->
-  <section id="main" class="relative py-12 md:py-20 text-white border-y border-white/10 tracking-tighter overflow-hidden select-none">
+  <section id="main" class="relative py-12 md:py-16 text-white border-y border-white/10 tracking-tighter overflow-hidden select-none">
     
     <!-- DYNAMIC BACKGROUND ANIMATION CONTAINER -->
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
@@ -211,7 +211,7 @@ get_header();
 
       <?php 
       else : 
-        echo '<div class="text-center py-20 border border-white/10 bg-[#0a0a0a]"><h2 class="text-2xl font-black text-gray-400 tracking-widest">NO TRANSMISSIONS OR LOGS FOUND</h2></div>';
+        echo '<div class="text-center py-16 border border-white/10 bg-[#0a0a0a]"><h2 class="text-2xl font-black text-gray-400 tracking-widest">NO TRANSMISSIONS OR LOGS FOUND</h2></div>';
       endif; 
       wp_reset_postdata(); // Restores original main loop context
       ?>

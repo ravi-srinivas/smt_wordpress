@@ -92,7 +92,7 @@
                 <a
                     href="https://forms.gle/48NFJY4QibC5UZ9X9"
                     target="_blank"
-                    class="bg-[#ff6600] text-white px-3 py-2.5 text-[10px] md:text-xs font-bold hover:bg-white hover:text-black transition-all whitespace-nowrap tracking-normal"
+                    class="bg-[#ff6600] text-white px-3 py-2.5 text-[14px] md:text-xs font-bold hover:bg-white hover:text-black transition-all whitespace-nowrap tracking-normal"
                 >
                     BE A MEMBER
                 </a>

@@ -51,7 +51,7 @@
 
   </section>
 
-  <section id="main" class="relative py-12 md:py-20 text-white border-y border-white/10 tracking-tighter overflow-hidden select-none">
+  <section id="main" class="relative py-12 md:py-16 text-white border-y border-white/10 tracking-tighter overflow-hidden select-none">
     
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
       <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
@@ -132,7 +132,7 @@
       </div>
 
       <!-- Stats & Swiper Gallery Split Block -->
-      <div class="max-w-7xl mx-auto py-20 border-t border-white/10 mt-16">
+      <div class="max-w-7xl mx-auto py-16 border-t border-white/10 mt-16">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           <!-- Left Description & Counter Stats -->
@@ -181,7 +181,7 @@
 
       <!-- Timeline 
       <div class="max-w-4xl mx-auto mb-16 border-t border-white/10 pt-16">
-        <h3 class="text-5xl font-black text-white text-center mb-20 tracking-tighter uppercase">
+        <h3 class="text-5xl font-black text-white text-center mb-16 tracking-tighter uppercase">
           OUR RIDING LEGACY
         </h3>
         <div class="space-y-0 border-l border-white/10 ml-4 md:ml-0">
@@ -227,11 +227,11 @@
         </div>
       </div> -->
 
-      <div class="max-w-7xl mx-auto py-20 border-t border-white/10 mt-16">
+      <div id="team" class="max-w-7xl mx-auto py-16 border-t border-white/10">
         <h2 class="text-5xl md:text-7xl font-black text-center mb-6 tracking-tighter uppercase leading-none">
           EXPLORED WITH <br/> THE BEST?
         </h2>
-        <p class="text-sm md:text-lg font-bold text-gray-600 mb-12 max-w-2xl mx-auto tracking-widest uppercase">
+        <p class="text-sm md:text-lg font-bold text-gray-600 mb-12 max-w-2xl mx-auto tracking-widest uppercase text-center">
           Join the tribe of passionate tourers and let's create unforgettable memories together on the open road!
         </p>
         <?php
@@ -335,7 +335,7 @@
       </div>
 
       <!-- Enough About Us -->
-      <div class="relative bg-white text-black py-20 md:py-20 rounded-none text-center my-16 border-4 md:border-8 border-[#ff6600] shadow-[0_0_40px_rgba(255,90,0,0.2)] overflow-hidden">
+      <div class="relative bg-white text-black py-16 md:py-16 rounded-none text-center my-16 border-4 md:border-8 border-[#ff6600] shadow-[0_0_40px_rgba(255,90,0,0.2)] overflow-hidden">
         
         <div class="absolute inset-0 bg-[linear-gradient(45deg,#00000008_25%,transparent_25%,transparent_50%,#00000008_50%,#00000008_75%,transparent_75%,transparent)] bg-[size:1rem_1rem] pointer-events-none"></div>
 

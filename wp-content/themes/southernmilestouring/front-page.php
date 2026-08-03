@@ -1,6 +1,6 @@
 <?php get_header(); ?>
   <div class="overflow-hidden">
-    <section class="relative bg-black text-white overflow-hidden flex items-center min-h-[80vh] uppercase">
+    <section class="relative bg-black text-white overflow-hidden flex items-center min-h-[80vh] sm:min-h-[80vh] md:min-h-[80vh] lg:min-h-[80vh] uppercase">
       <video
         autoPlay
         loop

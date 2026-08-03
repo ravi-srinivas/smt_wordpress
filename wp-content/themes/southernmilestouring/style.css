@@ -427,6 +427,15 @@ h6.wp-block-heading{
 #team {
   scroll-margin-top: 5em; 
 }
+.wp-singular #main p.wp-block-paragraph{
+    margin-bottom: 10px;
+}
+.wp-singular #main ul.wp-block-list li{
+    margin-bottom: 10px;
+}
+.wp-singular #main ul.wp-block-list li:last-child{
+    margin-bottom: 0px;
+}
 
 /* Style the trigger text */
 .acf-tooltip {

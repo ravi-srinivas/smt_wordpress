@@ -14,14 +14,14 @@
 <nav class="bg-black/90 backdrop-blur-md text-white sticky top-0 z-50 border-b border-white/10 uppercase tracking-tight">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20 md:h-28">
-            <a href="<?php echo home_url(); ?>" class="group flex items-center gap-3 flex-shrink-0">
+            <a href="<?php echo home_url(); ?>" class="group flex items-center gap-2 sm:gap-3 md:gap-3 lg:gap-3 flex-shrink-0">
                 <img 
                     src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png"
                     alt="Southern Miles Logo"
                     class="h-12 w-auto md:h-20 object-contain"
                 >
                 <div class="flex flex-col justify-center">
-                    <h1 class="sm md:text-xl font-black text-[#ff6600] leading-none tracking-normal">
+                    <h1 class="md:text-xl font-black text-[#ff6600] leading-none tracking-normal">
                         Southern Miles
                     </h1>
 
@@ -31,13 +31,13 @@
                 </div>
             </a>
             <!-- DESKTOP NAVIGATION -->
-            <div class="hidden lg:flex items-center gap-8">
+            <div class="hidden lg:flex items-center gap-8 md:gap-4 lg:gap-8">
                 <div class="header-menu">
                     <?php
                         wp_nav_menu(array(
                             'menu' => 'Header',
                             'container' => false,
-                            'menu_class' => 'flex items-center gap-8 text-lg font-semibold',
+                            'menu_class' => 'flex items-center gap-2 text-sm sm:gap-4 md:gap-4 lg:gap-8 md:text-md lg:text-lg font-semibold',
                             'fallback_cb' => false
                         ));
                     ?>
@@ -92,7 +92,7 @@
                 <a
                     href="https://forms.gle/48NFJY4QibC5UZ9X9"
                     target="_blank"
-                    class="bg-[#ff6600] text-white px-3 py-2.5 text-[14px] md:text-xs font-bold hover:bg-white hover:text-black transition-all whitespace-nowrap tracking-normal"
+                    class="ml-4 bg-[#ff6600] text-white px-2 py-2 text-[12px] sm:text-xs md:text-xs font-bold hover:bg-white hover:text-black transition-all whitespace-nowrap tracking-normal"
                 >
                     BE A MEMBER
                 </a>

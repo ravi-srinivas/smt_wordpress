@@ -7,8 +7,14 @@ get_header();
 <div class="bg-black text-white min-h-screen uppercase tracking-tighter selection:bg-[#ff6600] selection:text-black">
   
   <!-- ================= HERO SECTION ================= -->
-  <section class="relative h-[45vh] md:h-[60vh] overflow-hidden bg-black border-b-4 border-[#ff6600] flex items-center justify-center select-none">
+  <section class="relative h-[60vh] md:h-[80vh] overflow-hidden bg-black border-b-4 border-[#ff6600] flex items-center justify-center select-none">
     
+    <!-- Background Hero Image -->
+    <div
+      class="absolute inset-0 grayscale brightness-50 contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000 bg-cover bg-center bg-no-repeat"
+      style="background-image: url('<?php echo get_the_post_thumbnail_url(get_queried_object_id(),'full'); ?>');"
+    ></div>
+
     <!-- Vignette & Grid HUD Overlays -->
     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/80 z-10"></div>
     <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>

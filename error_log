@@ -1,0 +1,59 @@
+[30-Jul-2026 09:15:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/header.php:71
+Stack trace:
+#0 /home/c5q1jl6ikmv3/public_html/wp-includes/template.php(814): require_once()
+#1 /home/c5q1jl6ikmv3/public_html/wp-includes/template.php(749): load_template()
+#2 /home/c5q1jl6ikmv3/public_html/wp-includes/general-template.php(48): locate_template()
+#3 /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/page-contact.php(5): get_header()
+#4 /home/c5q1jl6ikmv3/public_html/wp-includes/template-loader.php(132): include('/home/c5q1jl6ik...')
+#5 /home/c5q1jl6ikmv3/public_html/wp-blog-header.php(19): require_once('/home/c5q1jl6ik...')
+#6 /home/c5q1jl6ikmv3/public_html/index.php(17): require('/home/c5q1jl6ik...')
+#7 {main}
+  thrown in /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/header.php on line 71
+[30-Jul-2026 09:15:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/header.php:71
+Stack trace:
+#0 /home/c5q1jl6ikmv3/public_html/wp-includes/template.php(814): require_once()
+#1 /home/c5q1jl6ikmv3/public_html/wp-includes/template.php(749): load_template()
+#2 /home/c5q1jl6ikmv3/public_html/wp-includes/general-template.php(48): locate_template()
+#3 /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/index.php(6): get_header()
+#4 /home/c5q1jl6ikmv3/public_html/wp-includes/template-loader.php(132): include('/home/c5q1jl6ik...')
+#5 /home/c5q1jl6ikmv3/public_html/wp-blog-header.php(19): require_once('/home/c5q1jl6ik...')
+#6 /home/c5q1jl6ikmv3/public_html/index.php(17): require('/home/c5q1jl6ik...')
+#7 {main}
+  thrown in /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/header.php on line 71
+[30-Jul-2026 09:15:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/header.php:71
+Stack trace:
+#0 /home/c5q1jl6ikmv3/public_html/wp-includes/template.php(814): require_once()
+#1 /home/c5q1jl6ikmv3/public_html/wp-includes/template.php(749): load_template()
+#2 /home/c5q1jl6ikmv3/public_html/wp-includes/general-template.php(48): locate_template()
+#3 /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/page-contact.php(5): get_header()
+#4 /home/c5q1jl6ikmv3/public_html/wp-includes/template-loader.php(132): include('/home/c5q1jl6ik...')
+#5 /home/c5q1jl6ikmv3/public_html/wp-blog-header.php(19): require_once('/home/c5q1jl6ik...')
+#6 /home/c5q1jl6ikmv3/public_html/index.php(17): require('/home/c5q1jl6ik...')
+#7 {main}
+  thrown in /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/header.php on line 71
+[30-Jul-2026 09:15:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/header.php:71
+Stack trace:
+#0 /home/c5q1jl6ikmv3/public_html/wp-includes/template.php(814): require_once()
+#1 /home/c5q1jl6ikmv3/public_html/wp-includes/template.php(749): load_template()
+#2 /home/c5q1jl6ikmv3/public_html/wp-includes/general-template.php(48): locate_template()
+#3 /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/front-page.php(1): get_header()
+#4 /home/c5q1jl6ikmv3/public_html/wp-includes/template-loader.php(132): include('/home/c5q1jl6ik...')
+#5 /home/c5q1jl6ikmv3/public_html/wp-blog-header.php(19): require_once('/home/c5q1jl6ik...')
+#6 /home/c5q1jl6ikmv3/public_html/index.php(17): require('/home/c5q1jl6ik...')
+#7 {main}
+  thrown in /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/header.php on line 71
+[30-Jul-2026 09:15:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/header.php:71
+Stack trace:
+#0 /home/c5q1jl6ikmv3/public_html/wp-includes/template.php(814): require_once()
+#1 /home/c5q1jl6ikmv3/public_html/wp-includes/template.php(749): load_template()
+#2 /home/c5q1jl6ikmv3/public_html/wp-includes/general-template.php(48): locate_template()
+#3 /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/page-contact.php(5): get_header()
+#4 /home/c5q1jl6ikmv3/public_html/wp-includes/template-loader.php(132): include('/home/c5q1jl6ik...')
+#5 /home/c5q1jl6ikmv3/public_html/wp-blog-header.php(19): require_once('/home/c5q1jl6ik...')
+#6 /home/c5q1jl6ikmv3/public_html/index.php(17): require('/home/c5q1jl6ik...')
+#7 {main}
+  thrown in /home/c5q1jl6ikmv3/public_html/wp-content/themes/southernmilestouring/header.php on line 71
+[30-Jul-2026 09:19:23 UTC] Cron reschedule event error for hook: googlesitekit_email_reporting_cleanup, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"monthly","args":[],"interval":2592000}
+[30-Jul-2026 09:59:41 UTC] ERROR PostmanWpMail: Exception code=0 message=Unable to send mail.
+[30-Jul-2026 10:10:57 UTC] ERROR PostmanWpMail: Exception code=0 message=Unable to send mail.
+[30-Jul-2026 10:22:18 UTC] ERROR PostmanWpMail: Exception code=0 message=Unable to send mail.

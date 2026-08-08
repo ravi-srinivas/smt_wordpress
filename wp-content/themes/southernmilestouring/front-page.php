@@ -11,7 +11,7 @@
         <source src="<?php echo get_template_directory_uri(); ?>/assets/bg-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div class="absolute inset-0 bg-black/60">
+      <div class="absolute inset-0 bg-black/50">
       <div class="banner-text-wrapper relative max-w-7xl my-4 sm:my-10 md:my-12 lg:my-3 px-4 mx-auto md:py-16 sm:py-6 text-center">
         <div class="inline-flex items-center bg-black border-2 border-[#ff6600] text-[#ff6600] px-6 py-2 rounded-none text-xs sm:text-sm md:text-sm lg:text-sm font-black sm:mb-10 mb-6 sm:mb-10 md:mb-12 lg:mb-12 tracking-widest">
           <i class="fa-solid fa-users"></i>&nbsp;
@@ -391,32 +391,23 @@
           <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
             
             <!-- Instagram Link -->
-            <a href="https://instagram.com/<?php echo get_field('instagram', get_the_ID()); ?>" target="_blank" class="group inline-flex items-center bg-[#0a0a0a] border-2 border-[#ff6600] text-[#ff6600] hover:bg-[#ff6600] hover:text-black px-5 py-3 rounded-none text-lg font-black transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-[0_0_20px_rgba(255,90,0,0.4)] tracking-widest">
+            <a href="https://instagram.com/<?php echo get_field('instagram', get_the_ID()); ?>" target="_blank" class="group inline-flex items-center bg-[#0a0a0a] border-2 border-[#ff6600] text-[#ff6600] hover:bg-[#ff6600] hover:text-white px-5 py-3 rounded-none text-lg font-black transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-[0_0_20px_rgba(255,90,0,0.4)] tracking-widest">
               <span class="flex items-center justify-center text-xl">
                 <i class="fa-brands fa-instagram"></i>
-              </span>
-              <span class="max-w-0 overflow-hidden transition-all duration-300 ease-in-out group-hover:max-w-xs group-hover:ml-3 text-xs uppercase font-black tracking-widest whitespace-nowrap">
-                INSTAGRAM
               </span>
             </a>
             
             <!-- Facebook Link -->
-            <a href="https://facebook.com/<?php echo get_field('facebook', get_the_ID()); ?>" target="_blank" class="group inline-flex items-center bg-[#0a0a0a] border-2 border-[#ff6600] text-[#ff6600] hover:bg-[#ff6600] hover:text-black px-5 py-3 rounded-none text-lg font-black transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-[0_0_20px_rgba(255,90,0,0.4)] tracking-widest">
+            <a href="https://facebook.com/<?php echo get_field('facebook', get_the_ID()); ?>" target="_blank" class="group inline-flex items-center bg-[#0a0a0a] border-2 border-[#ff6600] text-[#ff6600] hover:bg-[#ff6600] hover:text-white px-5 py-3 rounded-none text-lg font-black transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-[0_0_20px_rgba(255,90,0,0.4)] tracking-widest">
               <span class="flex items-center justify-center text-xl">
                 <i class="fa-brands fa-facebook"></i>
-              </span>
-              <span class="max-w-0 overflow-hidden transition-all duration-300 ease-in-out group-hover:max-w-xs group-hover:ml-3 text-xs uppercase font-black tracking-widest whitespace-nowrap">
-                FACEBOOK
               </span>
             </a>
             
             <!-- Threads Link -->
-            <a href="https://www.threads.com/@<?php echo get_field('threads', get_the_ID()); ?>?hl=en" target="_blank" class="group inline-flex items-center bg-[#0a0a0a] border-2 border-[#ff6600] text-[#ff6600] hover:bg-[#ff6600] hover:text-black px-5 py-3 rounded-none text-lg font-black transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-[0_0_20px_rgba(255,90,0,0.4)] tracking-widest">
+            <a href="https://www.threads.com/@<?php echo get_field('threads', get_the_ID()); ?>?hl=en" target="_blank" class="group inline-flex items-center bg-[#0a0a0a] border-2 border-[#ff6600] text-[#ff6600] hover:bg-[#ff6600] hover:text-white px-5 py-3 rounded-none text-lg font-black transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-[0_0_20px_rgba(255,90,0,0.4)] tracking-widest">
               <span class="flex items-center justify-center text-xl">
                 <i class="fa-brands fa-threads"></i>
-              </span>
-              <span class="max-w-0 overflow-hidden transition-all duration-300 ease-in-out group-hover:max-w-xs group-hover:ml-3 text-xs uppercase font-black tracking-widest whitespace-nowrap">
-                THREADS
               </span>
             </a>
 

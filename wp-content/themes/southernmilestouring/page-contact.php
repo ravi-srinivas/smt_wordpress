@@ -11,13 +11,9 @@
     
     <!-- Background Hero Image -->
     <div
-      class="absolute inset-0 grayscale brightness-50 contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000 bg-cover bg-center bg-no-repeat"
+      class="absolute inset-0 brightness-50 bg-cover bg-center bg-no-repeat"
       style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>');"
     ></div>
-
-    <!-- Vignette & Grid HUD Overlays -->
-    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/70"></div>
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
 
     <!-- Hero Content Block -->
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 max-w-5xl mx-auto uppercase tracking-tighter">

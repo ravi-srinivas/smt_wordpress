@@ -107,9 +107,6 @@ if (have_posts()) :
         <div class="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-[#ff6600] z-20 pointer-events-none"></div>
         <div class="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-[#ff6600] z-20 pointer-events-none"></div>
 
-        <!-- Radar Sweep Line -->
-        <div class="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#ff6600]/50 to-transparent animate-[radar_6s_ease-in-out_infinite] z-20 pointer-events-none"></div>
-
         <!-- Aspect Ratio Container -->
         <div class="relative w-full aspect-[16/9] bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
              style="background-image: url('<?php echo esc_url($image_url); ?>');">
@@ -246,18 +243,23 @@ if (have_posts()) :
             <!-- Investment Pricing Section -->
             <div class="pt-6 border-t border-white/10 flex flex-col">
               <div class="mb-2">
-                <span class="text-[10px] font-black tracking-widest text-[#ff6600] uppercase block mb-1">INVESTMENT</span>
+                <span class="text-[10px] font-black tracking-widest text-[#ff6600] uppercase block mb-1">TARIFF</span>
+              </div>
+              <?php if($ride_price) : ?>
+              <div class="mb-1">
+                <p class="text-[12px] font-medium tracking-wide text-gray-300 uppercase">Starting At</p>
               </div>
               <div class="flex items-baseline gap-2">
-                <?php if($ride_price) : ?>
-                  <span class="text-3xl md:text-4xl font-black tracking-tighter text-white">
-                    <?php echo esc_html($ride_price); ?>
-                  </span>
-                  <span class="text-[9px] text-gray-400 tracking-widest font-bold uppercase">/ TOURER</span>
-                <?php else: ?>
-                  <span class="text-3xl font-black tracking-tighter text-white">UPCOMING</span>
-                <?php endif; ?>
+                <span class="text-3xl md:text-4xl font-black tracking-tighter text-white">
+                  <?php echo esc_html($ride_price); ?>
+                </span>
+                <span class="text-[12px] text-gray-400 tracking-widest font-bold uppercase">/ PERSON <b class="text-[#ff6600]">*</b></span>
               </div>
+              <?php else: ?>
+              <div class="flex items-baseline gap-2">
+                <span class="text-3xl font-black tracking-tighter text-white">UPCOMING</span>
+              </div>
+            <?php endif; ?>
             </div>
 
             <!-- Action Button -->

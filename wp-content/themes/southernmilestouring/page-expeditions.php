@@ -166,44 +166,27 @@
           $args = array(
             'post_type'      => 'expedition', 
             'posts_per_page' => -1,
-            'orderby'        => array(
-              'start_date_clause' => 'ASC',
-            ),
+            'meta_key'       => 'ride_start_date',
+            'orderby'        => 'meta_value_num',
+            'order'          => 'ASC',
             'meta_query'     => array(
-              'relation' => 'AND',
-              'end_date_clause' => array(
-                'relation' => 'OR',
-                array(
-                  'key'     => 'ride_end_date',
-                  'value'   => $today_ymd,
-                  'compare' => '>=',
-                  'type'    => 'NUMERIC',
-                ),
-                array(
-                  'key'     => 'ride_end_date',
-                  'compare' => 'NOT EXISTS', 
-                ),
+              'relation' => 'OR',
+              array(
+                'key'     => 'ride_end_date',
+                'value'   => $today_ymd,
+                'compare' => '>=',
+                'type'    => 'NUMERIC',
               ),
-              'start_date_clause' => array(
-                'relation' => 'OR',
-                array(
-                  'key'     => 'ride_start_date',
-                  'compare' => 'EXISTS', 
-                ),
-                array( 
-                  'key'     => 'ride_start_date',
-                  'compare' => 'NOT EXISTS',
-                ),
+              array(
+                'key'     => 'ride_end_date',
+                'compare' => 'NOT EXISTS', 
               ),
             ),
           );
           $upcoming_rides = new WP_Query($args);
-          
-          $ride_counter = 0;
+
           if ($upcoming_rides->have_posts()) :
             while ($upcoming_rides->have_posts()) : $upcoming_rides->the_post(); 
-              $ride_counter++; 
-              
               $current_ride_id = get_the_ID();
               $image_url       = get_the_post_thumbnail_url($current_ride_id, 'full');
               
@@ -211,8 +194,9 @@
               $end_date     = get_field('ride_end_date', $current_ride_id);
               $distance_kms = get_field('ride_distance', $current_ride_id);
               $ride_price   = get_field('ride_price', $current_ride_id);
+              $form_link    = get_field('ride_form_link', $current_ride_id);
               
-              if ($ride_counter === 1) {
+              if (!empty($form_link) && !empty($start_date) && !empty($end_date)) {
                 $display_start = $start_date ? date("M d", strtotime(str_replace('/', '-', $start_date))) : 'TBD';
                 $display_end   = $end_date ? date("M d", strtotime(str_replace('/', '-', $end_date))) : 'TBD';
                 $current_year  = $start_date ? date("Y", strtotime(str_replace('/', '-', $start_date))) : '';
@@ -220,9 +204,9 @@
                 $date_string   = $display_start . ' to ' . $display_end . $display_year;
                 
                 $price_string  = esc_html($ride_price);
-                $badge_text    = 'OPENS SOON';
+                $badge_text    = 'OPEN NOW';
 
-                $card_border_class  = 'border-[#ff6600] bg-[#0d0d0d] shadow-[0_0_20px_rgba(255,90,0,0.15)]';
+                $card_border_class  = 'border-[#ff6600] bg-[#0d0d0d] shadow-[0_10px_30px_rgba(255,90,0,0.15)]';
                 $image_filter_class = 'grayscale-0 brightness-100 scale-100 group-hover:scale-105';
                 $title_color_class  = 'text-[#ff6600]';
                 $is_tentative       = false;
@@ -231,7 +215,7 @@
                 $price_string  = '';
                 $badge_text    = 'UPCOMING';
 
-                $card_border_class  = 'border-white/10 hover:border-[#ff6600]/40 hover:bg-[#0d0d0d]';
+                $card_border_class  = 'border-white/10 hover:border-[#ff6600]/50 hover:bg-[#0d0d0d]';
                 $image_filter_class = 'grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 scale-100 group-hover:scale-105';
                 $title_color_class  = 'group-hover:text-[#ff6600]';
                 $is_tentative       = true;

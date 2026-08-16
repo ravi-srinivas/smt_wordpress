@@ -127,15 +127,14 @@ function southern_miles_expedition_popup() {
         'post_type'      => 'expedition',
         'posts_per_page' => 1,
         'post_status'    => 'publish',
-        'meta_key'       => 'ride_start_date',
+        'meta_key'       => 'ride_is_featured',
         'orderby'        => 'meta_value',
         'order'          => 'ASC',
-        'meta_query'     => array(
+        'meta_query' => array(
             array(
-                'key'     => 'ride_start_date',
-                'value'   => $today,
-                'compare' => '>=',
-                'type'    => 'DATE',
+                'key'     => 'ride_is_featured',
+                'value'   => '1',
+                'compare' => '=',
             ),
         ),
     );
@@ -265,7 +264,7 @@ function southern_miles_expedition_popup() {
 
                     <!-- Content Header & Title -->
                     <div class="space-y-4">
-                        <h3 class="text-2xl md:text-4xl font-black text-center text-white tracking-tighter leading-none uppercase">
+                        <h3 class="text-xl md:text-3xl font-black text-center text-white tracking-tighter leading-none uppercase">
                             <?php echo esc_html( $title ); ?>
                         </h3>
                     </div>
@@ -276,7 +275,7 @@ function southern_miles_expedition_popup() {
                             <span class="text-[10px] font-black tracking-widest text-[#ff6600] block">TARIFF</span>
                             <?php if ( $ride_price ) : ?>
                                 <div class="">
-                                    <span class="text-2xl md:text-3xl font-black text-white"><?php echo esc_html( $ride_price ); ?></span>
+                                    <span class="text-xl md:text-2xl font-black text-white"><?php echo esc_html( $ride_price ); ?></span>
                                     <span class="text-[10px] text-gray-400 font-bold tracking-widest">/ PERSON <b class="text-[#ff6600]">*</b></span>
                                 </div>
                             <?php else : ?>

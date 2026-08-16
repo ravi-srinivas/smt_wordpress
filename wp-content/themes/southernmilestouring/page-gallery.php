@@ -40,16 +40,16 @@
     <div class="bg-black">
       <section class="relative w-full h-screen overflow-hidden select-none font-sans text-white flex items-center justify-center">
         <!-- HUD Control Bar -->
-        <div class="absolute top-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-4 bg-zinc-900/90 backdrop-blur-md px-6 py-2.5 rounded-full border border-zinc-800 text-xs font-open-sans">
-          <button id="btn-prev" class="px-3 py-1 bg-zinc-800 hover:bg-amber-500 hover:text-black font-bold rounded-full transition">&lt; Prev</button>
-          <button id="btn-next" class="px-3 py-1 bg-zinc-800 hover:bg-amber-500 hover:text-black font-bold rounded-full transition">Next &gt;</button>
+        <div class="absolute top-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-4 bg-zinc-900/90 backdrop-blur-md px-6 py-2.5 border border-zinc-800 text-xs font-open-sans">
+          <button id="btn-prev" class="px-3 py-1 bg-black hover:bg-[#ff6600] hover:text-black font-bold uppercase transition">&lt; Prev</button>
+          <button id="btn-next" class="px-3 py-1 bg-black hover:bg-[#ff6600] hover:text-black font-bold uppercase transition">Next &gt;</button>
         </div>
 
         <!-- HEADER & TITLE OVERLAY -->
         <div class="absolute z-20 flex flex-col items-center justify-center text-center p-8 max-w-xl pointer-events-none backdrop-blur-sm bg-black/30 rounded-2xl border border-white/5 shadow-2xl">
           <div class="flex items-center gap-2 mb-1">
-            <span class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse"></span>
-            <span class="text-xs font-open-sans uppercase tracking-widest text-amber-400">Expedition Vault</span>
+            <span><i class="fas fa-images text-[#ff6600]"></i></span>
+            <span class="text-xs font-open-sans uppercase tracking-widest text-[#ff6600]"><?php echo the_field('gallery_folder_name'); ?></span>
           </div>
           
           <h1 class="text-4xl md:text-6xl sm:text-5xl font-black uppercase tracking-wider text-white drop-shadow-md">

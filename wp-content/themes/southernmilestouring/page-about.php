@@ -367,9 +367,9 @@
           <a href="<?php echo esc_url(home_url('blog')); ?>" class="bg-[#ff6600] text-white hover:bg-white hover:text-[#ff6600] px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
             READ OUR BLOG
           </a>
-          <!-- <a href="<?php echo esc_url(home_url('gallery')); ?>" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
+          <a href="<?php echo esc_url(home_url('gallery')); ?>" class="bg-transparent border-2 border-[#ff6600] text-[#ff6600] hover:bg-[#ff6600] hover:text-white px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
             VIEW OUR GALLERY
-          </a> -->
+          </a>
           <a href="<?php echo esc_url(home_url('contact')); ?>" class="bg-[#ff6600] border-2 border-[#ff6600] text-black hover:bg-transparent hover:text-[#ff6600] px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
             CONTACT US
           </a>

@@ -39,6 +39,26 @@
 
     <div class="bg-black">
       <section class="relative w-full h-screen overflow-hidden select-none font-sans text-white flex items-center justify-center">
+        
+        <!-- GLOBAL PROGRESS BAR LOADER -->
+        <div id="gallery-loader" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-zinc-950/95 backdrop-blur-md transition-opacity duration-500">
+          <div class="w-80 max-w-[85vw] flex flex-col items-center gap-3">
+            <div class="flex items-center justify-between w-full text-xs font-open-sans uppercase tracking-widest">
+              <span class="text-zinc-400 flex items-center gap-2">
+                <i class="fas fa-spinner fa-spin text-[#ff6600]"></i> Loading Textures
+              </span>
+              <span id="loader-percent" class="text-[#ff6600] font-bold">0%</span>
+            </div>
+            
+            <!-- Progress Bar Track -->
+            <div class="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden border border-zinc-700/40 p-[1px]">
+              <div id="loader-bar" class="h-full bg-[#ff6600] rounded-full w-0 transition-all duration-200 ease-out shadow-[0_0_12px_rgba(255,102,0,0.8)]"></div>
+            </div>
+            
+            <span id="loader-status" class="text-[10px] text-zinc-500 font-mono">0 / 0 images</span>
+          </div>
+        </div>
+
         <!-- HUD Control Bar -->
         <div class="absolute top-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-4 bg-zinc-900/90 backdrop-blur-md px-6 py-2.5 border border-zinc-800 text-xs font-open-sans">
           <button id="btn-prev" class="px-3 py-1 bg-black hover:bg-[#ff6600] hover:text-black font-bold uppercase transition">&lt; Prev</button>
@@ -81,7 +101,13 @@
       <script>
         document.addEventListener('DOMContentLoaded', () => {
           const container = document.getElementById('three-gallery-canvas');
-          const galleryItems = <?php echo json_encode($gallery_items, JSON_UNESCAPED_SLASHES); ?>;
+          const galleryItems = <?php echo json_encode($gallery_items, JSON_UNESCAPED_SLASHES); ?> || [];
+
+          // Loader UI references
+          const loaderBar = document.getElementById('loader-bar');
+          const loaderPercent = document.getElementById('loader-percent');
+          const loaderStatus = document.getElementById('loader-status');
+          const galleryLoader = document.getElementById('gallery-loader');
 
           let scene, camera, renderer, wheelGroup;
           let meshes = [];
@@ -94,6 +120,29 @@
 
           const raycaster = new THREE.Raycaster();
           const mouse = new THREE.Vector2();
+
+          // THREE.JS LOADING MANAGER
+          const loadingManager = new THREE.LoadingManager();
+
+          loadingManager.onProgress = (url, itemsLoaded, itemsTotal) => {
+            const progress = Math.round((itemsLoaded / itemsTotal) * 100);
+            if (loaderBar) loaderBar.style.width = `${progress}%`;
+            if (loaderPercent) loaderPercent.innerText = `${progress}%`;
+            if (loaderStatus) loaderStatus.innerText = `${itemsLoaded} / ${itemsTotal} images`;
+          };
+
+          loadingManager.onLoad = () => {
+            if (galleryLoader) {
+              galleryLoader.classList.add('opacity-0', 'pointer-events-none');
+              setTimeout(() => {
+                galleryLoader.style.display = 'none';
+              }, 500);
+            }
+          };
+
+          loadingManager.onError = (url) => {
+            console.warn('Error loading texture:', url);
+          };
 
           function init() {
             scene = new THREE.Scene();
@@ -115,6 +164,9 @@
 
             if (galleryItems && galleryItems.length > 0) {
               buildWheel(galleryItems);
+            } else {
+              // Hide loader immediately if no images exist
+              loadingManager.onLoad();
             }
 
             setupInteractions();
@@ -127,13 +179,11 @@
             meshes.forEach(m => wheelGroup.remove(m));
             meshes = [];
 
-            const textureLoader = new THREE.TextureLoader();
-            // Allow cross-origin image loading for external ImgBB servers
+            // Pass loadingManager into TextureLoader
+            const textureLoader = new THREE.TextureLoader(loadingManager);
             textureLoader.setCrossOrigin('anonymous');
 
             const count = items.length;
-            
-            // Calculates columns and rows based on total image count
             const itemsPerRow = Math.min(12, Math.ceil(count / 3)); 
             const radius = 16; 
             const rowHeight = 4.2; 

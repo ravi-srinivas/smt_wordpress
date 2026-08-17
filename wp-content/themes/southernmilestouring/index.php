@@ -75,7 +75,7 @@ get_header();
         <?php while ( have_posts() ) : the_post(); ?>
           <article class="border border-white/10 bg-black/80 group flex flex-col justify-between hover:border-[#ff6600]/30 transition-colors duration-300 relative">
             <div class="p-6 md:p-12 lg:p-16 flex flex-col justify-center">
-              <div class="text-gray-300 text-lg tracking-normal normal-case mb-4 leading-relaxed dynamic-wp-content">
+              <div class="text-gray-300 text-lg tracking-normal normal-case leading-relaxed dynamic-wp-content">
                 <?php the_content(); ?>
               </div>
             </div>

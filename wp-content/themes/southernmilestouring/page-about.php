@@ -364,14 +364,14 @@
           Explore our blogs, view our gallery, or get a custom quote for your group expedition.
         </p>
         <div class="flex flex-col sm:flex-row gap-6 justify-center">
-          <a href="<?php echo esc_url(home_url('blog')); ?>" class="bg-[#ff6600] text-white hover:bg-white hover:text-[#ff6600] px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
-            READ OUR BLOG
+          <a href="<?php echo esc_url(home_url('blog')); ?>" class="bg-[#ff6600] text-white hover:bg-white hover:text-black px-12 py-5 rounded-none text-md font-black font-open-sans tracking-[0.2em] transition-all duration-300 uppercase">
+            Latest Blogs
           </a>
-          <a href="<?php echo esc_url(home_url('gallery')); ?>" class="bg-transparent border-2 border-[#ff6600] text-[#ff6600] hover:bg-[#ff6600] hover:text-white px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
-            VIEW OUR GALLERY
+          <a href="<?php echo esc_url(home_url('gallery')); ?>" class="bg-transparent border-2 border-[#ff6600] text-[#ff6600] hover:border-white hover:bg-white hover:text-black px-12 py-5 rounded-none text-md font-black font-open-sans tracking-[0.2em] transition-all duration-300 uppercase">
+            Field Photos
           </a>
-          <a href="<?php echo esc_url(home_url('contact')); ?>" class="bg-[#ff6600] border-2 border-[#ff6600] text-black hover:bg-transparent hover:text-[#ff6600] px-12 py-5 rounded-none text-sm font-black tracking-[0.2em] transition-all duration-300 uppercase">
-            CONTACT US
+          <a href="<?php echo esc_url(home_url('contact')); ?>" class="bg-[#ff6600] text-white hover:bg-white hover:text-black px-12 py-5 rounded-none text-md font-black font-open-sans tracking-[0.2em] transition-all duration-300 uppercase">
+            Contact Us
           </a>
         </div>
       </div>

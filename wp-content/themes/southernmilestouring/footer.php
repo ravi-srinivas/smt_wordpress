@@ -82,7 +82,7 @@
               Our Blogs
             </span>
           </a>
-          <!-- <a
+          <a
             href="<?php echo esc_url(home_url('/faq')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
           >
@@ -92,14 +92,14 @@
             </span>
           </a>
           <a
-            href="<?php echo esc_url(home_url('/travel-tips')); ?>"
+            href="<?php echo esc_url(home_url('/traveler-insights')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"
           >
             <span class="w-2 h-2 bg-[#ff6600]"></span>
             <span class="text-gray-400 group-hover:text-white font-bold text-sm">
-              Travel Tips
+              Traveler Insights
             </span>
-          </a> -->
+          </a>
           <a
             href="<?php echo esc_url(home_url('/contact')); ?>"
             class="group flex items-center gap-4 p-3 border-b border-transparent hover:border-white/10 transition-all"

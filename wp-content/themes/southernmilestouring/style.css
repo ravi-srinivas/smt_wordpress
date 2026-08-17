@@ -482,3 +482,151 @@ h6.wp-block-heading{
 .instagram-gallery__actions{
     display: none !important;
 }
+
+/* ==========================================================================
+   TACTICAL HUD STYLING FOR WORDPRESS ACCORDION BLOCKS (.dynamic-wp-content)
+   ========================================================================== */
+
+/* Outer Accordion Wrapper */
+.dynamic-wp-content .wp-block-accordion {
+  margin-bottom: 1.25rem;
+}
+
+/* Individual Accordion Card */
+.dynamic-wp-content .wp-block-accordion-item {
+  background-color: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 0.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  border-radius: 0px !important; /* Sharp tactical corners */
+  overflow: hidden;
+}
+
+/* Item Hover State */
+.dynamic-wp-content .wp-block-accordion-item:hover {
+  border-color: rgba(255, 102, 0, 0.4);
+}
+
+/* Item Open / Expanded State Glow */
+.dynamic-wp-content .wp-block-accordion-item.is-open,
+.dynamic-wp-content .wp-block-accordion-item:has(.wp-block-accordion-heading__toggle[aria-expanded="true"]) {
+  border-color: #ff6600;
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.15);
+  background-color: rgba(10, 10, 10, 0.95);
+}
+
+/* Tactical Left-Side Accent Bar on Hover/Active */
+.dynamic-wp-content .wp-block-accordion-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background-color: #ff6600;
+  transition: height 0.3s ease;
+  z-index: 10;
+}
+
+.dynamic-wp-content .wp-block-accordion-item:hover::before,
+.dynamic-wp-content .wp-block-accordion-item.is-open::before,
+.dynamic-wp-content .wp-block-accordion-item:has(.wp-block-accordion-heading__toggle[aria-expanded="true"])::before {
+  height: 100%;
+}
+
+/* Accordion Heading Reset */
+.dynamic-wp-content .wp-block-accordion-heading {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 100% !important;
+}
+
+/* Accordion Toggle Button */
+.dynamic-wp-content .wp-block-accordion-heading__toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  .dynamic-wp-content .wp-block-accordion-heading__toggle {
+    font-size: 1.125rem;
+  }
+}
+
+.dynamic-wp-content .wp-block-accordion-heading__toggle:hover {
+  color: #ff6600;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Title Text */
+.dynamic-wp-content .wp-block-accordion-heading__toggle-title {
+  flex-grow: 1;
+  line-height: 1.3;
+}
+
+/* Toggle Icon (+ / -) Tactical Box */
+.dynamic-wp-content .wp-block-accordion-heading__toggle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(255, 102, 0, 0.3);
+  color: #ff6600;
+  font-family: monospace;
+  font-size: 1.25rem;
+  font-weight: 900;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* Icon Highlight on Hover/Active */
+.dynamic-wp-content .wp-block-accordion-heading__toggle:hover .wp-block-accordion-heading__toggle-icon,
+.dynamic-wp-content .wp-block-accordion-heading__toggle[aria-expanded="true"] .wp-block-accordion-heading__toggle-icon,
+.dynamic-wp-content .wp-block-accordion-item.is-open .wp-block-accordion-heading__toggle-icon {
+  background-color: #ff6600;
+  color: #000000;
+  border-color: #ff6600;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+}
+
+/* Accordion Answer Panel */
+.dynamic-wp-content .wp-block-accordion-panel {
+  padding: 1.25rem 1.5rem 1.5rem 1.5rem;
+  color: #d1d5db; /* gray-300 */
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-transform: none; /* Keep answer body readable in normal case */
+  letter-spacing: normal;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dynamic-wp-content .wp-block-accordion-panel p {
+  margin-bottom: 0.75rem;
+}
+
+.dynamic-wp-content .wp-block-accordion-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.dynamic-wp-content .wp-block-accordion-panel strong {
+  color: #ffffff;
+  font-weight: 700;
+}

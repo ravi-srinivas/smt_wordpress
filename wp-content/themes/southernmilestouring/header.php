@@ -79,10 +79,6 @@
                         <a href="https://facebook.com/<?php echo get_field('facebook', $front_page_id); ?>" target="_blank" class="hover:text-[#ff6600] transition-colors">
                             <i class="fa-brands fa-facebook text-2xl"></i>
                         </a>
-                        <!-- Threads -->
-                        <a href="https://www.threads.com/@<?php echo get_field('threads', $front_page_id); ?>?hl=en" target="_blank" class="hover:text-[#ff6600] transition-colors">
-                            <i class="fa-brands fa-threads text-2xl"></i>
-                        </a>
                     </div>
                 </div>
             </div>

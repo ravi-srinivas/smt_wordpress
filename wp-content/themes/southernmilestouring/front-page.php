@@ -389,13 +389,6 @@
                 <i class="fa-brands fa-facebook"></i>
               </span>
             </a>
-            
-            <!-- Threads Link -->
-            <a href="https://www.threads.com/@<?php echo get_field('threads', get_the_ID()); ?>?hl=en" target="_blank" class="group inline-flex items-center bg-[#0a0a0a] border-2 border-[#ff6600] text-[#ff6600] hover:bg-[#ff6600] hover:text-white px-5 py-3 rounded-none text-lg font-black transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-[0_0_20px_rgba(255,90,0,0.4)] tracking-widest">
-              <span class="flex items-center justify-center text-xl">
-                <i class="fa-brands fa-threads"></i>
-              </span>
-            </a>
 
           </div>
 

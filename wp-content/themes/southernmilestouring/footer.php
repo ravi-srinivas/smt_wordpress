@@ -55,14 +55,6 @@
           >
             <i class="fa-brands fa-facebook text-2xl"></i>
           </a>
-          <a
-            href="https://www.threads.com/@<?php echo get_field('threads', $front_page_id); ?>?hl=en"
-            target="_blank"
-            rel="noreferrer"
-            class="p-3 border border-white/10 hover:border-[#ff6600] hover:text-[#ff6600] transition-all"
-          >
-            <i class="fa-brands fa-threads text-2xl"></i>
-          </a>
         </div>
       </div>
 

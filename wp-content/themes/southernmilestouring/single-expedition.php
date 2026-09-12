@@ -272,7 +272,7 @@ if (have_posts()) :
                   </button>
                 </a>
               <?php else : ?>
-                <a href="https://wa.me/919113230676?text=I+would+like+to+know+more+about+the+expedition, +<?php the_title(); ?>+as+we+are+looking+for+a+custom+MPV+itinerary." target="_blank" class="block w-full group">
+                <a href="https://wa.me/919113230676?text=I%20would%20like%20to%20know%20more%20about%20the%20expedition,%20<?php the_title(); ?>%20as%20we%20are%20looking%20for%20a%20custom%20MPV%20itinerary." target="_blank" class="block w-full group">
                   <button class="w-full bg-[#ff6600] hover:bg-white text-black py-4 px-6 text-xs font-black tracking-[0.2em] transition-all duration-300 flex items-center justify-center gap-3 uppercase shadow-[0_0_20px_rgba(255,90,0,0.3)]">
                     <span>CRAFT AN EXPERIENCE</span>
                     <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>

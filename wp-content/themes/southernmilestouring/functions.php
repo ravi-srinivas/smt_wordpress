@@ -141,17 +141,6 @@ function southern_miles_expedition_popup() {
 
     $expedition_query = new WP_Query( $args );
 
-    // Fallback: If no future rides exist, grab the single most recently published ride
-    if ( ! $expedition_query->have_posts() ) {
-        $expedition_query = new WP_Query( array(
-            'post_type'      => 'expedition',
-            'posts_per_page' => 1,
-            'post_status'    => 'publish',
-            'orderby'        => 'date',
-            'order'          => 'DESC',
-        ) );
-    }
-
     if ( $expedition_query->have_posts() ) :
         while ( $expedition_query->have_posts() ) : $expedition_query->the_post();
             $current_ride_id = get_the_ID();
